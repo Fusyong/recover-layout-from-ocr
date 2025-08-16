@@ -64,15 +64,16 @@ class TextLineToMarkdown:
     def convert_text_to_markdown(self, lines: List[str]) -> str:
         md_lines: List[str] = []
         for line in lines:
-            # 保留空行
+            # 保留空行和整行空格
             if not line:
                 md_lines.append('')
                 continue
             # 保留行首缩进（不 strip 左侧空格）
             left_spaces = len(line) - len(line.lstrip(' '))
             content = line.lstrip(' ')
+            # 如果移除左侧空格后内容为空，说明这行全是空格，应该保留
             if not content:
-                md_lines.append('')
+                md_lines.append(line)
                 continue
             if level := self.is_in_contents(content):
                 md_lines.append(f"{'#' * level} {line.strip()}")

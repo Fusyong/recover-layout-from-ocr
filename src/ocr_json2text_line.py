@@ -4,13 +4,13 @@ OCR JSON结果转Markdown转换器
 """
 
 import json
-from typing import Dict, List, Any, Tuple, Optional
-from dataclasses import dataclass
-from enum import Enum
 import os
 import statistics
 import time
-
+import re
+from typing import Dict, List, Any, Tuple, Optional
+from dataclasses import dataclass
+from enum import Enum
 
 class TextDirection(Enum):
     """文本方向枚举"""
@@ -255,20 +255,31 @@ class OCRJsonToTextLine:
         if fragments:
             line_spacing = max(1.0, char_height * line_multiplier)
             grouped = self._group_fragments_by_line(fragments, line_spacing, self.same_line_threshold_ratio)
+            
+            # 确定文字区域边界
+            text_area_bounds = self._determine_text_area_bounds(fragments)
+            
             # 文字区域左边界（全局最小 x）
-            base_left = min((f['x'] for f in fragments), default=0)
+            base_left = text_area_bounds['left']
+            # 文字区域右边界
+            base_right = text_area_bounds['right']
+            
             # 合并每一行的分片，按像素间距 → 空格数（两个空格≈一个正文汉字高度）
             prev_row: Optional[List[Dict[str, Any]]] = None
             for row in grouped:
-                # 行间距 → 空行
+                # 行间距 → 满行空格
                 if prev_row is not None:
                     blanks = self._compute_blank_lines_between(prev_row, row, line_spacing)
                     if blanks > 0:
-                        text_lines.extend([''] * blanks)
+                        # 计算每行应该有多少个字符（基于文字区域宽度）
+                        chars_per_line = self._compute_chars_per_line(text_area_bounds, char_height)
+                        for _ in range(blanks):
+                            text_lines.append(' ' * chars_per_line)
                 # 行首缩进：行头到文字区域左边界的距离以空格填充
                 indent_spaces = self._compute_row_indent_spaces(row, base_left, char_height)
-                joined = self._join_fragments_with_spacing(row, char_height)
-                stripped = joined.strip()
+                joined = self._join_fragments_with_spacing(row, char_height, base_right)
+                # 只移除行首空格，保留行末空格（包括边界填充）
+                stripped = joined.lstrip()
                 if not stripped:
                     continue
                 text_lines.append((' ' * indent_spaces) + stripped)
@@ -369,8 +380,8 @@ class OCRJsonToTextLine:
 
         return groups
 
-    def _join_fragments_with_spacing(self, row: List[Dict[str, Any]], char_height: float) -> str:
-        """按片段的左右间距，以“两个空格≈一个汉字高度”的换算插入空格"""
+    def _join_fragments_with_spacing(self, row: List[Dict[str, Any]], char_height: float, text_area_right: int) -> str:
+        """按片段的左右间距，以"两个空格≈一个汉字高度"的换算插入空格，并在行末添加边界填充"""
         if not row:
             return ''
         if char_height <= 0:
@@ -389,8 +400,50 @@ class OCRJsonToTextLine:
                 parts.append(' ' * spaces)
             parts.append(frag['text'])
             prev_right = frag['x'] + frag['width']
+        
+        # 行末边界填充：最后一个box后按照其与右边界的距离填充空格
+        if row and text_area_right > 0:
+            last_frag = row[-1]
+            last_right = last_frag['x'] + last_frag['width']
+            end_gap_px = max(0, text_area_right - last_right)
+            # 两个空格折算为一个正文汉字高度
+            end_spaces = int(round((end_gap_px / char_height) * 2))
+            if end_spaces > 0:
+                parts.append(' ' * end_spaces)
+        
         return ''.join(parts)
 
+    def _determine_text_area_bounds(self, fragments: List[Dict[str, Any]]) -> Dict[str, int]:
+        """确定文字区域的边界（左、右、上、下）"""
+        if not fragments:
+            return {'left': 0, 'right': 0, 'top': 0, 'bottom': 0}
+        
+        left = min(frag['x'] for frag in fragments)
+        right = max(frag['x'] + frag['width'] for frag in fragments)
+        top = min(frag['y'] for frag in fragments)
+        bottom = max(frag['y'] + frag['height'] for frag in fragments)
+        
+        return {
+            'left': left,
+            'right': right,
+            'top': top,
+            'bottom': bottom
+        }
+
+    def _compute_chars_per_line(self, text_area_bounds: Dict[str, int], char_height: float) -> int:
+        """计算每行应该有多少个字符（基于文字区域宽度）"""
+        if not text_area_bounds or char_height <= 0:
+            return 80  # 默认值
+        
+        # 文字区域宽度
+        text_width = text_area_bounds['right'] - text_area_bounds['left']
+        
+        # 两个空格≈一个汉字高度，所以一个汉字≈两个空格
+        # 每行字符数 = 文字区域宽度 / 汉字宽度
+        chars_per_line = int(round((text_width / char_height) * 2))
+        
+        # 确保至少有一些字符，避免过短
+        return max(20, chars_per_line)
 
     def convert_youdao_json_to_text(self, ocr_json: Dict[str, Any]) -> str:
         """将OCR JSON结果转换为纯文本（带空格/空行）"""
@@ -518,12 +571,35 @@ class OCRJsonToTextLine:
 
         return []
 
-if __name__ == "__main__":
-    with open('rapidocr_result.json', 'r', encoding='utf-8') as f:
+    def convert_json_to_text(self, ocr_json: Dict[str, Any]) -> str:
+        """将OCR JSON结果转换为纯文本（带空格/空行）"""
+        if 'Result' in ocr_json:
+            return self.convert_youdao_json_to_text(ocr_json)
+        else:
+            return self.convert_rapidocr_json_to_text(ocr_json)
+
+def convert_json_to_text(json_path: str, out_path: str='') -> str:
+    """将OCR JSON结果转换为纯文本（带空格/空行）"""
+    if not out_path:
+        out_path = re.sub(r'\.[^\.]+$', '.txt', json_path)
+    with open(json_path, 'r', encoding='utf-8') as f:
         json_data = json.load(f)
         tl_conv = OCRJsonToTextLine()
-        text_with_layout = tl_conv.convert_rapidocr_json_to_text(json_data)
-        with open('rapidocr_result.txt', 'w', encoding='utf-8') as f:
-            f.write(text_with_layout)
+        text = tl_conv.convert_json_to_text(json_data)
+        with open(out_path, 'w', encoding='utf-8') as f:
+            f.write(text)
 
-    print(text_with_layout)
+def convert_jsons_to_text(json_dir: str, out_dir: str='') -> str:
+    """将文件夹中的OCR JSON结果转换为纯文本（带空格/空行）"""
+    if not out_dir:
+        out_dir = json_dir
+    for json_path in os.listdir(json_dir):
+        if json_path.endswith('.json'):
+            convert_json_to_text(os.path.join(json_dir, json_path), os.path.join(out_dir, json_path.replace('.json', '.txt')))
+
+if __name__ == "__main__":
+    # 转换单个JSON文件
+    # convert_json_to_text('img_1_dsk.json', 'img_1_dsk.txt')
+
+    # 转换文件夹中的所有JSON文件
+    convert_jsons_to_text('img_dsk')

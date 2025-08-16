@@ -1,0 +1,6 @@
+.venv
+pdf/
+img/
+img_dsk/
+*.pdf
+__pycache__
