@@ -6,7 +6,6 @@ OCR JSON结果转文本行（含版面空格/空行）转换器
 import json
 import os
 import statistics
-import time
 import re
 from typing import Dict, List, Any, Tuple, Optional
 from dataclasses import dataclass
@@ -110,9 +109,7 @@ class Region:
 class OCRJsonToTextLine:
     """OCR JSON → 纯文本行（含版面空格/空行）转换器"""
 
-    def __init__(self):
-        # 常量持久化文件
-        self.constants_file = 'ocr_layout_constants.json'
+    def __init__(self, dpi: int = 300, char_height: float = 50.0, line_height_multiplier: float = 1.5):
         # 同行判定阈值（占行距比例）
         self.same_line_threshold_ratio = 0.8
         # 盒级过滤器列表
@@ -124,6 +121,10 @@ class OCRJsonToTextLine:
         self.page_height: int = 0
         # 过滤日志文件
         self.log_file: str = "filter_log.txt"
+        # 用户设置的布局参数
+        self.char_height: float = char_height  # 字符高度（像素），必须通过set_layout_params设置
+        self.line_height_multiplier: float = line_height_multiplier  # 行高倍数
+        self.dpi: int = dpi  # 分辨率
         
     def set_log_file(self, log_file: str) -> None:
         """设置过滤日志文件名
@@ -132,6 +133,26 @@ class OCRJsonToTextLine:
             log_file: 日志文件名
         """
         self.log_file = log_file
+        
+    def set_layout_params(self, dpi: int = None, char_height: float = None, line_height_multiplier: float = None) -> None:
+        """设置布局参数（可选，用于覆盖初始化时的设置）
+        
+        Args:
+            char_height: 字符高度（像素），用于计算空格和缩进，如果提供则必须大于0
+            line_height_multiplier: 行高倍数，用于计算行间距
+        """
+        if dpi is not None:
+            self.dpi = int(dpi)
+
+        if char_height is not None:
+            if char_height <= 0:
+                raise ValueError("char_height必须大于0，不能小于等于0")
+            self.char_height = float(char_height)
+        
+        if line_height_multiplier is not None:
+            self.line_height_multiplier = float(line_height_multiplier)
+        
+        print(f"[DEBUG] 布局参数: 字符高度={self.char_height:.2f}, 行高倍数={self.line_height_multiplier:.3f}, DPI={self.dpi}")
         
     def boxFilter(self, *filter_functions: callable) -> None:
         """启动用户自定义过滤器系统
@@ -385,175 +406,15 @@ class OCRJsonToTextLine:
         except statistics.StatisticsError:
             return float(values[0])
 
-    def _load_constants(self) -> Dict[str, Any]:
-        if not os.path.exists(self.constants_file):
-            return {}
-        try:
-            with open(self.constants_file, 'r', encoding='utf-8') as fp:
-                return json.load(fp)
-        except (OSError, json.JSONDecodeError, ValueError):
-            return {}
-
-    def _save_constants(self, constants: Dict[str, Any]) -> None:
-        try:
-            with open(self.constants_file, 'w', encoding='utf-8') as fp:
-                json.dump(constants, fp, ensure_ascii=False, indent=2)
-        except OSError:
-            pass
-
     def estimate_layout_constants(self, regions: List['Region']) -> Tuple[float, float, Dict[str, int]]:
-        """遍历所有 box，估计正文汉字高度与行高倍数，并结合历史常量进行微调/回落
-
+        """返回用户设置的布局参数
+        
+        参数在初始化时设置，不再进行自动估算
+        
         返回: (char_height_px, line_height_multiplier, sample_counts)
         """
-        char_heights: List[float] = []
-        line_heights: List[float] = []
-
-        # 收集样本
-        for region in regions:
-            for line in region.lines:
-                # 准备box数据用于过滤
-                if line.boundingBox:
-                    box_data = {
-                        'text': line.text.strip() if line.text else '',
-                        'x': int(line.boundingBox.x),
-                        'y': int(line.boundingBox.y),
-                        'width': int(line.boundingBox.width),
-                        'height': int(line.boundingBox.height),
-                        'bbox': line.boundingBox,
-                        'line': line,
-                        'region': region
-                    }
-                    
-                    # 准备页面信息用于过滤
-                    page_info = {
-                        'page_width': self.page_width,
-                        'page_height': self.page_height
-                    }
-                    
-                    # 应用用户自定义过滤器
-                    if not self._apply_user_filters(box_data, page_info):
-                        continue
-                
-                # 行高样本优先用行 bbox，其次 text_height
-                if line.boundingBox and line.boundingBox.height > 0:
-                    line_heights.append(float(line.boundingBox.height))
-                elif line.text_height:
-                    line_heights.append(float(line.text_height))
-
-                for w in line.words:
-                    if not w or not w.word:
-                        continue
-                    
-                    # 对单词也应用过滤器
-                    if w.boundingBox:
-                        word_box_data = {
-                            'text': w.word.strip() if w.word else '',
-                            'x': int(w.boundingBox.x),
-                            'y': int(w.boundingBox.y),
-                            'width': int(w.boundingBox.width),
-                            'height': int(w.boundingBox.height),
-                            'bbox': w.boundingBox,
-                            'word': w,
-                            'line': line,
-                            'region': region
-                        }
-                        
-                        # 应用用户自定义过滤器
-                        if not self._apply_user_filters(word_box_data, page_info):
-                            continue
-                    
-                    # 修复：改进字符高度估计逻辑
-                    if w.boundingBox and w.boundingBox.height > 0:
-                        word_height = float(w.boundingBox.height)
-                        # 对于pymupdf格式，如果单词高度异常大（可能是整行高度），尝试用行高度除以字符数
-                        if word_height > 50 and line.boundingBox and line.boundingBox.height > 0:
-                            # 如果单词高度异常大，可能是整行被当作一个单词处理
-                            # 尝试用行高度除以字符数来估计单个字符高度
-                            char_count = len(w.word.strip())
-                            if char_count > 0:
-                                estimated_char_height = line.boundingBox.height / char_count
-                                if 10 <= estimated_char_height <= 50:  # 合理的字符高度范围
-                                    char_heights.append(estimated_char_height)
-                                    continue
-                        
-                        # 正常的字符高度处理
-                        if self._contains_cjk(w.word) and word_height > 0:
-                            char_heights.append(word_height)
-
-        current_char_height = self._robust_median(char_heights) if len(char_heights) >= 5 else 0.0
-        current_line_height = self._robust_median(line_heights) if len(line_heights) >= 3 else 0.0
-
-        # 如果字符高度估计失败，尝试从行高度推断
-        if current_char_height <= 0 and current_line_height > 0:
-            # 假设行高是字符高度的1.5倍（常见的中文排版比例）
-            current_char_height = current_line_height / 1.5
-            print(f"[DEBUG] 从行高推断字符高度: {current_char_height:.2f}")
-
-        # 计算倍数（以正文汉字高度为基准）
-        current_multiplier = 0.0
-        if current_char_height > 0 and current_line_height > 0:
-            ratios = [lh / current_char_height for lh in line_heights if lh > 0]
-            current_multiplier = self._robust_median(ratios)
-
-        # 载入历史常量
-        loaded = self._load_constants()
-        prev_char_height = float(loaded.get('char_height', 0) or 0)
-        prev_multiplier = float(loaded.get('line_height_multiplier', 0) or 0)
-        prev_counts = loaded.get('sample_counts', {}) if isinstance(loaded.get('sample_counts', {}), dict) else {}
-        prev_char_n = int(prev_counts.get('char', 0))
-        prev_line_n = int(prev_counts.get('line', 0))
-
-        # 样本量
-        char_n = len(char_heights)
-        line_n = len(line_heights)
-
-        # 稀疏判定：字样本<5 或 行样本<3 则较少
-        sparse_char = char_n < 5
-        sparse_line = line_n < 3
-
-        # 合成结果
-        final_char_height = current_char_height
-        final_multiplier = current_multiplier
-
-        # 如果当前样本过少，回落历史；否则按样本量加权微调
-        if prev_char_height > 0:
-            if sparse_char or current_char_height <= 0:
-                final_char_height = prev_char_height
-            else:
-                alpha_char = min(0.7, char_n / float(char_n + prev_char_n + 1e-6))
-                final_char_height = alpha_char * current_char_height + (1 - alpha_char) * prev_char_height
-
-        if prev_multiplier > 0:
-            if sparse_line or current_multiplier <= 0:
-                final_multiplier = prev_multiplier
-            else:
-                alpha_line = min(0.7, line_n / float(line_n + prev_line_n + 1e-6))
-                final_multiplier = alpha_line * current_multiplier + (1 - alpha_line) * prev_multiplier
-
-        # 如仍无有效数值，给出保守默认
-        if final_char_height <= 0:
-            final_char_height = 32.0  # 经验默认值
-        if final_multiplier <= 0:
-            final_multiplier = 1.5
-
-        # 夹制行高倍数在合理区间（通常 1.2 ~ 2.0）
-        final_multiplier = max(1.2, min(2.0, final_multiplier))
-
-        # 更新计数，限制上限避免惯性过大
-        new_char_n = min(1000, prev_char_n + char_n)
-        new_line_n = min(1000, prev_line_n + line_n)
-
-        # 持久化
-        self._save_constants({
-            'char_height': round(final_char_height, 2),
-            'line_height_multiplier': round(final_multiplier, 3),
-            'sample_counts': {'char': new_char_n, 'line': new_line_n},
-            'updated_at': int(time.time())
-        })
-
-        print(f"[DEBUG] 布局常量估计结果: 字符高度={final_char_height:.2f}, 行高倍数={final_multiplier:.3f}")
-        return final_char_height, final_multiplier, {'char': char_n, 'line': line_n}
+        print(f"[DEBUG] 使用布局参数: 字符高度={self.char_height:.2f}, 行高倍数={self.line_height_multiplier:.3f}, DPI={self.dpi}")
+        return self.char_height, self.line_height_multiplier, {'char': 0, 'line': 0}
 
     def convert_regions_to_text_lines(self, regions: List[Region], char_height: float, line_multiplier: float) -> List[str]:
         """将区域列表转换为纯文本行（跨 region 同行合并、行首缩进与行间空行）"""
@@ -644,12 +505,12 @@ class OCRJsonToTextLine:
         if not row:
             return 0
         if char_height <= 0:
-            char_height = 32.0
+            raise ValueError("char_height必须大于0，请通过set_layout_params设置有效的字符高度")
         left_x = min(item['x'] for item in row)
         indent_px = max(0, left_x - int(base_left or 0))
         # 根据OCR格式调整系数：pymupdf需要更多空格，RapidOCR需要减少
         # 横向空格：pymupdf使用1.14倍，其他格式使用0.8倍
-        spacing_factor = 1.14 if hasattr(self, '_is_pymupdf') and self._is_pymupdf else 0.8
+        spacing_factor = 1 if hasattr(self, '_is_pymupdf') and self._is_pymupdf else 1
         spaces = int(round((indent_px / char_height) * 2 * spacing_factor))
         return max(0, spaces)
 
@@ -666,7 +527,7 @@ class OCRJsonToTextLine:
         # # 根据OCR格式调整系数：pymupdf需要减少空行，其他格式需要增加空行
         # # 空行空格：pymupdf使用0.5倍，其他格式使用2.0倍
         # spacing_factor = 1.3 if hasattr(self, '_is_pymupdf') and self._is_pymupdf else 1.3
-        spacing_factor = 1.3
+        spacing_factor = 1
         blanks = int((gap_px / line_spacing) * spacing_factor)
         return max(0, blanks)
 
@@ -758,7 +619,7 @@ class OCRJsonToTextLine:
         if not row:
             return ''
         if char_height <= 0:
-            char_height = 32.0
+            raise ValueError("char_height必须大于0，请通过set_layout_params设置有效的字符高度")
         parts: List[str] = []
         prev_right = None
         for frag in row:
@@ -769,7 +630,8 @@ class OCRJsonToTextLine:
             gap_px = max(0, frag['x'] - prev_right)
             # 根据OCR格式调整系数：pymupdf需要更多空格，RapidOCR需要减少
             # 行内空格：pymupdf使用1.14倍，其他格式使用0.8倍
-            spacing_factor = 1.14 if hasattr(self, '_is_pymupdf') and self._is_pymupdf else 0.8
+            # spacing_factor = 1.14 if hasattr(self, '_is_pymupdf') and self._is_pymupdf else 0.8
+            spacing_factor = 1
             spaces = int(round((gap_px / char_height) * 2 * spacing_factor))
             if spaces > 0:
                 parts.append(' ' * spaces)
@@ -783,7 +645,8 @@ class OCRJsonToTextLine:
             end_gap_px = max(0, text_area_right - last_right)
             # 根据OCR格式调整系数：pymupdf需要更多空格，RapidOCR需要减少
             # 行末空格：pymupdf使用1.14倍，其他格式使用0.8倍
-            spacing_factor = 1.14 if hasattr(self, '_is_pymupdf') and self._is_pymupdf else 0.8
+            # spacing_factor = 1.14 if hasattr(self, '_is_pymupdf') and self._is_pymupdf else 0.8
+            spacing_factor = 1
             end_spaces = int(round((end_gap_px / char_height) * 2 * spacing_factor))
             if end_spaces > 0:
                 parts.append(' ' * end_spaces)
@@ -795,15 +658,11 @@ class OCRJsonToTextLine:
         if not fragments:
             return {'left': 0, 'right': 0, 'top': 0, 'bottom': 0}
         
+        # 完全基于实际文本片段计算边界
         left = min(frag['x'] for frag in fragments)
         right = max(frag['x'] + frag['width'] for frag in fragments)
         top = min(frag['y'] for frag in fragments)
         bottom = max(frag['y'] + frag['height'] for frag in fragments)
-        
-        # 如果有页面尺寸信息，使用页面宽度作为右边界，确保行末填充足够
-        if hasattr(self, 'page_width') and self.page_width > 0:
-            # 使用页面宽度作为右边界，但确保不小于实际文本的右边界
-            right = max(right, self.page_width)
         
         return {
             'left': left,
@@ -1016,9 +875,9 @@ class OCRJsonToTextLine:
 
         regions = []
         
-        # DPI转换：pymupdf是72dpi，其他OCR通常是300dpi
-        # 需要将pymupdf的坐标和尺寸放大到300dpi
-        dpi_scale_factor = 300.0 / 72.0  # 约4.17倍
+        # DPI转换：pymupdf是72dpi，其他OCR通常是用户设置的DPI
+        # 需要将pymupdf的坐标和尺寸放大到用户设置的DPI
+        dpi_scale_factor = self.dpi / 72.0
         
         # 记录页面尺寸信息，用于后续的空格填充计算
         max_page_width = 0
@@ -1029,7 +888,7 @@ class OCRJsonToTextLine:
                 continue
                 
             # 获取页面尺寸信息 - 修复：使用正确的字段名
-            # 应用DPI转换：将72dpi转换为300dpi
+            # 应用DPI转换：将72dpi转换为用户设置的DPI
             page_width = int(page.get('width', 0) * dpi_scale_factor)
             page_height = int(page.get('height', 0) * dpi_scale_factor)
             
@@ -1056,7 +915,7 @@ class OCRJsonToTextLine:
                                             all_bottoms.append(h)
                 
                 if all_xs and all_ys and all_rights and all_bottoms:
-                    # 应用DPI转换：将72dpi转换为300dpi
+                    # 应用DPI转换：将72dpi转换为用户设置的DPI
                     inferred_width = (max(all_rights) - min(all_xs)) * dpi_scale_factor
                     inferred_height = (max(all_bottoms) - min(all_ys)) * dpi_scale_factor
                     # 添加一些边距
@@ -1111,7 +970,7 @@ class OCRJsonToTextLine:
                         # 创建Word对象
                         span_bbox = span.get('bbox', [])
                         if len(span_bbox) == 4:
-                            # 应用DPI转换：将72dpi转换为300dpi
+                            # 应用DPI转换：将72dpi转换为用户设置的DPI
                             x, y, w, h = span_bbox
                             word_bbox = BoundingBox(
                                 x=int(x * dpi_scale_factor),
@@ -1206,13 +1065,13 @@ class OCRJsonToTextLine:
         else:
             raise ValueError("不支持的JSON格式")
 
-def convert_json_to_text(json_path: str, out_path: str='', box_filter_functions: List[callable]=None, row_filter_functions: List[callable]=None) -> str:
+def convert_json_to_text(json_path: str, out_path: str='', box_filter_functions: List[callable]=None, row_filter_functions: List[callable]=None, dpi: int=300, char_height: float=50.0, line_height_multiplier: float=1.5) -> str:
     """将OCR JSON结果转换为纯文本（带空格/空行）"""
     if not out_path:
         out_path = re.sub(r'\.[^\.]+$', '.txt', json_path)
     with open(json_path, 'r', encoding='utf-8') as f:
         json_data = json.load(f)
-        tl_conv = OCRJsonToTextLine()
+        tl_conv = OCRJsonToTextLine(dpi=dpi, char_height=char_height, line_height_multiplier=line_height_multiplier)  # 使用初始化参数
         if box_filter_functions:
             tl_conv.boxFilter(*box_filter_functions)
         if row_filter_functions:
@@ -1221,34 +1080,40 @@ def convert_json_to_text(json_path: str, out_path: str='', box_filter_functions:
         with open(out_path, 'w', encoding='utf-8') as f:
             f.write(text)
 
-def convert_jsons_to_text(json_dir: str, out_dir: str='', box_filter_functions: List[callable]=None, row_filter_functions: List[callable]=None) -> str:
+def convert_jsons_to_text(json_dir: str, out_dir: str='', box_filter_functions: List[callable]=None, row_filter_functions: List[callable]=None, dpi: int=300, char_height: float=50.0, line_height_multiplier: float=1.5) -> str:
     """将文件夹中的OCR JSON结果转换为纯文本（带空格/空行）"""
     if not out_dir:
         out_dir = json_dir
     for json_path in os.listdir(json_dir):
         if json_path.endswith('.json'):
-            convert_json_to_text(os.path.join(json_dir, json_path), os.path.join(out_dir, json_path.replace('.json', '.txt')), box_filter_functions, row_filter_functions)
+            convert_json_to_text(os.path.join(json_dir, json_path), os.path.join(out_dir, json_path.replace('.json', '.txt')), box_filter_functions, row_filter_functions, dpi, char_height, line_height_multiplier)
 
 if __name__ == "__main__":
 
     from ocr_json_filters import box_filters, row_filters
 
-    # files = [
-    #     'tests/assets/pymupdf.json',
-    #     'tests/assets/rapidocr.json',
-    #     'tests/assets/youdao.json',
-    # ]
-    # for file in files:
-    #     # 转换单个JSON文件
-    #     convert_json_to_text(
-    #         file,
-    #         box_filter_functions=box_filters, 
-    #         row_filter_functions=row_filters
-    #         )
+    files = [
+        'tests/assets/pymupdf.json',
+        'tests/assets/rapidocr.json',
+        'tests/assets/youdao.json',
+    ]
+    for file in files:
+        # 转换单个JSON文件
+        convert_json_to_text(
+            file,
+            box_filter_functions=box_filters, 
+            row_filter_functions=row_filters,
+            dpi=300,
+            char_height=50.0,
+            line_height_multiplier=1.5
+            )
 
     # 转换文件夹中的所有JSON文件
     convert_jsons_to_text(
         'img_dsk',
         box_filter_functions=box_filters,
-        row_filter_functions=row_filters
+        row_filter_functions=row_filters,
+        dpi=300,
+        char_height=50.0,
+        line_height_multiplier=1.5
     )

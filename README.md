@@ -13,6 +13,44 @@ PDF OCR Utils and Examples, especially for workbook text extraction, layout reco
 5. text_line2markdown.py
    - Converts text lines to Markdown format
 
+## Usage
+
+### Layout Parameters
+
+The `OCRJsonToTextLine` class now allows users to set layout parameters during initialization or optionally override them later:
+
+```python
+from src.ocr_json2text_line import OCRJsonToTextLine
+
+# Method 1: Set parameters during initialization (recommended)
+converter = OCRJsonToTextLine(
+    dpi=300,                    # DPI resolution (default: 300)
+    char_height=28.0,           # Character height in pixels (default: 50.0)
+    line_height_multiplier=1.6  # Line height multiplier (default: 1.5)
+)
+
+# Method 2: Override parameters after initialization (optional)
+converter.set_layout_params(
+    char_height=32.0,           # Override character height
+    line_height_multiplier=1.8  # Override line height multiplier
+)
+
+# Convert OCR JSON to text
+text = converter.convert_json_to_text(ocr_json)
+```
+
+**Parameters:**
+- `dpi`: DPI resolution for coordinate conversion, especially important for pymupdf format (default: 300)
+- `char_height`: Character height in pixels, used for calculating spaces and indentation (default: 50.0)
+- `line_height_multiplier`: Line height multiplier, used for calculating line spacing (default: 1.5)
+
+**Default values:**
+- `dpi`: 300
+- `char_height`: 50.0 pixels
+- `line_height_multiplier`: 1.5
+
+**Note:** Parameters are now set during initialization, making the converter ready to use immediately. The `set_layout_params()` method is optional and only needed if you want to override the initial values.
+
 ## TODO
 
 
