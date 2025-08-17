@@ -22,7 +22,8 @@ PDF OCR Utils and Examples, especially for workbook text extraction, layout reco
     1. 使用RapidOCR进行OCR识别
 2. [x] 将OCR结果转换为文本行，过滤不需要的box和row
     * [x] 兼容有道OCR的JSON格式
-    * [ ] 兼容pymupdf的JSON格式
+    * [x] 兼容pymupdf的JSON格式
+    * [x] 兼容RapidOCR的JSON格式
 3. [x] 给文本行中的标题标出Markdown标记
 4. [ ] 分切为独立题目
 5. [ ] 转换成数据库，建立专项查询

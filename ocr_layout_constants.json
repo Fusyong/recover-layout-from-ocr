@@ -1,9 +1,9 @@
 {
-  "char_height": 63.0,
-  "line_height_multiplier": 1.2,
+  "char_height": 56.34,
+  "line_height_multiplier": 1.222,
   "sample_counts": {
     "char": 1000,
     "line": 1000
   },
-  "updated_at": 1755410438
+  "updated_at": 1755432533
 }

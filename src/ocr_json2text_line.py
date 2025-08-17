@@ -1,6 +1,6 @@
 """
-OCR JSON结果转Markdown转换器
-支持有道智云OCR API返回的JSON格式转换为Markdown文档
+OCR JSON结果转文本行（含版面空格/空行）转换器
+支持有道智云OCR API和pymupdf返回的JSON格式
 """
 
 import json
@@ -114,7 +114,7 @@ class OCRJsonToTextLine:
         # 常量持久化文件
         self.constants_file = 'ocr_layout_constants.json'
         # 同行判定阈值（占行距比例）
-        self.same_line_threshold_ratio = 0.4
+        self.same_line_threshold_ratio = 0.8
         # 盒级过滤器列表
         self.box_filters: List[callable] = []
         # 行级过滤器列表
@@ -463,11 +463,32 @@ class OCRJsonToTextLine:
                         if not self._apply_user_filters(word_box_data, page_info):
                             continue
                     
-                    if self._contains_cjk(w.word) and w.boundingBox and w.boundingBox.height > 0:
-                        char_heights.append(float(w.boundingBox.height))
+                    # 修复：改进字符高度估计逻辑
+                    if w.boundingBox and w.boundingBox.height > 0:
+                        word_height = float(w.boundingBox.height)
+                        # 对于pymupdf格式，如果单词高度异常大（可能是整行高度），尝试用行高度除以字符数
+                        if word_height > 50 and line.boundingBox and line.boundingBox.height > 0:
+                            # 如果单词高度异常大，可能是整行被当作一个单词处理
+                            # 尝试用行高度除以字符数来估计单个字符高度
+                            char_count = len(w.word.strip())
+                            if char_count > 0:
+                                estimated_char_height = line.boundingBox.height / char_count
+                                if 10 <= estimated_char_height <= 50:  # 合理的字符高度范围
+                                    char_heights.append(estimated_char_height)
+                                    continue
+                        
+                        # 正常的字符高度处理
+                        if self._contains_cjk(w.word) and word_height > 0:
+                            char_heights.append(word_height)
 
         current_char_height = self._robust_median(char_heights) if len(char_heights) >= 5 else 0.0
         current_line_height = self._robust_median(line_heights) if len(line_heights) >= 3 else 0.0
+
+        # 如果字符高度估计失败，尝试从行高度推断
+        if current_char_height <= 0 and current_line_height > 0:
+            # 假设行高是字符高度的1.5倍（常见的中文排版比例）
+            current_char_height = current_line_height / 1.5
+            print(f"[DEBUG] 从行高推断字符高度: {current_char_height:.2f}")
 
         # 计算倍数（以正文汉字高度为基准）
         current_multiplier = 0.0
@@ -531,6 +552,7 @@ class OCRJsonToTextLine:
             'updated_at': int(time.time())
         })
 
+        print(f"[DEBUG] 布局常量估计结果: 字符高度={final_char_height:.2f}, 行高倍数={final_multiplier:.3f}")
         return final_char_height, final_multiplier, {'char': char_n, 'line': line_n}
 
     def convert_regions_to_text_lines(self, regions: List[Region], char_height: float, line_multiplier: float) -> List[str]:
@@ -562,8 +584,12 @@ class OCRJsonToTextLine:
                 if prev_row is not None:
                     blanks = self._compute_blank_lines_between(prev_row, row, line_spacing)
                     if blanks > 0:
-                        # 计算每行应该有多少个字符（基于文字区域宽度）
-                        chars_per_line = self._compute_chars_per_line(text_area_bounds, char_height)
+                        # 优先使用页面宽度计算每行字符数，确保空行填充足够
+                        if hasattr(self, 'page_width') and self.page_width > 0:
+                            chars_per_line = self._compute_chars_per_line_with_page_width(char_height)
+                        else:
+                            # 回退到基于文字区域宽度的计算
+                            chars_per_line = self._compute_chars_per_line(text_area_bounds, char_height)
                         for _ in range(blanks):
                             text_lines.append(' ' * chars_per_line)
                 # 行首缩进：行头到文字区域左边界的距离以空格填充
@@ -621,7 +647,10 @@ class OCRJsonToTextLine:
             char_height = 32.0
         left_x = min(item['x'] for item in row)
         indent_px = max(0, left_x - int(base_left or 0))
-        spaces = int(round((indent_px / char_height) * 2))
+        # 根据OCR格式调整系数：pymupdf需要更多空格，RapidOCR需要减少
+        # 横向空格：pymupdf使用1.14倍，其他格式使用0.8倍
+        spacing_factor = 1.14 if hasattr(self, '_is_pymupdf') and self._is_pymupdf else 0.8
+        spaces = int(round((indent_px / char_height) * 2 * spacing_factor))
         return max(0, spaces)
 
     def _compute_blank_lines_between(self, prev_row: List[Dict[str, Any]], curr_row: List[Dict[str, Any]], line_spacing: float) -> int:
@@ -634,7 +663,11 @@ class OCRJsonToTextLine:
         prev_bottom = max(item['y'] + item['height'] for item in prev_row)
         curr_top = min(item['y'] for item in curr_row)
         gap_px = max(0.0, float(curr_top - prev_bottom))
-        blanks = int(gap_px // line_spacing)
+        # # 根据OCR格式调整系数：pymupdf需要减少空行，其他格式需要增加空行
+        # # 空行空格：pymupdf使用0.5倍，其他格式使用2.0倍
+        # spacing_factor = 1.3 if hasattr(self, '_is_pymupdf') and self._is_pymupdf else 1.3
+        spacing_factor = 1.3
+        blanks = int((gap_px / line_spacing) * spacing_factor)
         return max(0, blanks)
 
     def _collect_horizontal_fragments(self, regions: List[Region]) -> List[Dict[str, Any]]:
@@ -734,8 +767,10 @@ class OCRJsonToTextLine:
                 prev_right = frag['x'] + frag['width']
                 continue
             gap_px = max(0, frag['x'] - prev_right)
-            # 两个空格折算为一个正文汉字高度
-            spaces = int(round((gap_px / char_height) * 2))
+            # 根据OCR格式调整系数：pymupdf需要更多空格，RapidOCR需要减少
+            # 行内空格：pymupdf使用1.14倍，其他格式使用0.8倍
+            spacing_factor = 1.14 if hasattr(self, '_is_pymupdf') and self._is_pymupdf else 0.8
+            spaces = int(round((gap_px / char_height) * 2 * spacing_factor))
             if spaces > 0:
                 parts.append(' ' * spaces)
             parts.append(frag['text'])
@@ -746,8 +781,10 @@ class OCRJsonToTextLine:
             last_frag = row[-1]
             last_right = last_frag['x'] + last_frag['width']
             end_gap_px = max(0, text_area_right - last_right)
-            # 两个空格折算为一个正文汉字高度
-            end_spaces = int(round((end_gap_px / char_height) * 2))
+            # 根据OCR格式调整系数：pymupdf需要更多空格，RapidOCR需要减少
+            # 行末空格：pymupdf使用1.14倍，其他格式使用0.8倍
+            spacing_factor = 1.14 if hasattr(self, '_is_pymupdf') and self._is_pymupdf else 0.8
+            end_spaces = int(round((end_gap_px / char_height) * 2 * spacing_factor))
             if end_spaces > 0:
                 parts.append(' ' * end_spaces)
         
@@ -762,6 +799,11 @@ class OCRJsonToTextLine:
         right = max(frag['x'] + frag['width'] for frag in fragments)
         top = min(frag['y'] for frag in fragments)
         bottom = max(frag['y'] + frag['height'] for frag in fragments)
+        
+        # 如果有页面尺寸信息，使用页面宽度作为右边界，确保行末填充足够
+        if hasattr(self, 'page_width') and self.page_width > 0:
+            # 使用页面宽度作为右边界，但确保不小于实际文本的右边界
+            right = max(right, self.page_width)
         
         return {
             'left': left,
@@ -784,9 +826,20 @@ class OCRJsonToTextLine:
         
         # 确保至少有一些字符，避免过短
         return max(20, chars_per_line)
+    
+    def _compute_chars_per_line_with_page_width(self, char_height: float) -> int:
+        """基于页面宽度计算每行应该有多少个字符"""
+        if not hasattr(self, 'page_width') or self.page_width <= 0 or char_height <= 0:
+            return 80  # 默认值
+        
+        # 使用页面宽度计算
+        chars_per_line = int(round((self.page_width / char_height) * 2))
+        
+        # 确保至少有一些字符，避免过短
+        return max(20, chars_per_line)
 
     def convert_youdao_json_to_text(self, ocr_json: Dict[str, Any]) -> str:
-        """将OCR JSON结果转换为纯文本（带空格/空行）"""
+        """将有道智云OCR JSON结果转换为纯文本（带空格/空行）"""
         try:
             # 解析JSON数据
             if 'Result' not in ocr_json:
@@ -808,20 +861,15 @@ class OCRJsonToTextLine:
         except (KeyError, TypeError, ValueError) as e:
             return f"转换失败: {str(e)}"
 
-    def convert_rapidocr_json_to_text(self, ocr_json: Dict[str, Any]) -> str:
+    def convert_rapidocr_json_to_text(self, ocr_json: List[Dict[str, Any]]) -> str:
         """将RapidOCR JSON结果转换为纯文本（带空格/空行）"""
         try:
-            # RapidOCR返回的是数组格式，不是嵌套的Result结构
-            if isinstance(ocr_json, list):
-                ocr_items = ocr_json
-            elif isinstance(ocr_json, dict) and 'Result' in ocr_json:
-                # 兼容有道智云格式
-                ocr_items = ocr_json['Result'].get('regions', [])
-            else:
-                raise ValueError("不支持的JSON格式")
+            # RapidOCR返回的是数组格式，每个元素包含box和txt字段
+            if not isinstance(ocr_json, list):
+                raise ValueError("RapidOCR JSON数据应该是数组格式")
 
             # 将RapidOCR格式转换为Region对象
-            regions = self._convert_rapidocr_to_regions(ocr_items)
+            regions = self._convert_rapidocr_to_regions(ocr_json)
 
             # 估计布局常量
             char_h, line_mul, _ = self.estimate_layout_constants(regions)
@@ -831,6 +879,35 @@ class OCRJsonToTextLine:
             return '\n'.join(lines)
 
         except (KeyError, TypeError, ValueError) as e:
+            return f"转换失败: {str(e)}"
+
+    def convert_pymupdf_json_to_text(self, ocr_json: List[Dict[str, Any]]) -> str:
+        """将pymupdf导出的JSON结果转换为纯文本（带空格/空行）"""
+        try:
+            # pymupdf返回的是页面列表，每个页面包含blocks
+            if not isinstance(ocr_json, list):
+                raise ValueError("pymupdf JSON数据应该是页面列表格式")
+
+            # 设置pymupdf格式标识
+            self._is_pymupdf = True
+
+            # 将pymupdf格式转换为Region对象
+            regions = self._convert_pymupdf_to_regions(ocr_json)
+
+            # 估计布局常量
+            char_h, line_mul, _ = self.estimate_layout_constants(regions)
+
+            # 转换为纯文本行
+            lines = self.convert_regions_to_text_lines(regions, char_h, line_mul)
+            
+            # 清除格式标识
+            self._is_pymupdf = False
+            
+            return '\n'.join(lines)
+
+        except (KeyError, TypeError, ValueError) as e:
+            # 确保清除格式标识
+            self._is_pymupdf = False
             return f"转换失败: {str(e)}"
 
     def _convert_rapidocr_to_regions(self, ocr_items: List[Dict[str, Any]]) -> List[Region]:
@@ -932,12 +1009,202 @@ class OCRJsonToTextLine:
 
         return []
 
-    def convert_json_to_text(self, ocr_json: Dict[str, Any]) -> str:
+    def _convert_pymupdf_to_regions(self, pages: List[Dict[str, Any]]) -> List[Region]:
+        """将pymupdf的识别结果转换为Region对象列表"""
+        if not pages:
+            return []
+
+        regions = []
+        
+        # DPI转换：pymupdf是72dpi，其他OCR通常是300dpi
+        # 需要将pymupdf的坐标和尺寸放大到300dpi
+        dpi_scale_factor = 300.0 / 72.0  # 约4.17倍
+        
+        # 记录页面尺寸信息，用于后续的空格填充计算
+        max_page_width = 0
+        max_page_height = 0
+        
+        for page in pages:
+            if not isinstance(page, dict) or 'blocks' not in page:
+                continue
+                
+            # 获取页面尺寸信息 - 修复：使用正确的字段名
+            # 应用DPI转换：将72dpi转换为300dpi
+            page_width = int(page.get('width', 0) * dpi_scale_factor)
+            page_height = int(page.get('height', 0) * dpi_scale_factor)
+            
+            # 如果页面尺寸为0，尝试从页面内容推断
+            if page_width <= 0 or page_height <= 0:
+                # 从所有文本块的坐标推断页面尺寸
+                all_xs = []
+                all_ys = []
+                all_rights = []
+                all_bottoms = []
+                
+                for block in page.get('blocks', []):
+                    if isinstance(block, dict) and block.get('type') == 0:  # 文本块
+                        for line_data in block.get('lines', []):
+                            if isinstance(line_data, dict) and 'spans' in line_data:
+                                for span in line_data.get('spans', []):
+                                    if isinstance(span, dict) and 'bbox' in span:
+                                        span_bbox = span.get('bbox', [])
+                                        if len(span_bbox) == 4:
+                                            x, y, w, h = span_bbox
+                                            all_xs.append(x)
+                                            all_ys.append(y)
+                                            all_rights.append(w)
+                                            all_bottoms.append(h)
+                
+                if all_xs and all_ys and all_rights and all_bottoms:
+                    # 应用DPI转换：将72dpi转换为300dpi
+                    inferred_width = (max(all_rights) - min(all_xs)) * dpi_scale_factor
+                    inferred_height = (max(all_bottoms) - min(all_ys)) * dpi_scale_factor
+                    # 添加一些边距
+                    page_width = max(page_width, inferred_width + 100)
+                    page_height = max(page_height, inferred_height + 100)
+            
+            # 更新最大页面尺寸
+            max_page_width = max(max_page_width, page_width)
+            max_page_height = max(max_page_height, page_height)
+            
+            # 处理页面中的文本块
+            text_blocks = []
+            for block in page.get('blocks', []):
+                if not isinstance(block, dict):
+                    continue
+                    
+                # 只处理文本类型的块 (type == 0)
+                if block.get('type') != 0:
+                    continue
+                    
+                # 处理文本块中的行
+                lines_data = block.get('lines', [])
+                if not lines_data:
+                    continue
+                    
+                # 创建Line对象列表
+                lines = []
+                for line_data in lines_data:
+                    if not isinstance(line_data, dict) or 'spans' not in line_data:
+                        continue
+                        
+                    # 处理行中的文本片段
+                    spans = line_data.get('spans', [])
+                    if not spans:
+                        continue
+                        
+                    # 合并同一行的所有文本片段
+                    line_text = ''
+                    line_words = []
+                    line_bbox = None
+                    
+                    for span in spans:
+                        if not isinstance(span, dict) or 'text' not in span:
+                            continue
+                            
+                        text = span.get('text', '').strip()
+                        if not text:
+                            continue
+                            
+                        line_text += text
+                        
+                        # 创建Word对象
+                        span_bbox = span.get('bbox', [])
+                        if len(span_bbox) == 4:
+                            # 应用DPI转换：将72dpi转换为300dpi
+                            x, y, w, h = span_bbox
+                            word_bbox = BoundingBox(
+                                x=int(x * dpi_scale_factor),
+                                y=int(y * dpi_scale_factor),
+                                width=int((w - x) * dpi_scale_factor),
+                                height=int((h - y) * dpi_scale_factor)
+                            )
+                            word = Word(word=text, boundingBox=word_bbox)
+                            line_words.append(word)
+                            
+                            # 更新行的边界框
+                            if line_bbox is None:
+                                line_bbox = word_bbox
+                            else:
+                                # 合并边界框
+                                min_x = min(line_bbox.x, word_bbox.x)
+                                min_y = min(line_bbox.y, word_bbox.y)
+                                max_x = max(line_bbox.x + line_bbox.width, word_bbox.x + word_bbox.width)
+                                max_y = max(line_bbox.y + line_bbox.height, word_bbox.y + word_bbox.height)
+                                line_bbox = BoundingBox(
+                                    x=min_x,
+                                    y=min_y,
+                                    width=max_x - min_x,
+                                    height=max_y - min_y
+                                )
+                    
+                    if line_text and line_bbox:
+                        # 创建Line对象
+                        line = Line(
+                            text=line_text,
+                            words=line_words,
+                            boundingBox=line_bbox,
+                            text_height=line_bbox.height
+                        )
+                        lines.append(line)
+                
+                if lines:
+                    # 计算文本块的边界框
+                    if lines:
+                        min_x = min(line.boundingBox.x for line in lines)
+                        min_y = min(line.boundingBox.y for line in lines)
+                        max_x = max(line.boundingBox.x + line.boundingBox.width for line in lines)
+                        max_y = max(line.boundingBox.y + line.boundingBox.height for line in lines)
+                        
+                        block_bbox = BoundingBox(
+                            x=min_x,
+                            y=min_y,
+                            width=max_x - min_x,
+                            height=max_y - min_y
+                        )
+                        
+                        # 创建Region对象
+                        region = Region(
+                            lang='zh',  # 默认中文
+                            dir='h',    # 默认水平方向
+                            lines=lines,
+                            boundingBox=block_bbox
+                        )
+                        regions.append(region)
+        
+        # 更新转换器的页面尺寸信息，用于空格填充计算
+        if max_page_width > 0 and max_page_height > 0:
+            self.page_width = max_page_width
+            self.page_height = max_page_height
+            print(f"[DEBUG] 设置页面尺寸: {max_page_width} x {max_page_height}")
+        
+        return regions
+
+    def convert_json_to_text(self, ocr_json: Any) -> str:
         """将OCR JSON结果转换为纯文本（带空格/空行）"""
-        if 'Result' in ocr_json:
-            return self.convert_youdao_json_to_text(ocr_json)
+        # 自动识别JSON格式
+        if isinstance(ocr_json, list):
+            # 检查是否为pymupdf格式（页面列表，每个页面有width/height和blocks）
+            if (len(ocr_json) > 0 and 
+                isinstance(ocr_json[0], dict) and 
+                'width' in ocr_json[0] and 
+                'height' in ocr_json[0] and 
+                'blocks' in ocr_json[0]):
+                print(f"转换pymupdf格式")
+                return self.convert_pymupdf_json_to_text(ocr_json)
+            else:
+                # RapidOCR格式：直接是文本块数组
+                print(f"转换RapidOCR格式")
+                return self.convert_rapidocr_json_to_text(ocr_json)
+        elif isinstance(ocr_json, dict):
+            if 'Result' in ocr_json:
+                # 有道智云格式
+                print(f"转换有道智云格式")
+                return self.convert_youdao_json_to_text(ocr_json)
+            else:
+                raise ValueError("不支持的JSON格式")
         else:
-            return self.convert_rapidocr_json_to_text(ocr_json)
+            raise ValueError("不支持的JSON格式")
 
 def convert_json_to_text(json_path: str, out_path: str='', box_filter_functions: List[callable]=None, row_filter_functions: List[callable]=None) -> str:
     """将OCR JSON结果转换为纯文本（带空格/空行）"""
@@ -964,15 +1231,20 @@ def convert_jsons_to_text(json_dir: str, out_dir: str='', box_filter_functions: 
 
 if __name__ == "__main__":
 
-    from src.ocr_json_filters import box_filters, row_filters
+    from ocr_json_filters import box_filters, row_filters
 
-    # 转换单个JSON文件
-    convert_json_to_text(
-        'tests/assets/img_1_dsk.json',
-        'tests/assets/img_1_dsk.txt', 
-        box_filter_functions=box_filters, 
-        row_filter_functions=row_filters
-        )
+    # files = [
+    #     'tests/assets/pymupdf.json',
+    #     'tests/assets/rapidocr.json',
+    #     'tests/assets/youdao.json',
+    # ]
+    # for file in files:
+    #     # 转换单个JSON文件
+    #     convert_json_to_text(
+    #         file,
+    #         box_filter_functions=box_filters, 
+    #         row_filter_functions=row_filters
+    #         )
 
     # 转换文件夹中的所有JSON文件
     convert_jsons_to_text(

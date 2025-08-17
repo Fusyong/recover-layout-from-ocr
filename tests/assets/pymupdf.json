@@ -1,0 +1,1823 @@
+[
+    {
+        "width": 612.2833862304688,
+        "height": 858.8975830078125,
+        "blocks": [
+            {
+                "number": 0,
+                "type": 1,
+                "bbox": [
+                    266.85040283203125,
+                    789.3790283203125,
+                    309.9363098144531,
+                    832.4649047851562
+                ],
+                "width": 168,
+                "height": 168,
+                "ext": "jpeg",
+                "colorspace": 4,
+                "xres": 96,
+                "yres": 96,
+                "bpc": 8,
+                "transform": [
+                    43.085899353027344,
+                    0.0,
+                    -0.0,
+                    43.085899353027344,
+                    266.85040283203125,
+                    789.3790283203125
+                ],
+                "size": 5820,
+                "image": "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",
+                "mask": null
+            },
+            {
+                "number": 1,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    97.06651306152344,
+                    217.55503845214844,
+                    110.56687927246094
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 44783,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "三、品读句子，理解句意。",
+                                "origin": [
+                                    73.8207015991211,
+                                    107.2153091430664
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    97.06651306152344,
+                                    217.55503845214844,
+                                    110.56687927246094
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            97.06651306152344,
+                            217.55503845214844,
+                            110.56687927246094
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 2,
+                "type": 0,
+                "bbox": [
+                    91.82098388671875,
+                    126.19620513916016,
+                    493.5836181640625,
+                    138.9674530029297
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "“增之一分则嫌长，减之一分则嫌短，素之一忽则嫌白，黛之一忽则嫌黑。”",
+                                "origin": [
+                                    91.82098388671875,
+                                    136.34500122070312
+                                ],
+                                "bbox": [
+                                    91.82098388671875,
+                                    126.19620513916016,
+                                    493.5836181640625,
+                                    138.9674530029297
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            91.82098388671875,
+                            126.19620513916016,
+                            493.5836181640625,
+                            138.9674530029297
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 3,
+                "type": 0,
+                "bbox": [
+                    97.8207015991211,
+                    146.19723510742188,
+                    329.9599304199219,
+                    159.69761657714844
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "1.这个句子中“忽”的意思是（",
+                                "origin": [
+                                    97.8207015991211,
+                                    156.34603881835938
+                                ],
+                                "bbox": [
+                                    97.8207015991211,
+                                    146.19723510742188,
+                                    265.81243896484375,
+                                    159.69761657714844
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            97.8207015991211,
+                            146.19723510742188,
+                            265.81243896484375,
+                            159.69761657714844
+                        ]
+                    },
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "）。",
+                                "origin": [
+                                    310.3924560546875,
+                                    156.34603881835938
+                                ],
+                                "bbox": [
+                                    310.3924560546875,
+                                    146.19723510742188,
+                                    329.9599304199219,
+                                    159.69761657714844
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            310.3924560546875,
+                            146.19723510742188,
+                            329.9599304199219,
+                            159.69761657714844
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 4,
+                "type": 0,
+                "bbox": [
+                    109.82069396972656,
+                    166.19833374023438,
+                    493.94952392578125,
+                    179.69871520996094
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "A.不注意；不重视",
+                                "origin": [
+                                    109.82069396972656,
+                                    176.34713745117188
+                                ],
+                                "bbox": [
+                                    109.82069396972656,
+                                    166.19833374023438,
+                                    206.0012969970703,
+                                    179.69871520996094
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            109.82069396972656,
+                            166.19833374023438,
+                            206.0012969970703,
+                            179.69871520996094
+                        ]
+                    },
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "B.忽而",
+                                "origin": [
+                                    254.24017333984375,
+                                    176.34713745117188
+                                ],
+                                "bbox": [
+                                    254.24017333984375,
+                                    166.19833374023438,
+                                    289.7652893066406,
+                                    179.69871520996094
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            254.24017333984375,
+                            166.19833374023438,
+                            289.7652893066406,
+                            179.69871520996094
+                        ]
+                    },
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "C.计量单位名称",
+                                "origin": [
+                                    338.00457763671875,
+                                    176.34713745117188
+                                ],
+                                "bbox": [
+                                    338.00457763671875,
+                                    166.19833374023438,
+                                    421.529296875,
+                                    179.69871520996094
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            338.00457763671875,
+                            166.19833374023438,
+                            421.529296875,
+                            179.69871520996094
+                        ]
+                    },
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "D.姓",
+                                "origin": [
+                                    469.76812744140625,
+                                    176.34713745117188
+                                ],
+                                "bbox": [
+                                    469.76812744140625,
+                                    166.19833374023438,
+                                    493.94952392578125,
+                                    179.69871520996094
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            469.76812744140625,
+                            166.19833374023438,
+                            493.94952392578125,
+                            179.69871520996094
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 5,
+                "type": 0,
+                "bbox": [
+                    97.8207015991211,
+                    185.78970336914062,
+                    191.9861297607422,
+                    199.2900848388672
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "2.这句话的意思是",
+                                "origin": [
+                                    97.8207015991211,
+                                    195.93850708007812
+                                ],
+                                "bbox": [
+                                    97.8207015991211,
+                                    185.78970336914062,
+                                    191.9861297607422,
+                                    199.2900848388672
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            97.8207015991211,
+                            185.78970336914062,
+                            191.9861297607422,
+                            199.2900848388672
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 6,
+                "type": 0,
+                "bbox": [
+                    97.8207015991211,
+                    225.78970336914062,
+                    527.95703125,
+                    239.2900848388672
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "3.这句话写出了白鹭的",
+                                "origin": [
+                                    97.8207015991211,
+                                    235.93850708007812
+                                ],
+                                "bbox": [
+                                    97.8207015991211,
+                                    225.78970336914062,
+                                    215.98594665527344,
+                                    239.2900848388672
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            97.8207015991211,
+                            225.78970336914062,
+                            215.98594665527344,
+                            239.2900848388672
+                        ]
+                    },
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "、",
+                                "origin": [
+                                    300.2239074707031,
+                                    235.93850708007812
+                                ],
+                                "bbox": [
+                                    300.2239074707031,
+                                    225.78970336914062,
+                                    311.98382568359375,
+                                    239.2900848388672
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            300.2239074707031,
+                            225.78970336914062,
+                            311.98382568359375,
+                            239.2900848388672
+                        ]
+                    },
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "都恰到好处、无可挑剔。",
+                                "origin": [
+                                    396.2224426269531,
+                                    235.93850708007812
+                                ],
+                                "bbox": [
+                                    396.2224426269531,
+                                    225.78970336914062,
+                                    527.95703125,
+                                    239.2900848388672
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            396.2224426269531,
+                            225.78970336914062,
+                            527.95703125,
+                            239.2900848388672
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 7,
+                "type": 1,
+                "bbox": [
+                    73.0,
+                    297.0,
+                    155.0,
+                    317.0
+                ],
+                "width": 82,
+                "height": 20,
+                "ext": "png",
+                "colorspace": 3,
+                "xres": 96,
+                "yres": 96,
+                "bpc": 8,
+                "transform": [
+                    82.0,
+                    0.0,
+                    0.0,
+                    20.0,
+                    73.0,
+                    297.0
+                ],
+                "size": 881,
+                "image": "iVBORw0KGgoAAAANSUhEUgAAAFIAAAAUCAYAAAAeLWrqAAAACXBIWXMAAA7EAAAOxAGVKw4bAAADI0lEQVR4nO2XyUtVYRjGT4v+irb9CbVpH0GrNi3aJBFEBCERJhRFNlBB0UBz0UApTaaWmqkXNa/mPM96na6lTQ53nuTpee/p4MfpHDW43grO4gO5Z/je9/f9Xh6PpuXPQSvgKuR6Mw+tmKuUq2wBWjlXpQ9alQ/ravzY6PZjS30A2xsC2NUcxJ6WIPa3BXGoI4TszhCOd4dwuieMC31hXBmI4OZQBPdHInjsiSJvLIpXE1G89cZQ9ikG1+cYPszE8fFrHG3f4+ieTWBgPgGPL4HJwCIm/IsY5d9DCwn083e53vEjjlbe2/gtDveXOGr4vGs6hnK+r3Qqlnx3wWQUL7nPM+73ZDSKh54I7g1HcIu1XB+MsK4wLvaHcZ41nukN40R3GEe7QjjC+qWPg+2hZE97W4PYzf52NAaSfWvVPp2FcCmZ11kJt/xf609Abqj1Y3NdAFsJcmfTEshMbp7FQo6xoByCPMciL7NgKfwum5BmctnUi/FoslFpuoIgq2diqCOQJoJpJ6SeuQQGCW3cn4CXMMcJU8DKb3281kWYAl3ulwOo5bPVBFnJd70jzGKCLOT78wnyOffKJcxHHv0w77COG4R5lQd8qV8/bAF5kvVK3SLCYYLMtAC5iT2vZ/8pBWllpGxuNtIAaTayaFK3RzWyhXA6Z3VYhpGyxgh0eEE31WxkPSHK81XT+qFYGfl0dAmknZEGyOWMFJBramQGN9rXam2knPo1Fn576Hcji6f0cRQIbgsjZaS9ynirRsp9zby/wWTke76vhO8tIkzVSDnEByP6ZJiNPGtj5AE7I11rANJspAHSbKQ62qqR6mirRoqB6mgbRvbyWqcy2mYj1dG2MtIYbTsjs9NpZDrDRpZd2IiNK4VN3irC5lTPymGzrcEJGydsnLBxwsYJm7SGjd1oW4WNgFxt2LQ4YZP6sDEb6YRNGsPG7lvbGO3lvrUF5F//1s5YxkgjbKyMVMPG6t8fNWzMRqph405B2OQ4YeOEzZqHjZjvhE2Kw0YO8Z8MGwFpFTZZNmEjIK3CpsImbASkVdjIaDthk+awee2Ezf8bNj8Bq+jSMNqDtJUAAAAASUVORK5CYII=",
+                "mask": null
+            },
+            {
+                "number": 8,
+                "type": 1,
+                "bbox": [
+                    113.27529907226562,
+                    283.9864807128906,
+                    160.36199951171875,
+                    322.5169677734375
+                ],
+                "width": 216,
+                "height": 176,
+                "ext": "jpeg",
+                "colorspace": 4,
+                "xres": 96,
+                "yres": 96,
+                "bpc": 8,
+                "transform": [
+                    47.086700439453125,
+                    0.0,
+                    -0.0,
+                    38.53049850463867,
+                    113.27529907226562,
+                    283.9864807128906
+                ],
+                "size": 5926,
+                "image": "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",
+                "mask": "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"
+            },
+            {
+                "number": 9,
+                "type": 0,
+                "bbox": [
+                    78.42253112792969,
+                    299.9552917480469,
+                    138.3622283935547,
+                    315.70556640625
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 13.719746589660645,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "阅读拓展",
+                                "origin": [
+                                    78.42253112792969,
+                                    311.7954406738281
+                                ],
+                                "bbox": [
+                                    78.42253112792969,
+                                    299.9552917480469,
+                                    138.3622283935547,
+                                    315.70556640625
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            78.42253112792969,
+                            299.9552917480469,
+                            138.3622283935547,
+                            315.70556640625
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 10,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    339.7094421386719,
+                    217.55503845214844,
+                    353.2098083496094
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 44783,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "四、阅读短文，完成练习。",
+                                "origin": [
+                                    73.8207015991211,
+                                    349.8582458496094
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    339.7094421386719,
+                                    217.55503845214844,
+                                    353.2098083496094
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            339.7094421386719,
+                            217.55503845214844,
+                            353.2098083496094
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 11,
+                "type": 0,
+                "bbox": [
+                    280.2682800292969,
+                    368.64056396484375,
+                    332.007568359375,
+                    383.2276611328125
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 12.739826202392578,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZXH1JW--GB1-0",
+                                "color": 44783,
+                                "alpha": 255,
+                                "ascender": 0.8790000081062317,
+                                "descender": -0.26600000262260437,
+                                "text": "岚县畅想",
+                                "origin": [
+                                    280.2682800292969,
+                                    379.8388671875
+                                ],
+                                "bbox": [
+                                    280.2682800292969,
+                                    368.64056396484375,
+                                    332.007568359375,
+                                    383.2276611328125
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            280.2682800292969,
+                            368.64056396484375,
+                            332.007568359375,
+                            383.2276611328125
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 12,
+                "type": 0,
+                "bbox": [
+                    288.2581787109375,
+                    389.839111328125,
+                    324.01788330078125,
+                    403.3394775390625
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZSSJW--GB1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.2849999964237213,
+                                "text": "孔瑞平",
+                                "origin": [
+                                    288.2581787109375,
+                                    399.9879150390625
+                                ],
+                                "bbox": [
+                                    288.2581787109375,
+                                    389.839111328125,
+                                    324.01788330078125,
+                                    403.3394775390625
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            288.2581787109375,
+                            389.839111328125,
+                            324.01788330078125,
+                            403.3394775390625
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 13,
+                "type": 0,
+                "bbox": [
+                    97.8207015991211,
+                    421.63531494140625,
+                    538.4561767578125,
+                    434.4065856933594
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "岚者，山间雾气也。我的家乡昔阳有“八景”，其一即“沾岭拖岚”，那是淡蓝色的",
+                                "origin": [
+                                    97.8207015991211,
+                                    431.78411865234375
+                                ],
+                                "bbox": [
+                                    97.8207015991211,
+                                    421.63531494140625,
+                                    538.4561767578125,
+                                    434.4065856933594
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            97.8207015991211,
+                            421.63531494140625,
+                            538.4561767578125,
+                            434.4065856933594
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 14,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    441.63531494140625,
+                    538.45556640625,
+                    454.4065856933594
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "雾气常年缠绕沾山半山腰形成的一种景色。不用说，“岚”是很美的。以“岚”冠名的",
+                                "origin": [
+                                    73.8207015991211,
+                                    451.78411865234375
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    441.63531494140625,
+                                    538.45556640625,
+                                    454.4065856933594
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            441.63531494140625,
+                            538.45556640625,
+                            454.4065856933594
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 15,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    461.63531494140625,
+                    181.60267639160156,
+                    474.4065856933594
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "县，想必亦是如此。",
+                                "origin": [
+                                    73.8207015991211,
+                                    471.78411865234375
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    461.63531494140625,
+                                    181.60267639160156,
+                                    474.4065856933594
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            461.63531494140625,
+                            181.60267639160156,
+                            474.4065856933594
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 16,
+                "type": 0,
+                "bbox": [
+                    97.8207015991211,
+                    481.6352233886719,
+                    538.4558715820312,
+                    494.406494140625
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "无独有偶，家乡沾岭的“拖岚”之下盛产土豆。素有“天上云间”之称的岚县，亦",
+                                "origin": [
+                                    97.8207015991211,
+                                    491.7840270996094
+                                ],
+                                "bbox": [
+                                    97.8207015991211,
+                                    481.6352233886719,
+                                    538.4558715820312,
+                                    494.406494140625
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            97.8207015991211,
+                            481.6352233886719,
+                            538.4558715820312,
+                            494.406494140625
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 17,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    501.63531494140625,
+                    544.4697265625,
+                    514.4065551757812
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "是以“土豆花开”的名义召唤我们前往。哦，难道大雅之“岚”与大俗之“土豆”之间，",
+                                "origin": [
+                                    73.8207015991211,
+                                    511.78411865234375
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    501.63531494140625,
+                                    544.4697265625,
+                                    514.4065551757812
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            501.63531494140625,
+                            544.4697265625,
+                            514.4065551757812
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 18,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    521.6353759765625,
+                    451.59832763671875,
+                    534.4066162109375
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "竟是有着必然联系的吗？恰逢合适的机会，去岚县看“岚”，赏土豆花。",
+                                "origin": [
+                                    73.8207015991211,
+                                    531.7841796875
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    521.6353759765625,
+                                    451.59832763671875,
+                                    534.4066162109375
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            521.6353759765625,
+                            451.59832763671875,
+                            534.4066162109375
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 19,
+                "type": 0,
+                "bbox": [
+                    97.8207015991211,
+                    541.6353759765625,
+                    544.4793701171875,
+                    554.4066162109375
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "走进岚县河口乡土豆花风景区，凉风吹送，微小的雨点乍洒还收，空气舒适而美好。",
+                                "origin": [
+                                    97.8207015991211,
+                                    551.7841796875
+                                ],
+                                "bbox": [
+                                    97.8207015991211,
+                                    541.6353759765625,
+                                    544.4793701171875,
+                                    554.4066162109375
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            97.8207015991211,
+                            541.6353759765625,
+                            544.4793701171875,
+                            554.4066162109375
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 20,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    561.6353759765625,
+                    538.4558715820312,
+                    574.4066162109375
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "大地情意绵绵，它的深处流动着血脉，而朴素的果实正在萌芽。我们看不到它成长的",
+                                "origin": [
+                                    73.8207015991211,
+                                    571.7841796875
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    561.6353759765625,
+                                    538.4558715820312,
+                                    574.4066162109375
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            561.6353759765625,
+                            538.4558715820312,
+                            574.4066162109375
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 21,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    581.6353759765625,
+                    538.4558715820312,
+                    594.4066162109375
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "过程，我们的成长，却都仰仗过它提供的热量。吃土豆长大的人啊，朴实厚道又胸怀",
+                                "origin": [
+                                    73.8207015991211,
+                                    591.7841796875
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    581.6353759765625,
+                                    538.4558715820312,
+                                    594.4066162109375
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            581.6353759765625,
+                            538.4558715820312,
+                            594.4066162109375
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 22,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    601.6354370117188,
+                    110.3238296508789,
+                    614.4066772460938
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "宽广。",
+                                "origin": [
+                                    73.8207015991211,
+                                    611.7842407226562
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    601.6354370117188,
+                                    110.3238296508789,
+                                    614.4066772460938
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            601.6354370117188,
+                            110.3238296508789,
+                            614.4066772460938
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 23,
+                "type": 0,
+                "bbox": [
+                    97.8207015991211,
+                    616.0494384765625,
+                    538.4558715820312,
+                    643.9439086914062
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "我们将要循山路而上，寻觅山顶云间海拔",
+                                "origin": [
+                                    97.8207015991211,
+                                    631.7841796875
+                                ],
+                                "bbox": [
+                                    97.8207015991211,
+                                    621.6353759765625,
+                                    316.51904296875,
+                                    634.4066162109375
+                                ]
+                            },
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 4,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "NEU-BZ-Regular",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 1.3380000591278076,
+                                "descender": -1.034000039100647,
+                                "text": "2000",
+                                "origin": [
+                                    318.43109130859375,
+                                    631.7841796875
+                                ],
+                                "bbox": [
+                                    318.43109130859375,
+                                    616.0494384765625,
+                                    342.3109130859375,
+                                    643.9439086914062
+                                ]
+                            },
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": " 多米处那片神秘的高山草甸。出发的",
+                                "origin": [
+                                    342.3109130859375,
+                                    631.7841796875
+                                ],
+                                "bbox": [
+                                    342.3109130859375,
+                                    621.6353759765625,
+                                    538.4558715820312,
+                                    634.4066162109375
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            97.8207015991211,
+                            616.0494384765625,
+                            538.4558715820312,
+                            643.9439086914062
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 24,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    636.0494384765625,
+                    538.4552612304688,
+                    663.9439086914062
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "时候已经是云气氤氲，一层一层的山隐在雾中，只给你个朦胧的身影。走在海拔",
+                                "origin": [
+                                    73.8207015991211,
+                                    651.7841796875
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    641.6353759765625,
+                                    499.1291809082031,
+                                    654.4066162109375
+                                ]
+                            },
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 4,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "NEU-BZ-Regular",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 1.3380000591278076,
+                                "descender": -1.034000039100647,
+                                "text": "2000",
+                                "origin": [
+                                    501.0323181152344,
+                                    651.7841796875
+                                ],
+                                "bbox": [
+                                    501.0323181152344,
+                                    636.0494384765625,
+                                    524.912109375,
+                                    663.9439086914062
+                                ]
+                            },
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": " 米",
+                                "origin": [
+                                    524.912109375,
+                                    651.7841796875
+                                ],
+                                "bbox": [
+                                    524.912109375,
+                                    641.6353759765625,
+                                    538.4552612304688,
+                                    654.4066162109375
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            636.0494384765625,
+                            538.4552612304688,
+                            663.9439086914062
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 25,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    661.6353759765625,
+                    538.4559936523438,
+                    674.4066162109375
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "的山路上，圆珠子般透明的雨滴仿佛不是从天而降，而是升自某个深渊，升自往日消逝",
+                                "origin": [
+                                    73.8207015991211,
+                                    671.7841796875
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    661.6353759765625,
+                                    538.4559936523438,
+                                    674.4066162109375
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            661.6353759765625,
+                            538.4559936523438,
+                            674.4066162109375
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 26,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    681.6354370117188,
+                    253.6015167236328,
+                    694.4066772460938
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "的某种怀念。此间风景让人陶醉。",
+                                "origin": [
+                                    73.8207015991211,
+                                    691.7842407226562
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    681.6354370117188,
+                                    253.6015167236328,
+                                    694.4066772460938
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            681.6354370117188,
+                            253.6015167236328,
+                            694.4066772460938
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 27,
+                "type": 0,
+                "bbox": [
+                    97.8207015991211,
+                    701.6353759765625,
+                    538.4564819335938,
+                    714.4066162109375
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "终于登顶！大地温柔起伏，至草地边缘，遂壁立如削。雨停了，方便我们在崖边远",
+                                "origin": [
+                                    97.8207015991211,
+                                    711.7841796875
+                                ],
+                                "bbox": [
+                                    97.8207015991211,
+                                    701.6353759765625,
+                                    538.4564819335938,
+                                    714.4066162109375
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            97.8207015991211,
+                            701.6353759765625,
+                            538.4564819335938,
+                            714.4066162109375
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 28,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    721.6353759765625,
+                    538.4559936523438,
+                    734.4066162109375
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "眺那些方言中的村庄。村子的主色是白和红，它们在万亩土豆葱绿的背景中，如此鲜艳",
+                                "origin": [
+                                    73.8207015991211,
+                                    731.7841796875
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    721.6353759765625,
+                                    538.4559936523438,
+                                    734.4066162109375
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            721.6353759765625,
+                            538.4559936523438,
+                            734.4066162109375
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 29,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    741.6353759765625,
+                    538.45556640625,
+                    754.4066162109375
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "又安详宁静。皇天在上，后土在下，这是炊烟、雄黄酒、石头房；这是劈柴、针灸；这",
+                                "origin": [
+                                    73.8207015991211,
+                                    751.7841796875
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    741.6353759765625,
+                                    538.45556640625,
+                                    754.4066162109375
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            741.6353759765625,
+                            538.45556640625,
+                            754.4066162109375
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 30,
+                "type": 0,
+                "bbox": [
+                    73.8207015991211,
+                    761.6354370117188,
+                    538.45556640625,
+                    774.4066772460938
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 11.759905815124512,
+                                "flags": 0,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "FZKTK--GBK1-0",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 0.8629999756813049,
+                                "descender": -0.22300000488758087,
+                                "text": "是父亲的遗像；这是农历、雨水、井栏和池塘……多少年了，它们依然待在原地，如此",
+                                "origin": [
+                                    73.8207015991211,
+                                    771.7842407226562
+                                ],
+                                "bbox": [
+                                    73.8207015991211,
+                                    761.6354370117188,
+                                    538.45556640625,
+                                    774.4066772460938
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            73.8207015991211,
+                            761.6354370117188,
+                            538.45556640625,
+                            774.4066772460938
+                        ]
+                    }
+                ]
+            },
+            {
+                "number": 31,
+                "type": 0,
+                "bbox": [
+                    303.377197265625,
+                    796.4960327148438,
+                    309.7471008300781,
+                    826.7149047851562
+                ],
+                "lines": [
+                    {
+                        "spans": [
+                            {
+                                "size": 12.739826202392578,
+                                "flags": 4,
+                                "bidi": 0,
+                                "char_flags": 16,
+                                "font": "NEU-BZ-Regular",
+                                "color": 2301728,
+                                "alpha": 255,
+                                "ascender": 1.3380000591278076,
+                                "descender": -1.034000039100647,
+                                "text": "2",
+                                "origin": [
+                                    303.377197265625,
+                                    813.5419311523438
+                                ],
+                                "bbox": [
+                                    303.377197265625,
+                                    796.4960327148438,
+                                    309.7471008300781,
+                                    826.7149047851562
+                                ]
+                            }
+                        ],
+                        "wmode": 0,
+                        "dir": [
+                            1.0,
+                            0.0
+                        ],
+                        "bbox": [
+                            303.377197265625,
+                            796.4960327148438,
+                            309.7471008300781,
+                            826.7149047851562
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

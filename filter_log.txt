@@ -97,3 +97,538 @@
 [FILTER_LOG] BOX被过滤 - 过滤器: filter_keywords, 文本: '第三单元', 坐标: (259, 1760), 尺寸: 197x57
 [FILTER_LOG] BOX被过滤 - 过滤器: filter_small_boxes, 文本: '40', 坐标: (1782, 2252), 尺寸: 41x30
 [FILTER_LOG] BOX被过滤 - 过滤器: filter_keywords, 文本: '第四单元', 坐标: (841, 2317), 尺寸: 197x57
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '目    录', 坐标: (271, 75), 尺寸: 68x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 664), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '五', 坐标: (99, 683), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单', 坐标: (99, 702), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '元', 坐标: (99, 721), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '16     太\u3000阳\x08ćććććććććććććććććć57', 坐标: (169, 659), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '17     松\u3000鼠\x08ćććććććććććććććććć60', 坐标: (169, 679), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单元巩固练习\x08ććććććććććććććć63', 坐标: (169, 699), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 112), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '18     慈母情深\x08ććććććććććććććććć66', 坐标: (169, 94), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第一单元', 坐标: (260, 90), 尺寸: 91x25
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '二、根据释义，写出课文中的词语。', 坐标: (73, 653), 尺寸: 191x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1.形容声音响亮而有节奏。', 坐标: (97, 682), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2.特殊的爱好。', 坐标: (97, 702), 尺寸: 82x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '3.虽然很好，但还有缺陷。', 坐标: (97, 722), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '4.形容水质或某种状态的纯净。', 坐标: (97, 742), 尺寸: 166x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '三、品读句子，理解句意。', 坐标: (73, 97), 尺寸: 143x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '时候已经是云气氤氲，一层一层的山隐在雾中，只给你个朦胧的身影。走在海拔', 坐标: (73, 641), 尺寸: 425x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '米', 坐标: (524, 641), 尺寸: 13x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '的山路上，圆珠子般透明的雨滴仿佛不是从天而降，而是升自某个深渊，升自往日消逝', 坐标: (73, 661), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '的某种怀念。此间风景让人陶醉。', 坐标: (73, 681), 尺寸: 179x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '终于登顶！大地温柔起伏，至草地边缘，遂壁立如削。雨停了，方便我们在崖边远', 坐标: (97, 701), 尺寸: 440x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '眺那些方言中的村庄。村子的主色是白和红，它们在万亩土豆葱绿的背景中，如此鲜艳', 坐标: (73, 721), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '又安详宁静。皇天在上，后土在下，这是炊烟、雄黄酒、石头房；这是劈柴、针灸；这', 坐标: (73, 741), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '是父亲的遗像；这是农历、雨水、井栏和池塘……多少年了，它们依然待在原地，如此', 坐标: (73, 761), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '目    录', 坐标: (271, 75), 尺寸: 68x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 664), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '五', 坐标: (99, 683), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单', 坐标: (99, 702), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '元', 坐标: (99, 721), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '16     太\u3000阳\x08ćććććććććććććććććć57', 坐标: (169, 659), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '17     松\u3000鼠\x08ćććććććććććććććććć60', 坐标: (169, 679), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单元巩固练习\x08ććććććććććććććć63', 坐标: (169, 699), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 112), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '18     慈母情深\x08ććććććććććććććććć66', 坐标: (169, 94), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第一单元', 坐标: (260, 90), 尺寸: 91x25
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '二、根据释义，写出课文中的词语。', 坐标: (73, 653), 尺寸: 191x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1.形容声音响亮而有节奏。', 坐标: (97, 682), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2.特殊的爱好。', 坐标: (97, 702), 尺寸: 82x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '3.虽然很好，但还有缺陷。', 坐标: (97, 722), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '4.形容水质或某种状态的纯净。', 坐标: (97, 742), 尺寸: 166x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '三、品读句子，理解句意。', 坐标: (73, 97), 尺寸: 143x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '的山路上，圆珠子般透明的雨滴仿佛不是从天而降，而是升自某个深渊，升自往日消逝', 坐标: (73, 661), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '的某种怀念。此间风景让人陶醉。', 坐标: (73, 681), 尺寸: 179x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '终于登顶！大地温柔起伏，至草地边缘，遂壁立如削。雨停了，方便我们在崖边远', 坐标: (97, 701), 尺寸: 440x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '眺那些方言中的村庄。村子的主色是白和红，它们在万亩土豆葱绿的背景中，如此鲜艳', 坐标: (73, 721), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '又安详宁静。皇天在上，后土在下，这是炊烟、雄黄酒、石头房；这是劈柴、针灸；这', 坐标: (73, 741), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '是父亲的遗像；这是农历、雨水、井栏和池塘……多少年了，它们依然待在原地，如此', 坐标: (73, 761), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '目    录', 坐标: (271, 75), 尺寸: 68x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '五', 坐标: (99, 683), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '单', 坐标: (99, 702), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '元', 坐标: (99, 721), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '17     松\u3000鼠\x08ćććććććććććććććććć60', 坐标: (169, 679), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '单元巩固练习\x08ććććććććććććććć63', 坐标: (169, 699), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '·（huì', 坐标: (498, 443), 尺寸: 40x23
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '寻常', 坐标: (445, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '望却', 坐标: (493, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '乡居', 坐标: (446, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '末免', 坐标: (494, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '）。', 坐标: (428, 584), 尺寸: 19x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '1.形容声音响亮而有节奏。', 坐标: (97, 682), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '（', 坐标: (426, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '）', 坐标: (530, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '2.特殊的爱好。', 坐标: (97, 702), 尺寸: 82x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '（', 坐标: (426, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '）', 坐标: (530, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '3.虽然很好，但还有缺陷。', 坐标: (97, 722), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '（', 坐标: (426, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '）', 坐标: (530, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '4.形容水质或某种状态的纯净。', 坐标: (97, 742), 尺寸: 166x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '（', 坐标: (426, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '）', 坐标: (530, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: 'D.姓', 坐标: (469, 166), 尺寸: 24x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '2000', 坐标: (501, 636), 尺寸: 23x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '米', 坐标: (524, 641), 尺寸: 13x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '的某种怀念。此间风景让人陶醉。', 坐标: (73, 681), 尺寸: 179x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '终于登顶！大地温柔起伏，至草地边缘，遂壁立如削。雨停了，方便我们在崖边远', 坐标: (97, 701), 尺寸: 440x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '眺那些方言中的村庄。村子的主色是白和红，它们在万亩土豆葱绿的背景中，如此鲜艳', 坐标: (73, 721), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '又安详宁静。皇天在上，后土在下，这是炊烟、雄黄酒、石头房；这是劈柴、针灸；这', 坐标: (73, 741), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '是父亲的遗像；这是农历、雨水、井栏和池塘……多少年了，它们依然待在原地，如此', 坐标: (73, 761), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '目    录', 坐标: (271, 75), 尺寸: 68x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '五', 坐标: (99, 683), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '单', 坐标: (99, 702), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '元', 坐标: (99, 721), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '17     松\u3000鼠\x08ćććććććććććććććććć60', 坐标: (169, 679), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '单元巩固练习\x08ććććććććććććććć63', 坐标: (169, 699), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '·（huì', 坐标: (498, 443), 尺寸: 40x23
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '寻常', 坐标: (445, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '望却', 坐标: (493, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '乡居', 坐标: (446, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '末免', 坐标: (494, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '）。', 坐标: (428, 584), 尺寸: 19x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '1.形容声音响亮而有节奏。', 坐标: (97, 682), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '（', 坐标: (426, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '）', 坐标: (530, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '2.特殊的爱好。', 坐标: (97, 702), 尺寸: 82x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '（', 坐标: (426, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '）', 坐标: (530, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '3.虽然很好，但还有缺陷。', 坐标: (97, 722), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '（', 坐标: (426, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '）', 坐标: (530, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '4.形容水质或某种状态的纯净。', 坐标: (97, 742), 尺寸: 166x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '（', 坐标: (426, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '）', 坐标: (530, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: 'D.姓', 坐标: (469, 166), 尺寸: 24x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '的某种怀念。此间风景让人陶醉。', 坐标: (73, 681), 尺寸: 179x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '终于登顶！大地温柔起伏，至草地边缘，遂壁立如削。雨停了，方便我们在崖边远', 坐标: (97, 701), 尺寸: 440x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '眺那些方言中的村庄。村子的主色是白和红，它们在万亩土豆葱绿的背景中，如此鲜艳', 坐标: (73, 721), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '又安详宁静。皇天在上，后土在下，这是炊烟、雄黄酒、石头房；这是劈柴、针灸；这', 坐标: (73, 741), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '是父亲的遗像；这是农历、雨水、井栏和池塘……多少年了，它们依然待在原地，如此', 坐标: (73, 761), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '目    录', 坐标: (271, 75), 尺寸: 68x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 180), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '一', 坐标: (99, 199), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单', 坐标: (99, 218), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '元', 坐标: (99, 237), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 310), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '二', 坐标: (99, 329), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单', 坐标: (99, 348), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '元', 坐标: (99, 367), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 432), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '三', 坐标: (99, 451), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单', 坐标: (99, 470), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '元', 坐标: (99, 489), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 554), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '四', 坐标: (99, 573), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单', 坐标: (99, 592), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '元', 坐标: (99, 611), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 664), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '五', 坐标: (99, 683), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单', 坐标: (99, 702), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '元', 坐标: (99, 721), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1       白\u3000鹭\x08ćććććććććććććććććć 1', 坐标: (169, 154), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2       落花生\x08ćććććććććććććććććć 4', 坐标: (169, 174), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '3       桂花雨\x08ćććććććććććććććććć 7', 坐标: (169, 194), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '4*     珍珠鸟\x08ćććććććććććććććććć10', 坐标: (169, 214), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单元巩固练习\x08ććććććććććććććć12', 坐标: (169, 234), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '5       搭\u3000石\x08ćććććććććććććććććć15', 坐标: (169, 285), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '6       将相和\x08ćććććććććććććććććć18', 坐标: (169, 305), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '7       什么比猎豹的速度更快\x08ććććććććććć21', 坐标: (169, 325), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '8       冀中的地道战\x08ććććććććććććććć24', 坐标: (169, 345), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单元巩固练习\x08ććććććććććććććć27', 坐标: (169, 365), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '9       猎人海力布\x08ćććććććććććććććć30', 坐标: (169, 416), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '10     牛郎织女（一）\x08ćććććććććććććć33', 坐标: (169, 436), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '11*   牛郎织女（二）\x08ćććććććććććććć36', 坐标: (169, 456), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单元巩固练习\x08ććććććććććććććć38', 坐标: (169, 476), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '12     古诗三首\x08ććććććććććććććććć43', 坐标: (169, 528), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '13     少年中国说（节选）\x08ćććććććććććć46', 坐标: (169, 548), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '14     圆明园的毁灭\x08ććććććććććććććć49', 坐标: (169, 568), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '15*   小\u3000岛\x08ćććććććććććććććććć52', 坐标: (169, 588), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单元巩固练习\x08ććććććććććććććć54', 坐标: (169, 608), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '16     太\u3000阳\x08ćććććććććććććććććć57', 坐标: (169, 659), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '17     松\u3000鼠\x08ćććććććććććććććććć60', 坐标: (169, 679), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单元巩固练习\x08ććććććććććććććć63', 坐标: (169, 699), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 221), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '七', 坐标: (99, 240), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单', 坐标: (99, 259), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '元', 坐标: (99, 277), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 112), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '六', 坐标: (99, 131), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单', 坐标: (99, 150), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '元', 坐标: (99, 169), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 333), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '八', 坐标: (99, 352), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单', 坐标: (99, 371), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '元', 坐标: (99, 390), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '18     慈母情深\x08ććććććććććććććććć66', 坐标: (169, 94), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '19     父爱之舟\x08ććććććććććććććććć69', 坐标: (169, 114), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '20*  “精彩极了”和“糟糕透了”\x08ććććććććć72', 坐标: (169, 134), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单元巩固练习\x08ććććććććććććććć74', 坐标: (169, 154), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '21     古诗词三首\x08ćććććććććććććććć77', 坐标: (169, 206), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '22     鸟的天堂\x08ććććććććććććććććć80', 坐标: (169, 226), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '23*   月\u3000迹\x08ćććććććććććććććććć83', 坐标: (169, 246), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单元巩固练习\x08ććććććććććććććć85', 坐标: (169, 266), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '24     古人谈读书\x08ćććććććććććććććć88', 坐标: (169, 317), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '25     忆读书\x08ćććććććććććććććććć91', 坐标: (169, 337), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '26*  我的“长生果”\x08ććććććććććććććć94', 坐标: (169, 357), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单元巩固练习\x08ććććććććććććććć96', 坐标: (169, 377), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '部分参考答案\x08ććććććććććććććć99', 坐标: (169, 417), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第一单元', 坐标: (260, 90), 尺寸: 91x25
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1', 坐标: (260, 188), 尺寸: 9x21
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '白', 坐标: (310, 188), 尺寸: 18x21
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '鹭', 坐标: (348, 188), 尺寸: 18x21
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '在文学作品中，作者常借物来抒发自己的情感，这种写法', 坐标: (201, 249), 尺寸: 307x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '叫托物言志、借物抒情。在《文心雕龙》中有一句“应物斯威，', 坐标: (177, 269), 尺寸: 337x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '意物吟志”，这句话的意思是见到外界事物，触发了某种思想，', 坐标: (177, 289), 尺寸: 337x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '于是借助描述外界事物，来表达自己的感受。', 坐标: (177, 309), 尺寸: 239x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '基础练习', 坐标: (78, 355), 尺寸: 59x15
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '一、根据要求选择正确的答案。', 坐标: (73, 395), 尺寸: 167x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1.给加点字选择正确的读音，并用“', 坐标: (97, 424), 尺寸: 190x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '”画出来。', 坐标: (310, 424), 尺寸: 59x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（1）那雪白的蓑', 坐标: (93, 439), 尺寸: 95x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '·（suō', 坐标: (176, 443), 尺寸: 42x23
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'shuāi）毛，那全身的流线型结构，那铁色的长喙', 坐标: (231, 443), 尺寸: 279x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '·（huì', 坐标: (498, 443), 尺寸: 40x23
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'yuán），那青色的脚，增之一分则嫌', 坐标: (73, 463), 尺寸: 192x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '·（xián', 坐标: (253, 463), 尺寸: 45x23
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'jiān）长，减之一分则嫌短，素之一忽则嫌', 坐标: (310, 463), 尺寸: 228x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '白，黛之一忽则嫌黑。', 坐标: (73, 484), 尺寸: 119x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（2）那是清澄', 坐标: (93, 499), 尺寸: 75x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '·（chéng', 坐标: (157, 503), 尺寸: 54x23
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'dēng）的形象化，而且具有生命了。', 坐标: (223, 503), 尺寸: 193x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2.下列没有错别字的一项是（', 坐标: (97, 524), 尺寸: 155x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）。', 坐标: (298, 524), 尺寸: 19x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'A.精巧', 坐标: (109, 539), 尺寸: 36x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '配合', 坐标: (170, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '身段', 坐标: (218, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '适宜', 坐标: (266, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'B.白鹤', 坐标: (337, 539), 尺寸: 35x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '生硬', 坐标: (397, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '寻常', 坐标: (445, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '望却', 坐标: (493, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'C.镜匣', 坐标: (109, 559), 尺寸: 35x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '青晨', 坐标: (169, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '孤独', 坐标: (217, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '悠然', 坐标: (265, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'D.黄昏', 坐标: (337, 559), 尺寸: 36x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '恩惠', 坐标: (398, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '乡居', 坐标: (446, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '末免', 坐标: (494, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '3.“韵”在“一首韵在骨子里的散文诗”中的意思是（', 坐标: (97, 584), 尺寸: 286x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）。', 坐标: (428, 584), 尺寸: 19x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'A.语音中的韵母', 坐标: (109, 599), 尺寸: 84x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'B.和谐的声音', 坐标: (265, 599), 尺寸: 71x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'C.表现出来的气韵和神韵', 坐标: (109, 619), 尺寸: 131x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'D.诗歌中的押韵', 坐标: (265, 619), 尺寸: 84x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '二、根据释义，写出课文中的词语。', 坐标: (73, 653), 尺寸: 191x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1.形容声音响亮而有节奏。', 坐标: (97, 682), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2.特殊的爱好。', 坐标: (97, 702), 尺寸: 82x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '3.虽然很好，但还有缺陷。', 坐标: (97, 722), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '4.形容水质或某种状态的纯净。', 坐标: (97, 742), 尺寸: 166x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '三、品读句子，理解句意。', 坐标: (73, 97), 尺寸: 143x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '“增之一分则嫌长，减之一分则嫌短，素之一忽则嫌白，黛之一忽则嫌黑。”', 坐标: (91, 126), 尺寸: 401x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1.这个句子中“忽”的意思是（', 坐标: (97, 146), 尺寸: 167x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）。', 坐标: (310, 146), 尺寸: 19x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'A.不注意；不重视', 坐标: (109, 166), 尺寸: 96x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'B.忽而', 坐标: (254, 166), 尺寸: 35x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'C.计量单位名称', 坐标: (338, 166), 尺寸: 83x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: 'D.姓', 坐标: (469, 166), 尺寸: 24x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2.这句话的意思是', 坐标: (97, 185), 尺寸: 94x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '3.这句话写出了白鹭的', 坐标: (97, 225), 尺寸: 118x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '、', 坐标: (300, 225), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '都恰到好处、无可挑剔。', 坐标: (396, 225), 尺寸: 131x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '阅读拓展', 坐标: (78, 299), 尺寸: 59x15
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '四、阅读短文，完成练习。', 坐标: (73, 339), 尺寸: 143x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '岚县畅想', 坐标: (280, 368), 尺寸: 51x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '孔瑞平', 坐标: (288, 389), 尺寸: 35x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '岚者，山间雾气也。我的家乡昔阳有“八景”，其一即“沾岭拖岚”，那是淡蓝色的', 坐标: (97, 421), 尺寸: 440x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '雾气常年缠绕沾山半山腰形成的一种景色。不用说，“岚”是很美的。以“岚”冠名的', 坐标: (73, 441), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '县，想必亦是如此。', 坐标: (73, 461), 尺寸: 107x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '无独有偶，家乡沾岭的“拖岚”之下盛产土豆。素有“天上云间”之称的岚县，亦', 坐标: (97, 481), 尺寸: 440x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '是以“土豆花开”的名义召唤我们前往。哦，难道大雅之“岚”与大俗之“土豆”之间，', 坐标: (73, 501), 尺寸: 470x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '竟是有着必然联系的吗？恰逢合适的机会，去岚县看“岚”，赏土豆花。', 坐标: (73, 521), 尺寸: 377x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '走进岚县河口乡土豆花风景区，凉风吹送，微小的雨点乍洒还收，空气舒适而美好。', 坐标: (97, 541), 尺寸: 446x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '大地情意绵绵，它的深处流动着血脉，而朴素的果实正在萌芽。我们看不到它成长的', 坐标: (73, 561), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '过程，我们的成长，却都仰仗过它提供的热量。吃土豆长大的人啊，朴实厚道又胸怀', 坐标: (73, 581), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '宽广。', 坐标: (73, 601), 尺寸: 36x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '我们将要循山路而上，寻觅山顶云间海拔2000多米处那片神秘的高山草甸。出发的', 坐标: (97, 616), 尺寸: 441x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '时候已经是云气氤氲，一层一层的山隐在雾中，只给你个朦胧的身影。走在海拔2000米', 坐标: (73, 636), 尺寸: 464x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '的山路上，圆珠子般透明的雨滴仿佛不是从天而降，而是升自某个深渊，升自往日消逝', 坐标: (73, 661), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '的某种怀念。此间风景让人陶醉。', 坐标: (73, 681), 尺寸: 179x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '终于登顶！大地温柔起伏，至草地边缘，遂壁立如削。雨停了，方便我们在崖边远', 坐标: (97, 701), 尺寸: 440x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '眺那些方言中的村庄。村子的主色是白和红，它们在万亩土豆葱绿的背景中，如此鲜艳', 坐标: (73, 721), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '又安详宁静。皇天在上，后土在下，这是炊烟、雄黄酒、石头房；这是劈柴、针灸；这', 坐标: (73, 741), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '是父亲的遗像；这是农历、雨水、井栏和池塘……多少年了，它们依然待在原地，如此', 坐标: (73, 761), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '目    录', 坐标: (271, 75), 尺寸: 68x27
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 664), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '五', 坐标: (99, 683), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单', 坐标: (99, 702), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '元', 坐标: (99, 721), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '16     太\u3000阳\x08ćććććććććććććććććć57', 坐标: (169, 659), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '17     松\u3000鼠\x08ćććććććććććććććććć60', 坐标: (169, 679), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '单元巩固练习\x08ććććććććććććććć63', 坐标: (169, 699), 尺寸: 326x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第', 坐标: (99, 112), 尺寸: 19x19
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '18     慈母情深\x08ććććććććććććććććć66', 坐标: (169, 94), 尺寸: 325x14
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '第一单元', 坐标: (260, 90), 尺寸: 91x25
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_small_text_blocks, 文本: '1', 坐标: (260, 188), 尺寸: 9x21
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '·（huì', 坐标: (498, 443), 尺寸: 40x23
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '寻常', 坐标: (445, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '望却', 坐标: (493, 544), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '乡居', 坐标: (446, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '末免', 坐标: (494, 564), 尺寸: 23x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: '）。', 坐标: (428, 584), 尺寸: 19x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '二、根据释义，写出课文中的词语。', 坐标: (73, 653), 尺寸: 191x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1.形容声音响亮而有节奏。', 坐标: (97, 682), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 682), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2.特殊的爱好。', 坐标: (97, 702), 尺寸: 82x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 702), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '3.虽然很好，但还有缺陷。', 坐标: (97, 722), 尺寸: 142x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 722), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '4.形容水质或某种状态的纯净。', 坐标: (97, 742), 尺寸: 166x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '（', 坐标: (426, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '）', 坐标: (530, 742), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '三、品读句子，理解句意。', 坐标: (73, 97), 尺寸: 143x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_by_page_region, 文本: 'D.姓', 坐标: (469, 166), 尺寸: 24x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_small_text_blocks, 文本: '、', 坐标: (300, 225), 尺寸: 11x13
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '的山路上，圆珠子般透明的雨滴仿佛不是从天而降，而是升自某个深渊，升自往日消逝', 坐标: (73, 661), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '的某种怀念。此间风景让人陶醉。', 坐标: (73, 681), 尺寸: 179x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '终于登顶！大地温柔起伏，至草地边缘，遂壁立如削。雨停了，方便我们在崖边远', 坐标: (97, 701), 尺寸: 440x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '眺那些方言中的村庄。村子的主色是白和红，它们在万亩土豆葱绿的背景中，如此鲜艳', 坐标: (73, 721), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '又安详宁静。皇天在上，后土在下，这是炊烟、雄黄酒、石头房；这是劈柴、针灸；这', 坐标: (73, 741), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '是父亲的遗像；这是农历、雨水、井栏和池塘……多少年了，它们依然待在原地，如此', 坐标: (73, 761), 尺寸: 464x12
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_page_header_footer, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '12', 坐标: (302, 809), 尺寸: 7x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '112', 坐标: (302, 796), 尺寸: 7x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1122', 坐标: (302, 796), 尺寸: 7x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '12', 坐标: (302, 809), 尺寸: 7x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '112', 坐标: (302, 796), 尺寸: 7x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1122', 坐标: (302, 796), 尺寸: 7x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 809), 尺寸: 6x14
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (302, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (303, 796), 尺寸: 6x30
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级 上册', 坐标: (1393, 266), 尺寸: 451x77
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2958), 尺寸: 48x47
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (1262, 3372), 尺寸: 26x62
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3372), 尺寸: 26x62
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '1', 坐标: (1261, 3318), 尺寸: 26x125
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '2', 坐标: (1264, 3318), 尺寸: 26x125
