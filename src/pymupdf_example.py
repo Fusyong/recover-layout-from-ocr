@@ -28,10 +28,14 @@ def pdfs_to_image(pdf_dir, img_dir, dpi=300):
             pdf_to_image(os.path.join(pdf_dir, pdf_path), sub_dir, dpi)
 
 if __name__ == "__main__":
+    # 
     # 转换单个pdf为image
+    # 
     # PDF_PATH = "D:/OneDrive163/OneDrive/同步练习题库/长江作业本四上.pdf"
     # IMG_DIR = "img"
     # pdf_to_image(PDF_PATH, IMG_DIR)
 
+    # 
     # 转换多个pdf为image
+    # 
     pdfs_to_image('pdf', 'img')

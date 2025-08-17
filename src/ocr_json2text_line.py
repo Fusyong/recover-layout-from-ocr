@@ -115,6 +115,187 @@ class OCRJsonToTextLine:
         self.constants_file = 'ocr_layout_constants.json'
         # 同行判定阈值（占行距比例）
         self.same_line_threshold_ratio = 0.4
+        # 盒级过滤器列表
+        self.box_filters: List[callable] = []
+        # 行级过滤器列表
+        self.row_filters: List[callable] = []
+        # 页面尺寸信息（用于过滤器）
+        self.page_width: int = 0
+        self.page_height: int = 0
+
+    def boxFilter(self, *filter_functions: callable) -> None:
+        """启动用户自定义过滤器系统
+        
+        允许用户使用box的数据（如BoundingBox，text）和页面长宽数据，
+        编写自己的一个或多个过滤函数，滤除不需要的box。
+        
+        Args:
+            *filter_functions: 一个或多个过滤函数，每个函数应该：
+                - 接受参数：(box_data, page_info)
+                - 返回 bool: True表示保留该box，False表示滤除
+                - box_data包含: text, x, y, width, height, bbox等
+                - page_info包含: page_width, page_height等
+        
+        Example:
+            # 滤除宽度小于10像素的box
+            def filter_small_boxes(box_data, page_info):
+                return box_data['width'] >= 10
+                
+            # 滤除特定区域的box
+            def filter_header_footer(box_data, page_info):
+                y = box_data['y']
+                page_height = page_info['page_height']
+                # 滤除页面顶部和底部20%的区域
+                return 0.2 * page_height <= y <= 0.8 * page_height
+                
+            # 启动过滤器
+            converter.boxFilter(filter_small_boxes, filter_header_footer)
+        """
+        self.box_filters = list(filter_functions)
+        
+    def rowBoxFilter(self, *filter_functions: callable) -> None:
+        """启动行级box过滤器系统
+        
+        允许用户对聚类后的每一行（row）进行过滤，
+        每行包含该行中所有文本片段的box信息。
+        
+        Args:
+            *filter_functions: 一个或多个过滤函数，每个函数应该：
+                - 接受参数：(row_data, page_info)
+                - 返回 bool: True表示保留该行，False表示滤除
+                - row_data包含: row_fragments, row_text, row_bounds等
+                - page_info包含: page_width, page_height等
+        
+        Example:
+            # 滤除文本内容少于5个字符的行
+            def filter_short_rows(row_data, page_info):
+                return len(row_data['row_text']) >= 5
+                
+            # 滤除特定位置的行
+            def filter_header_rows(row_data, page_info):
+                y = row_data['row_bounds']['y']
+                page_height = page_info['page_height']
+                # 滤除页面顶部10%的区域
+                return y >= 0.1 * page_height
+                
+            # 启动行级过滤器
+            converter.rowBoxFilter(filter_short_rows, filter_header_rows)
+        """
+        self.row_filters = list(filter_functions)
+        
+    def _apply_user_filters(self, box_data: Dict[str, Any], page_info: Dict[str, Any]) -> bool:
+        """应用用户自定义过滤器
+        
+        Args:
+            box_data: 包含box信息的字典
+            page_info: 包含页面信息的字典
+            
+        Returns:
+            bool: True表示保留，False表示滤除
+        """
+        if not self.box_filters:
+            return True  # 没有过滤器时保留所有box
+            
+        # 所有过滤器都必须返回True才保留该box
+        for filter_func in self.box_filters:
+            try:
+                if not filter_func(box_data, page_info):
+                    return False
+            except Exception as e:
+                # 过滤器出错时记录错误但继续处理，默认保留
+                print(f"过滤器执行出错: {e}, 默认保留box: {box_data}")
+                continue
+        
+        return True
+        
+    def _apply_row_filters(self, row: List[Dict[str, Any]], page_info: Dict[str, Any]) -> bool:
+        """应用行级过滤器
+        
+        Args:
+            row: 包含该行所有文本片段信息的列表
+            page_info: 包含页面信息的字典
+            
+        Returns:
+            bool: True表示保留该行，False表示滤除
+        """
+        if not self.row_filters:
+            return True  # 没有过滤器时保留所有行
+            
+        # 准备行数据用于过滤
+        if not row:
+            return False  # 空行直接滤除
+            
+        # 计算行的边界信息
+        row_xs = [frag['x'] for frag in row]
+        row_ys = [frag['y'] for frag in row]
+        row_rights = [frag['x'] + frag['width'] for frag in row]
+        row_bottoms = [frag['y'] + frag['height'] for frag in row]
+        
+        # 合并该行所有文本
+        row_text = ''.join(frag['text'] for frag in row)
+        
+        # 构建行数据字典
+        row_data = {
+            'row_fragments': row,  # 原始片段列表
+            'row_text': row_text,  # 合并后的文本
+            'row_bounds': {
+                'x': min(row_xs),
+                'y': min(row_ys),
+                'width': max(row_rights) - min(row_xs),
+                'height': max(row_bottoms) - min(row_ys),
+                'right': max(row_rights),
+                'bottom': max(row_bottoms)
+            },
+            'fragment_count': len(row),  # 片段数量
+            'text_length': len(row_text)  # 文本长度
+        }
+        
+        # 所有过滤器都必须返回True才保留该行
+        for filter_func in self.row_filters:
+            try:
+                if not filter_func(row_data, page_info):
+                    return False
+            except Exception as e:
+                # 过滤器出错时记录错误但继续处理，默认保留
+                print(f"行级过滤器执行出错: {e}, 默认保留行: {row_data}")
+                continue
+                
+        return True
+        
+    def _update_page_dimensions(self, regions: List[Region]) -> None:
+        """更新页面尺寸信息，用于过滤器"""
+        if not regions:
+            return
+            
+        all_xs = []
+        all_ys = []
+        all_rights = []
+        all_bottoms = []
+        
+        for region in regions:
+            if region.boundingBox:
+                all_xs.append(region.boundingBox.x)
+                all_ys.append(region.boundingBox.y)
+                all_rights.append(region.boundingBox.x + region.boundingBox.width)
+                all_bottoms.append(region.boundingBox.y + region.boundingBox.height)
+                
+            for line in region.lines:
+                if line.boundingBox:
+                    all_xs.append(line.boundingBox.x)
+                    all_ys.append(line.boundingBox.y)
+                    all_rights.append(line.boundingBox.x + line.boundingBox.width)
+                    all_bottoms.append(line.boundingBox.y + line.boundingBox.height)
+                    
+                for word in line.words:
+                    if word.boundingBox:
+                        all_xs.append(word.boundingBox.x)
+                        all_ys.append(word.boundingBox.y)
+                        all_rights.append(word.boundingBox.x + word.boundingBox.width)
+                        all_bottoms.append(word.boundingBox.y + word.boundingBox.height)
+        
+        if all_xs and all_ys and all_rights and all_bottoms:
+            self.page_width = max(all_rights) - min(all_xs)
+            self.page_height = max(all_bottoms) - min(all_ys)
 
     # ====== 布局常量估计与持久化 ======
     def _contains_cjk(self, s: str) -> bool:
@@ -167,6 +348,29 @@ class OCRJsonToTextLine:
         # 收集样本
         for region in regions:
             for line in region.lines:
+                # 准备box数据用于过滤
+                if line.boundingBox:
+                    box_data = {
+                        'text': line.text.strip() if line.text else '',
+                        'x': int(line.boundingBox.x),
+                        'y': int(line.boundingBox.y),
+                        'width': int(line.boundingBox.width),
+                        'height': int(line.boundingBox.height),
+                        'bbox': line.boundingBox,
+                        'line': line,
+                        'region': region
+                    }
+                    
+                    # 准备页面信息用于过滤
+                    page_info = {
+                        'page_width': self.page_width,
+                        'page_height': self.page_height
+                    }
+                    
+                    # 应用用户自定义过滤器
+                    if not self._apply_user_filters(box_data, page_info):
+                        continue
+                
                 # 行高样本优先用行 bbox，其次 text_height
                 if line.boundingBox and line.boundingBox.height > 0:
                     line_heights.append(float(line.boundingBox.height))
@@ -176,6 +380,25 @@ class OCRJsonToTextLine:
                 for w in line.words:
                     if not w or not w.word:
                         continue
+                    
+                    # 对单词也应用过滤器
+                    if w.boundingBox:
+                        word_box_data = {
+                            'text': w.word.strip() if w.word else '',
+                            'x': int(w.boundingBox.x),
+                            'y': int(w.boundingBox.y),
+                            'width': int(w.boundingBox.width),
+                            'height': int(w.boundingBox.height),
+                            'bbox': w.boundingBox,
+                            'word': w,
+                            'line': line,
+                            'region': region
+                        }
+                        
+                        # 应用用户自定义过滤器
+                        if not self._apply_user_filters(word_box_data, page_info):
+                            continue
+                    
                     if self._contains_cjk(w.word) and w.boundingBox and w.boundingBox.height > 0:
                         char_heights.append(float(w.boundingBox.height))
 
@@ -267,6 +490,10 @@ class OCRJsonToTextLine:
             # 合并每一行的分片，按像素间距 → 空格数（两个空格≈一个正文汉字高度）
             prev_row: Optional[List[Dict[str, Any]]] = None
             for row in grouped:
+                # 应用行级过滤器
+                if not self._apply_row_filters(row, {'page_width': self.page_width, 'page_height': self.page_height}):
+                    continue
+                
                 # 行间距 → 满行空格
                 if prev_row is not None:
                     blanks = self._compute_blank_lines_between(prev_row, row, line_spacing)
@@ -293,6 +520,29 @@ class OCRJsonToTextLine:
                 # 将垂直文本直接按普通文本输出（不加 markdown 引用符号）
                 sorted_lines = sorted(region.lines, key=lambda l: l.boundingBox.x)
                 for line in sorted_lines:
+                    # 准备box数据用于过滤
+                    if line.boundingBox:
+                        box_data = {
+                            'text': line.text.strip() if line.text else '',
+                            'x': int(line.boundingBox.x),
+                            'y': int(line.boundingBox.y),
+                            'width': int(line.boundingBox.width),
+                            'height': int(line.boundingBox.height),
+                            'bbox': line.boundingBox,
+                            'line': line,
+                            'region': region
+                        }
+                        
+                        # 准备页面信息用于过滤
+                        page_info = {
+                            'page_width': self.page_width,
+                            'page_height': self.page_height
+                        }
+                        
+                        # 应用用户自定义过滤器
+                        if not self._apply_user_filters(box_data, page_info):
+                            continue
+                    
                     text = (line.text or '').strip()
                     if text:
                         text_lines.append(text)
@@ -328,6 +578,10 @@ class OCRJsonToTextLine:
         返回的分片包含: text, x, y, width, height
         """
         fragments: List[Dict[str, Any]] = []
+        
+        # 更新页面尺寸信息，用于过滤器
+        self._update_page_dimensions(regions)
+        
         for region in regions:
             if region.dir != TextDirection.HORIZONTAL.value:
                 continue
@@ -337,13 +591,35 @@ class OCRJsonToTextLine:
                 bbox = line.boundingBox or region.boundingBox
                 if not bbox:
                     continue
-                fragments.append({
+                
+                # 准备box数据用于过滤
+                box_data = {
                     'text': line.text.strip(),
                     'x': int(bbox.x),
                     'y': int(bbox.y),
                     'width': int(bbox.width),
                     'height': int(bbox.height),
-                })
+                    'bbox': bbox,
+                    'line': line,
+                    'region': region
+                }
+                
+                # 准备页面信息用于过滤
+                page_info = {
+                    'page_width': self.page_width,
+                    'page_height': self.page_height
+                }
+                
+                # 应用用户自定义过滤器
+                if self._apply_user_filters(box_data, page_info):
+                    fragments.append({
+                        'text': line.text.strip(),
+                        'x': int(bbox.x),
+                        'y': int(bbox.y),
+                        'width': int(bbox.width),
+                        'height': int(bbox.height),
+                    })
+        
         return fragments
 
     def _group_fragments_by_line(self, fragments: List[Dict[str, Any]], line_spacing: float, ratio: float) -> List[List[Dict[str, Any]]]:
@@ -528,6 +804,27 @@ class OCRJsonToTextLine:
                 height=int(max_y - min_y)
             )
 
+            # 准备box数据用于过滤
+            box_data = {
+                'text': text,
+                'x': int(min_x),
+                'y': int(min_y),
+                'width': int(max_x - min_x),
+                'height': int(max_y - min_y),
+                'bbox': bbox,
+                'rapidocr_item': item
+            }
+            
+            # 准备页面信息用于过滤（RapidOCR情况下可能还没有页面尺寸信息）
+            page_info = {
+                'page_width': self.page_width,
+                'page_height': self.page_height
+            }
+            
+            # 应用用户自定义过滤器
+            if not self._apply_user_filters(box_data, page_info):
+                continue
+
             # 创建Word对象（RapidOCR没有单词级别，将整行作为一个word）
             word = Word(word=text, boundingBox=bbox)
 
@@ -578,28 +875,33 @@ class OCRJsonToTextLine:
         else:
             return self.convert_rapidocr_json_to_text(ocr_json)
 
-def convert_json_to_text(json_path: str, out_path: str='') -> str:
+def convert_json_to_text(json_path: str, out_path: str='', filter_functions: List[callable]=None, row_filter_functions: List[callable]=None) -> str:
     """将OCR JSON结果转换为纯文本（带空格/空行）"""
     if not out_path:
         out_path = re.sub(r'\.[^\.]+$', '.txt', json_path)
     with open(json_path, 'r', encoding='utf-8') as f:
         json_data = json.load(f)
         tl_conv = OCRJsonToTextLine()
+        if filter_functions:
+            tl_conv.boxFilter(*filter_functions)
+        if row_filter_functions:
+            tl_conv.rowBoxFilter(*row_filter_functions)
         text = tl_conv.convert_json_to_text(json_data)
         with open(out_path, 'w', encoding='utf-8') as f:
             f.write(text)
 
-def convert_jsons_to_text(json_dir: str, out_dir: str='') -> str:
+def convert_jsons_to_text(json_dir: str, out_dir: str='', filter_functions: List[callable]=None, row_filter_functions: List[callable]=None) -> str:
     """将文件夹中的OCR JSON结果转换为纯文本（带空格/空行）"""
     if not out_dir:
         out_dir = json_dir
     for json_path in os.listdir(json_dir):
         if json_path.endswith('.json'):
-            convert_json_to_text(os.path.join(json_dir, json_path), os.path.join(out_dir, json_path.replace('.json', '.txt')))
+            convert_json_to_text(os.path.join(json_dir, json_path), os.path.join(out_dir, json_path.replace('.json', '.txt')), filter_functions, row_filter_functions)
 
 if __name__ == "__main__":
+
     # 转换单个JSON文件
-    # convert_json_to_text('img_1_dsk.json', 'img_1_dsk.txt')
+    convert_json_to_text('img_1_dsk.json', 'img_1_dsk.txt')
 
     # 转换文件夹中的所有JSON文件
     convert_jsons_to_text('img_dsk')

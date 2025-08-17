@@ -2,8 +2,9 @@
 整理分行纯文本（OCR结果或者PDF转文本）为 Markdown
 """
 
+import os
 import re
-from typing import List, Tuple
+from typing import List
 
 
 class TextLineToMarkdown:
@@ -85,14 +86,33 @@ class TextLineToMarkdown:
         # 不做列表合并，保留原始行结构
         return '\n'.join(md_lines)
 
+def markdown_text_with_toc(text_path: str, out_path: str='', contents: str = "", start_level:int=1) -> str:
+    """将文本转换为Markdown，根据目录标记标题级别"""
+    if not out_path:
+        out_path = re.sub(r'\.[^\.]+$', '.md', text_path)   
+    with open(text_path, 'r', encoding='utf-8') as f:
+        text = f.read()
+        md_conv = TextLineToMarkdown(contents, start_level)
+        md = md_conv.convert_text_to_markdown(text.split('\n'))
+        if out_path:
+            with open(out_path, 'w', encoding='utf-8') as f:
+                f.write(md)
+        return md
+
+def markdown_texts_with_toc(text_dir: str, out_dir: str='', contents: str = "", start_level:int=1) -> str:
+    """将文本转换为Markdown，根据目录标记标题级别"""
+    if not out_dir:
+        out_dir = text_dir
+    for text_path in os.listdir(text_dir):
+        if text_path.endswith('.txt'):
+            markdown_text_with_toc(os.path.join(text_dir, text_path), os.path.join(out_dir, text_path.replace('.txt', '.md')), contents, start_level)
+
 if __name__ == "__main__":
-    contents = """
+    toc = """
     语文园地五
         学会运用
     """
-    with open('rapidocr_result.txt', 'r', encoding='utf-8') as f:
-        text_with_layout = f.read()
-        md_conv = TextLineToMarkdown(contents, 2)
-        md = md_conv.convert_text_to_markdown(text_with_layout.split('\n'))
-        with open('rapidocr_result.md', 'w', encoding='utf-8') as f:
-            f.write(md)
+    # 转换单个文本
+    # markdown_text_with_toc('img_1_dsk.txt', 'img_1_dsk.md', toc, 2)
+    # 转换文件夹中的所有文本
+    markdown_texts_with_toc('img_dsk', contents=toc, start_level=2)

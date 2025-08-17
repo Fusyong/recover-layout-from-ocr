@@ -37,13 +37,17 @@ def ocr_images(img_dir):
         ocr_image(os.path.join(img_dir, img_url))
 
 if __name__ == "__main__":
+    # 
     # 单张图片ocr
+    # 
     # IMGURL = "img_1_dsk.jpg"
     # result = ocr_image(IMGURL)
     # print(result)
     # print(result.to_text())
     # print(result.to_markdown())
 
+    # 
     # 多张图片ocr
+    # 
     ocr_images('img_dsk')
     
