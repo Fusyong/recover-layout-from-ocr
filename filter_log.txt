@@ -1,0 +1,16 @@
+﻿[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48

@@ -122,7 +122,17 @@ class OCRJsonToTextLine:
         # 页面尺寸信息（用于过滤器）
         self.page_width: int = 0
         self.page_height: int = 0
-
+        # 过滤日志文件
+        self.log_file: str = "filter_log.txt"
+        
+    def set_log_file(self, log_file: str) -> None:
+        """设置过滤日志文件名
+        
+        Args:
+            log_file: 日志文件名
+        """
+        self.log_file = log_file
+        
     def boxFilter(self, *filter_functions: callable) -> None:
         """启动用户自定义过滤器系统
         
@@ -183,6 +193,54 @@ class OCRJsonToTextLine:
         """
         self.row_filters = list(filter_functions)
         
+    def _log_filtered_item(self, item_type: str, filter_name: str, item_data: Dict[str, Any]) -> None:
+        """记录被过滤掉的项目信息
+        
+        Args:
+            item_type: 项目类型 ('box' 或 'row')
+            filter_name: 过滤器函数名称
+            item_data: 项目数据
+        """
+        try:
+            # 提取基本信息
+            if item_type == 'box':
+                text = item_data.get('text', '')
+                x = item_data.get('x', 0)
+                y = item_data.get('y', 0)
+                width = item_data.get('width', 0)
+                height = item_data.get('height', 0)
+            else:  # row
+                text = item_data.get('row_text', '')
+                bounds = item_data.get('row_bounds', {})
+                x = bounds.get('x', 0)
+                y = bounds.get('y', 0)
+                width = bounds.get('width', 0)
+                height = bounds.get('height', 0)
+            
+            # 记录过滤信息
+            log_msg = f"[FILTER_LOG] {item_type.upper()}被过滤 - 过滤器: {filter_name}, 文本: {repr(text[:50])}, 坐标: ({x}, {y}), 尺寸: {width}x{height}"
+            
+            # 输出到控制台
+            print(log_msg)
+            
+            # 输出到日志文件
+            try:
+                # 在Windows上使用utf-8-sig编码，避免BOM问题
+                with open(self.log_file, 'a', encoding='utf-8-sig') as f:
+                    f.write(log_msg + '\n')
+            except Exception as log_e:
+                print(f"[FILTER_LOG] 写入日志文件时出错: {log_e}")
+            
+        except Exception as e:
+            error_msg = f"[FILTER_LOG] 记录过滤信息时出错: {e}"
+            print(error_msg)
+            # 尝试记录错误到日志文件
+            try:
+                with open(self.log_file, 'a', encoding='utf-8') as f:
+                    f.write(error_msg + '\n')
+            except:
+                pass
+        
     def _apply_user_filters(self, box_data: Dict[str, Any], page_info: Dict[str, Any]) -> bool:
         """应用用户自定义过滤器
         
@@ -199,7 +257,10 @@ class OCRJsonToTextLine:
         # 所有过滤器都必须返回True才保留该box
         for filter_func in self.box_filters:
             try:
+                filter_name = filter_func.__name__
                 if not filter_func(box_data, page_info):
+                    # 记录被过滤掉的box信息
+                    self._log_filtered_item('box', filter_name, box_data)
                     return False
             except Exception as e:
                 # 过滤器出错时记录错误但继续处理，默认保留
@@ -253,7 +314,10 @@ class OCRJsonToTextLine:
         # 所有过滤器都必须返回True才保留该行
         for filter_func in self.row_filters:
             try:
+                filter_name = filter_func.__name__
                 if not filter_func(row_data, page_info):
+                    # 记录被过滤掉的行信息
+                    self._log_filtered_item('row', filter_name, row_data)
                     return False
             except Exception as e:
                 # 过滤器出错时记录错误但继续处理，默认保留

@@ -63,10 +63,30 @@ Each filter function should:
 - `row_data` contains: `row_fragments`, `row_text`, `row_bounds`, `fragment_count`, `text_length`
 - `page_info` contains: `page_width`, `page_height`
 
+#### Filter Logging System
+
+The filtering system now includes comprehensive logging functionality:
+
+- **Console Output**: Filter information is displayed in real-time during processing
+- **Log File**: All filter actions are automatically saved to a log file for review and debugging
+- **Default Log File**: `filter_log.txt` (can be customized)
+- **Log Format**: `[FILTER_LOG] ITEM_TYPE被过滤 - 过滤器: filter_name, 文本: text, 坐标: (x, y), 尺寸: widthxheight`
+
+**Customizing Log File:**
+```python
+converter = OCRJsonToTextLine()
+converter.set_log_file("my_custom_log.txt")  # Set custom log file name
+```
+
+**Log File Content Example:**
+```
+[FILTER_LOG] BOX被过滤 - 过滤器: filter_header, 文本: '语文·六年级上册', 坐标: (1395, 270), 尺寸: 450x65
+[FILTER_LOG] ROW被过滤 - 过滤器: filter_page_number, 文本: '43', 坐标: (1783, 2959), 尺寸: 52x48
+```
+
 ## TODO
 
 1. [x] ocr_json过滤，删除不需要的box
-2. [ ] text_line过滤，删除不需要的line
 3. [ ] 分切为独立题目
 4. [ ] 转换成数据库，建立专项查询
 5. [ ] 使用LLM修复格式错误、分切错误
