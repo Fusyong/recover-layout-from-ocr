@@ -33,10 +33,10 @@ if __name__ == "__main__":
     # 
     # 旋正单张图片
     # 
-    # IN_PATH = 'img_0.jpg'
-    # deskew_image(IN_PATH)
+    IN_PATH = 'tests/assets/img_0.jpg'
+    deskew_image(IN_PATH)
 
     # 
     # 旋正多个图片
     # 
-    deskew_images('img', 'img_dsk')
+    # deskew_images('img', 'img_dsk')

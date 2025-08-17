@@ -939,33 +939,44 @@ class OCRJsonToTextLine:
         else:
             return self.convert_rapidocr_json_to_text(ocr_json)
 
-def convert_json_to_text(json_path: str, out_path: str='', filter_functions: List[callable]=None, row_filter_functions: List[callable]=None) -> str:
+def convert_json_to_text(json_path: str, out_path: str='', box_filter_functions: List[callable]=None, row_filter_functions: List[callable]=None) -> str:
     """将OCR JSON结果转换为纯文本（带空格/空行）"""
     if not out_path:
         out_path = re.sub(r'\.[^\.]+$', '.txt', json_path)
     with open(json_path, 'r', encoding='utf-8') as f:
         json_data = json.load(f)
         tl_conv = OCRJsonToTextLine()
-        if filter_functions:
-            tl_conv.boxFilter(*filter_functions)
+        if box_filter_functions:
+            tl_conv.boxFilter(*box_filter_functions)
         if row_filter_functions:
             tl_conv.rowBoxFilter(*row_filter_functions)
         text = tl_conv.convert_json_to_text(json_data)
         with open(out_path, 'w', encoding='utf-8') as f:
             f.write(text)
 
-def convert_jsons_to_text(json_dir: str, out_dir: str='', filter_functions: List[callable]=None, row_filter_functions: List[callable]=None) -> str:
+def convert_jsons_to_text(json_dir: str, out_dir: str='', box_filter_functions: List[callable]=None, row_filter_functions: List[callable]=None) -> str:
     """将文件夹中的OCR JSON结果转换为纯文本（带空格/空行）"""
     if not out_dir:
         out_dir = json_dir
     for json_path in os.listdir(json_dir):
         if json_path.endswith('.json'):
-            convert_json_to_text(os.path.join(json_dir, json_path), os.path.join(out_dir, json_path.replace('.json', '.txt')), filter_functions, row_filter_functions)
+            convert_json_to_text(os.path.join(json_dir, json_path), os.path.join(out_dir, json_path.replace('.json', '.txt')), box_filter_functions, row_filter_functions)
 
 if __name__ == "__main__":
 
+    from src.ocr_json_filters import box_filters, row_filters
+
     # 转换单个JSON文件
-    convert_json_to_text('img_1_dsk.json', 'img_1_dsk.txt')
+    convert_json_to_text(
+        'tests/assets/img_1_dsk.json',
+        'tests/assets/img_1_dsk.txt', 
+        box_filter_functions=box_filters, 
+        row_filter_functions=row_filters
+        )
 
     # 转换文件夹中的所有JSON文件
-    convert_jsons_to_text('img_dsk')
+    convert_jsons_to_text(
+        'img_dsk',
+        box_filter_functions=box_filters,
+        row_filter_functions=row_filters
+    )

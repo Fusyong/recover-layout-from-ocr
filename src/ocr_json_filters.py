@@ -134,43 +134,49 @@ def filter_all_keywords(data, page_info):
             return True
     return False
 
-
+# 盒级过滤器
+box_filters = [
+    # filter_small_width,     # 滤除宽度太小的内容
+    # filter_abnormal_height, # 滤除高度异常的内容
+    # filter_header,          # 滤除页眉
+    # filter_footer,          # 滤除页脚
+    # filter_page_number,     # 滤除页码
+    # filter_left_sidebar,    # 滤除左侧边栏
+    # filter_right_sidebar,   # 滤除右侧边栏
+    # filter_any_keywords,    # 滤除包含任意关键词的内容
+    # filter_all_keywords,    # 滤除包含所有关键词的内容
+]
+# 行级过滤器
+row_filters = [
+    # filter_small_width,     # 滤除宽度太小的内容
+    # filter_abnormal_height, # 滤除高度异常的内容
+    filter_header,          # 滤除页眉
+    # filter_footer,          # 滤除页脚
+    filter_page_number,     # 滤除页码
+    # filter_left_sidebar,    # 滤除左侧边栏
+    # filter_right_sidebar,   # 滤除右侧边栏
+    # filter_any_keywords,    # 滤除包含任意关键词的内容
+    # filter_all_keywords,    # 滤除包含所有关键词的内容
+]
 
 if __name__ == "__main__":
     import sys
     import os
     sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    from src.ocr_json2text_line import convert_json_to_text
+    from src.ocr_json2text_line import convert_json_to_text, convert_jsons_to_text
     
-    # 盒级过滤器
-    box_filters = [
-        # filter_small_width,     # 滤除宽度太小的内容
-        # filter_abnormal_height, # 滤除高度异常的内容
-        # filter_header,          # 滤除页眉
-        # filter_footer,          # 滤除页脚
-        # filter_page_number,     # 滤除页码
-        # filter_left_sidebar,    # 滤除左侧边栏
-        # filter_right_sidebar,   # 滤除右侧边栏
-        # filter_any_keywords,    # 滤除包含任意关键词的内容
-        # filter_all_keywords,    # 滤除包含所有关键词的内容
-    ]
-    # 行级过滤器
-    row_filters = [
-        # filter_small_width,     # 滤除宽度太小的内容
-        # filter_abnormal_height, # 滤除高度异常的内容
-        filter_header,          # 滤除页眉
-        # filter_footer,          # 滤除页脚
-        filter_page_number,     # 滤除页码
-        # filter_left_sidebar,    # 滤除左侧边栏
-        # filter_right_sidebar,   # 滤除右侧边栏
-        # filter_any_keywords,    # 滤除包含任意关键词的内容
-        # filter_all_keywords,    # 滤除包含所有关键词的内容
-    ]
-    
-    # 可以同时用于box和行级过滤
+
+    # 转换为文本行，并过滤
     convert_json_to_text(
-        'img_1_dsk.json', 
-        'img_1_dsk.txt',
+        'tests/assets/img_1_dsk.json', 
+        'tests/assets/img_1_dsk.txt',
         box_filters,         # box级过滤
         row_filters          # 行级过滤
+    )
+
+    # 转换为文本行，并过滤
+    convert_jsons_to_text(
+        'img_dsk', 
+        box_filter_functions = box_filters,         # box级过滤
+        row_filter_functions=row_filters          # 行级过滤
     )

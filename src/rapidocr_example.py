@@ -40,7 +40,7 @@ if __name__ == "__main__":
     # 
     # 单张图片ocr
     # 
-    # IMGURL = "img_1_dsk.jpg"
+    # IMGURL = "tests/assets/img_1_dsk.jpg"
     # result = ocr_image(IMGURL)
     # print(result)
     # print(result.to_text())
