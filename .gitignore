@@ -4,3 +4,4 @@ img/
 img_dsk/
 *.pdf
 __pycache__
+processed_images/
