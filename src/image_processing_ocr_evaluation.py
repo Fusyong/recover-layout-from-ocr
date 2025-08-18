@@ -306,3 +306,22 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # 图像tests/assets/img_0_dsk.jpg 为淡彩色，主题文字黑色、标题淡彩色有装饰花纹、页脚文字反白、一个二维码
+    # 效果最好的配置（6个配置的结果几乎没有差别,且质量稳定）
+    # processed_067_gray_cv2_thresh_otsu.vis.jpg
+    # processed_076_gray_cv2_contrast_a0.5_b0_thresh_otsu.vis.jpg
+    # processed_085_gray_cv2_contrast_a1.0_b0_thresh_otsu.vis.jpg
+    # processed_130_gray_luminance_thresh_otsu.vis.jpg
+    # processed_139_gray_luminance_contrast_a0.5_b0_thresh_otsu.vis.jpg
+    # processed_148_gray_luminance_contrast_a1.0_b0_thresh_otsu.vis.jpg
+
+    # 效果稍差的配置，且质量不稳定
+    # processed_009_contrast_a0.5_b0.vis.jpg
+    # processed_027_contrast_a1.5_b0.vis.jpg
+    # processed_045_contrast_a1.0_b-50.vis.jpg
+    # processed_072_gray_cv2_contrast_a0.5_b0.vis.jpg
+    # processed_117_gray_cv2_contrast_a1.0_b50.vis.jpg
+    # processed_135_gray_luminance_contrast_a0.5_b0.vis.jpg
+    # processed_180_gray_luminance_contrast_a1.0_b50.vis.jpg
+    # processed_198_gray_average_contrast_a0.5_b0.vis.jpg
+    # processed_243_gray_average_contrast_a1.0_b50.vis.jpg
