@@ -1589,3 +1589,21 @@
 2025-08-18 20:38:32,387 - INFO - 处理完成！结果保存在: processed_images
 2025-08-18 20:38:32,388 - INFO - 详细结果: processed_images\processing_results.json
 2025-08-18 20:38:32,388 - INFO - 评估报告: processed_images\evaluation_report.txt
+2025-08-19 10:42:57,457 - INFO - 处理图像: tests\assets\img_0.jpg
+2025-08-19 10:42:57,458 - INFO - 原始图像尺寸: (3070, 2125, 3)
+2025-08-19 10:42:57,458 - INFO - 使用配置: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-19 10:42:57,485 - INFO - 处理完成，输出文件: tests\assets\img_0.preprocessed.png
+2025-08-19 10:43:50,089 - INFO - 处理图像: tests\assets\img_0.jpg
+2025-08-19 10:43:50,117 - INFO - 处理完成，输出文件: tests\assets\img_0.preprocessed.png
+2025-08-19 10:44:17,283 - INFO - 处理图像: tests\assets\img_0.jpg
+2025-08-19 10:44:17,312 - INFO - 输出文件: tests\assets\img_0.preprocessed.png
+2025-08-19 10:47:10,876 - INFO - 处理图像: tests\assets\img_0.jpg
+2025-08-19 10:47:10,905 - INFO - 输出文件: tests\assets\img_0.preprocessed.png
+2025-08-19 10:48:39,041 - INFO - 处理图像: tests\assets\img_0.jpg
+2025-08-19 10:48:39,068 - INFO - 输出文件: tests\assets\img_0.preprocessed.png
+2025-08-19 10:49:42,169 - INFO - 处理图像: tests\assets\img_0.jpg
+2025-08-19 10:49:42,199 - INFO - 输出文件: tests\assets\img_0.preprocessed.png
+2025-08-19 10:50:57,988 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 10:50:58,018 - INFO - 输出文件: tests\assets\img_0_dsk.preprocessed.png
+2025-08-19 11:39:25,574 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 11:39:25,601 - INFO - 输出文件: tests\assets\img_0_dsk.preprocessed.jpg

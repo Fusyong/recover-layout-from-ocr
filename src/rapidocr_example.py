@@ -2,7 +2,6 @@
 
 import json
 import os
-import re
 from pathlib import Path
 from rapidocr import EngineType, LangDet, LangRec, ModelType, OCRVersion, RapidOCR
 
@@ -50,8 +49,8 @@ if __name__ == "__main__":
     # 
     # 单张图片ocr
     # 
-    # IMGURL = "D:/ah21/recover-layout-from-ocr/tests/assets/img_0_preprocessed.jpg"
-    # result = ocr_image(IMGURL)
+    IMGURL = "D:/ah21/recover-layout-from-ocr/tests/assets/img_0_dsk.preprocessed.jpg"
+    result = ocr_image(IMGURL)
     # print(result)
     # # print(result.to_text())
     # print(result.to_markdown())
@@ -59,5 +58,5 @@ if __name__ == "__main__":
     # 
     # 多张图片ocr
     # 
-    ocr_images('D:/语文出版社/2025/同步练习题库/temp/')
+    # ocr_images('D:/语文出版社/2025/同步练习题库/temp/')
     

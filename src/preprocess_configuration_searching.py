@@ -1,18 +1,15 @@
 """
-图像处理与OCR效果评估脚本
+用于OCR的图像预处理配置搜索脚本
 
-对图像进行灰度、对比度、二值化处理，循环组合不同参数，
-调用RapidOCR进行识别，输出结果用于评估效果。
+对图像进行灰度、对比度、二值化处理，循环组合不同参数，以搜索最佳配置
 """
 
+import json
+import logging
 import os
+from typing import List, Dict, Any
 import cv2
 import numpy as np
-import json
-from pathlib import Path
-from rapidocr import EngineType, LangDet, LangRec, ModelType, OCRVersion, RapidOCR
-from typing import List, Tuple, Dict, Any
-import logging
 
 # 配置日志
 logging.basicConfig(
@@ -29,18 +26,7 @@ class ImageProcessor:
     """图像处理类"""
     
     def __init__(self):
-        self.rapidocr_engine = RapidOCR(
-            params={
-                "Det.engine_type": EngineType.ONNXRUNTIME,
-                "Det.lang_type": LangDet.CH,
-                "Det.model_type": ModelType.MOBILE,
-                "Det.ocr_version": OCRVersion.PPOCRV4,
-                "Rec.engine_type": EngineType.ONNXRUNTIME,
-                "Rec.lang_type": LangRec.CH,
-                "Rec.model_type": ModelType.MOBILE,
-                "Rec.ocr_version": OCRVersion.PPOCRV5,
-            }
-        )
+        pass
     
     def apply_grayscale(self, image: np.ndarray, method: str = 'cv2') -> np.ndarray:
         """应用灰度处理"""
@@ -129,32 +115,6 @@ class ImageProcessor:
                 parts.append(f"thresh_{method}")
         
         return "_".join(parts) + ".jpg"
-    
-    def ocr_image(self, image: np.ndarray, image_path: str) -> Dict[str, Any]:
-        """对图像进行OCR识别"""
-        try:
-            # 保存图像
-            cv2.imwrite(image_path, image)
-            
-            # 进行OCR识别
-            result = self.rapidocr_engine(image_path)
-            
-            # 提取文本
-            text_result = result.to_text() if hasattr(result, 'to_text') else str(result)
-            
-            return {
-                'success': True,
-                'text': text_result,
-                'raw_result': str(result),
-                'image_path': image_path
-            }
-        except Exception as e:
-            logger.error(f"OCR处理失败: {e}")
-            return {
-                'success': False,
-                'error': str(e),
-                'image_path': image_path
-            }
 
 def generate_processing_configs() -> List[Dict[str, Any]]:
     """生成所有可能的处理配置组合"""
@@ -249,24 +209,19 @@ def main():
             filename = processor.generate_filename(config, i)
             output_path = os.path.join(output_dir, filename)
             
-            # 进行OCR识别
-            ocr_result = processor.ocr_image(processed_image, output_path)
+            # 保存处理后的图像
+            cv2.imwrite(output_path, processed_image)
             
             # 记录结果
             result = {
                 'config_index': i,
                 'config': config,
                 'filename': filename,
-                'output_path': output_path,
-                'ocr_result': ocr_result
+                'output_path': output_path
             }
             results.append(result)
             
             logger.info(f"配置 {i+1} 完成: {filename}")
-            if ocr_result['success']:
-                logger.info(f"OCR文本: {ocr_result['text'][:100]}...")
-            else:
-                logger.warning(f"OCR失败: {ocr_result['error']}")
                 
         except Exception as e:
             logger.error(f"处理配置 {i+1} 时出错: {e}")
@@ -280,12 +235,11 @@ def main():
     # 生成汇总报告
     report_file = os.path.join(output_dir, "evaluation_report.txt")
     with open(report_file, 'w', encoding='utf-8') as f:
-        f.write("图像处理与OCR效果评估报告\n")
+        f.write("图像处理效果评估报告\n")
         f.write("=" * 50 + "\n\n")
         
         f.write(f"总配置数: {len(configs)}\n")
-        f.write(f"成功处理: {len([r for r in results if r['ocr_result']['success']])}\n")
-        f.write(f"处理失败: {len([r for r in results if not r['ocr_result']['success']])}\n\n")
+        f.write(f"成功处理: {len(results)}\n\n")
         
         f.write("详细结果:\n")
         f.write("-" * 30 + "\n")
@@ -293,11 +247,6 @@ def main():
         for result in results:
             f.write(f"\n配置 {result['config_index']}: {result['filename']}\n")
             f.write(f"处理配置: {result['config']}\n")
-            
-            if result['ocr_result']['success']:
-                f.write(f"OCR文本: {result['ocr_result']['text']}\n")
-            else:
-                f.write(f"OCR失败: {result['ocr_result']['error']}\n")
             f.write("-" * 30 + "\n")
     
     logger.info(f"处理完成！结果保存在: {output_dir}")
