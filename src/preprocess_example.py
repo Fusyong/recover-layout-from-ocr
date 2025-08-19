@@ -25,6 +25,19 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+def cv_imread(file_path):
+    """
+    读取图像，解决中文路径问题
+    """
+    cv_img = cv2.imdecode(np.fromfile(file_path, dtype=np.uint8), -1)
+    return cv_img
+def cv_imwrite(img, path):
+    """
+    保存图像，解决中文路径问题
+    """
+    suffix = Path(path).suffix
+    cv2.imencode(suffix, img)[1].tofile(path)
+
 def process_image(input_path: str, output_path: str="", config: Dict[str, Any]={}) -> bool:
     """处理单个图像文件"""
     input_path_obj = Path(input_path)
@@ -53,7 +66,8 @@ def process_image(input_path: str, output_path: str="", config: Dict[str, Any]={
         processor = ImageProcessor()
         
         # 读取原始图像
-        original_image = cv2.imread(str(input_path_obj))
+        print(input_path_obj)
+        original_image = cv_imread(str(input_path_obj))
         if original_image is None:
             logger.error(f"无法读取图像: {input_path_obj}")
             return False
@@ -64,7 +78,7 @@ def process_image(input_path: str, output_path: str="", config: Dict[str, Any]={
         processed_image = processor.process_image(original_image, config)
         
         # 保存处理后的图像
-        cv2.imwrite(output_path, processed_image)
+        cv_imwrite(processed_image, output_path)
         
         logger.info(f"输出文件: {output_path}")
     
@@ -93,7 +107,7 @@ def process_images(input_dir: str, output_dir: str="", config: Dict[str, Any]={}
         
     
         # 处理每个图像文件
-        for input_path in input_dir_obj.iterdir():
+        for input_path in list(input_dir_obj.rglob("*.png")):
             
             try:
                 # 生成输出文件路径
@@ -175,9 +189,8 @@ if __name__ == "__main__":
 
     
     # 示例配置 - 用户可以根据需要修改
-    config = get_default_config()    
+    config = get_default_config()
     
-    process_image(input_path="tests/assets/img_0_dsk.jpg",
-                  config=config)
+    # process_image(input_path="img/以根据需要修改/img-1.dsk.png", config=config)
 
-    # process_images(input_dir="input", config=config)
+    process_images(input_dir="img/以根据需要修改", config=config)
