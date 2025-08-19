@@ -40,14 +40,14 @@ if __name__ == "__main__":
     # 
     # 单张图片ocr
     # 
-    # IMGURL = "tests/assets/img_1_dsk.jpg"
+    # IMGURL = "D:/ah21/recover-layout-from-ocr/tests/assets/img_0_preprocessed.jpg"
     # result = ocr_image(IMGURL)
     # print(result)
-    # print(result.to_text())
+    # # print(result.to_text())
     # print(result.to_markdown())
 
     # 
     # 多张图片ocr
     # 
-    ocr_images('img_dsk')
+    ocr_images('D:/语文出版社/2025/同步练习题库/temp/')
     

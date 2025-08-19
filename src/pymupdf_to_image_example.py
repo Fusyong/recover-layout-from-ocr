@@ -1,41 +1,48 @@
 """转换pdf为image"""
-import os
 import pymupdf
+from pathlib import Path
 
-def pdf_to_image(pdf_path, img_dir, dpi=300):
+def pdf_to_image(pdf_path, img_dir="", dpi=300):
     """转换pdf为image"""
     ZOOM_FACTOR = dpi / 72.0
     mat = pymupdf.Matrix(ZOOM_FACTOR, ZOOM_FACTOR)
-    if not os.path.exists(img_dir):
-        os.makedirs(img_dir)
+    # 如果img_dir为空，则使用pdf_path(去掉扩展名)作为img_dir    
+    PDF_PATH = Path(pdf_path)
+    if not img_dir:
+        img_dir = str(PDF_PATH.with_suffix(''))
+    IMG_PATH = Path(img_dir)
+    if not IMG_PATH.exists():
+        IMG_PATH.mkdir(parents=True, exist_ok=True)
+    print(f'Processing {PDF_PATH.name} to {IMG_PATH}')
     doc = pymupdf.open(pdf_path)
     for page_number in range(len(doc)):
         page = doc.load_page(page_number)
         pix = page.get_pixmap(matrix=mat)
-        pix.save(f"{img_dir}/img-{page_number + 1}.jpg")
+        img_path = IMG_PATH / f"img-{page_number + 1}.png"
+        pix.save(img_path)
     doc.close()
 
-def pdfs_to_image(pdf_dir, img_dir, dpi=300):
+def pdfs_to_image(pdf_dir, img_dir="", dpi=300):
     """转换多个pdf为image"""
-    if not os.path.exists(img_dir):
-        os.makedirs(img_dir)
-    for pdf_path in os.listdir(pdf_dir):
-        if pdf_path.endswith('.pdf'):
+    # 如果img_dir为空，则使用pdf_path作为img_dir
+    if not img_dir:
+        img_dir = pdf_dir
+    for pdf_path in Path(pdf_dir).iterdir():
+        if pdf_path.suffix == '.pdf':
             # 用pdf文件名建立子目录
-            sub_dir = os.path.join(img_dir, pdf_path.replace('.pdf', ''))
-            if not os.path.exists(sub_dir):
-                os.makedirs(sub_dir)
-            pdf_to_image(os.path.join(pdf_dir, pdf_path), sub_dir, dpi)
+            sub_dir = Path(img_dir) / pdf_path.stem
+            if not sub_dir.exists():
+                sub_dir.mkdir(parents=True, exist_ok=True)
+            pdf_to_image(pdf_path, str(sub_dir), dpi)
 
 if __name__ == "__main__":
     # 
     # 转换单个pdf为image
     # 
-    # PDF_PATH = "pdf/长江作业本四上.pdf"
-    # IMG_DIR = "img"
-    # pdf_to_image(PDF_PATH, IMG_DIR)
+    # PDF_PATH = "D:/语文出版社/2025/同步练习题库/2顺序拼接PDF/五三天天练测评卷四下-h.pdf"
+    # pdf_to_image(PDF_PATH)
 
     # 
     # 转换多个pdf为image
     # 
-    pdfs_to_image('pdf', 'img')
+    pdfs_to_image('D:/语文出版社/2025/同步练习题库/2顺序拼接PDF')
