@@ -1,0 +1,1591 @@
+2025-08-18 20:12:05,612 - INFO - 生成了 252 种处理配置组合
+2025-08-18 20:12:05,904 - INFO - 原始图像尺寸: (3107, 2178, 3)
+2025-08-18 20:12:05,905 - INFO - 处理配置 1/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:12:18,448 - INFO - 配置 1 完成: processed_000.jpg
+2025-08-18 20:12:18,449 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:12:18,449 - INFO - 处理配置 2/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:12:29,361 - INFO - 配置 2 完成: processed_001_thresh_binary_127.jpg
+2025-08-18 20:12:29,361 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:12:29,361 - INFO - 处理配置 3/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:12:40,387 - INFO - 配置 3 完成: processed_002_thresh_binary_100.jpg
+2025-08-18 20:12:40,388 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:12:40,389 - INFO - 处理配置 4/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:12:53,914 - INFO - 配置 4 完成: processed_003_thresh_binary_150.jpg
+2025-08-18 20:12:53,914 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:12:53,915 - INFO - 处理配置 5/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:12:54,049 - ERROR - 处理配置 5 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1633: error: (-2:Unspecified error) in function 'double __cdecl cv::threshold(const class cv::_InputArray &,const class cv::_OutputArray &,double,double,int)'
+> THRESH_OTSU mode:
+>     'src_type == CV_8UC1 || src_type == CV_16UC1'
+> where
+>     'src_type' is 16 (CV_8UC3)
+
+2025-08-18 20:12:54,055 - INFO - 处理配置 6/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:12:54,067 - ERROR - 处理配置 6 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:12:54,072 - INFO - 处理配置 7/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:12:54,081 - ERROR - 处理配置 7 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:12:54,082 - INFO - 处理配置 8/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:12:54,115 - ERROR - 处理配置 8 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:12:54,119 - INFO - 处理配置 9/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:12:54,147 - ERROR - 处理配置 9 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:12:54,149 - INFO - 处理配置 10/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:13:11,372 - INFO - 配置 10 完成: processed_009_contrast_a0.5_b0.jpg
+2025-08-18 20:13:11,373 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:13:11,374 - INFO - 处理配置 11/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:13:14,999 - INFO - 配置 11 完成: processed_010_contrast_a0.5_b0_thresh_binary_127.jpg
+2025-08-18 20:13:14,999 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:13:15,000 - INFO - 处理配置 12/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:13:22,833 - INFO - 配置 12 完成: processed_011_contrast_a0.5_b0_thresh_binary_100.jpg
+2025-08-18 20:13:22,834 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:13:22,836 - INFO - 处理配置 13/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:13:25,375 - INFO - 配置 13 完成: processed_012_contrast_a0.5_b0_thresh_binary_150.jpg
+2025-08-18 20:13:25,376 - INFO - OCR文本: RapidOCROutput(img=None, boxes=None, txts=None, scores=None, word_results=(('', 1.0, None),), elapse...
+2025-08-18 20:13:25,376 - INFO - 处理配置 14/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:13:25,402 - ERROR - 处理配置 14 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1633: error: (-2:Unspecified error) in function 'double __cdecl cv::threshold(const class cv::_InputArray &,const class cv::_OutputArray &,double,double,int)'
+> THRESH_OTSU mode:
+>     'src_type == CV_8UC1 || src_type == CV_16UC1'
+> where
+>     'src_type' is 16 (CV_8UC3)
+
+2025-08-18 20:13:25,405 - INFO - 处理配置 15/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:13:25,437 - ERROR - 处理配置 15 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:13:25,440 - INFO - 处理配置 16/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:13:25,546 - ERROR - 处理配置 16 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:13:25,592 - INFO - 处理配置 17/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:13:25,666 - ERROR - 处理配置 17 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:13:25,670 - INFO - 处理配置 18/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:13:25,727 - ERROR - 处理配置 18 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:13:25,733 - INFO - 处理配置 19/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:13:33,857 - INFO - 配置 19 完成: processed_018_contrast_a1.0_b0.jpg
+2025-08-18 20:13:33,858 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:13:33,858 - INFO - 处理配置 20/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:13:43,011 - INFO - 配置 20 完成: processed_019_contrast_a1.0_b0_thresh_binary_127.jpg
+2025-08-18 20:13:43,011 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:13:43,012 - INFO - 处理配置 21/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:13:50,747 - INFO - 配置 21 完成: processed_020_contrast_a1.0_b0_thresh_binary_100.jpg
+2025-08-18 20:13:50,748 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:13:50,748 - INFO - 处理配置 22/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:13:58,393 - INFO - 配置 22 完成: processed_021_contrast_a1.0_b0_thresh_binary_150.jpg
+2025-08-18 20:13:58,393 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:13:58,394 - INFO - 处理配置 23/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:13:58,414 - ERROR - 处理配置 23 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1633: error: (-2:Unspecified error) in function 'double __cdecl cv::threshold(const class cv::_InputArray &,const class cv::_OutputArray &,double,double,int)'
+> THRESH_OTSU mode:
+>     'src_type == CV_8UC1 || src_type == CV_16UC1'
+> where
+>     'src_type' is 16 (CV_8UC3)
+
+2025-08-18 20:13:58,416 - INFO - 处理配置 24/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:13:58,447 - ERROR - 处理配置 24 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:13:58,449 - INFO - 处理配置 25/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:13:58,477 - ERROR - 处理配置 25 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:13:58,480 - INFO - 处理配置 26/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:13:58,508 - ERROR - 处理配置 26 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:13:58,509 - INFO - 处理配置 27/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:13:58,533 - ERROR - 处理配置 27 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:13:58,536 - INFO - 处理配置 28/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:14:06,397 - INFO - 配置 28 完成: processed_027_contrast_a1.5_b0.jpg
+2025-08-18 20:14:06,398 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:14:06,398 - INFO - 处理配置 29/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:14:18,125 - INFO - 配置 29 完成: processed_028_contrast_a1.5_b0_thresh_binary_127.jpg
+2025-08-18 20:14:18,125 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:14:18,126 - INFO - 处理配置 30/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:14:28,480 - INFO - 配置 30 完成: processed_029_contrast_a1.5_b0_thresh_binary_100.jpg
+2025-08-18 20:14:28,481 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:14:28,481 - INFO - 处理配置 31/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:14:37,093 - INFO - 配置 31 完成: processed_030_contrast_a1.5_b0_thresh_binary_150.jpg
+2025-08-18 20:14:37,094 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:14:37,094 - INFO - 处理配置 32/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:14:37,116 - ERROR - 处理配置 32 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1633: error: (-2:Unspecified error) in function 'double __cdecl cv::threshold(const class cv::_InputArray &,const class cv::_OutputArray &,double,double,int)'
+> THRESH_OTSU mode:
+>     'src_type == CV_8UC1 || src_type == CV_16UC1'
+> where
+>     'src_type' is 16 (CV_8UC3)
+
+2025-08-18 20:14:37,119 - INFO - 处理配置 33/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:14:37,143 - ERROR - 处理配置 33 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:14:37,147 - INFO - 处理配置 34/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:14:37,169 - ERROR - 处理配置 34 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:14:37,171 - INFO - 处理配置 35/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:14:37,201 - ERROR - 处理配置 35 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:14:37,204 - INFO - 处理配置 36/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:14:37,229 - ERROR - 处理配置 36 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:14:37,231 - INFO - 处理配置 37/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:14:46,122 - INFO - 配置 37 完成: processed_036_contrast_a2.0_b0.jpg
+2025-08-18 20:14:46,123 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:14:46,124 - INFO - 处理配置 38/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:14:53,993 - INFO - 配置 38 完成: processed_037_contrast_a2.0_b0_thresh_binary_127.jpg
+2025-08-18 20:14:53,993 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:14:53,993 - INFO - 处理配置 39/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:15:02,215 - INFO - 配置 39 完成: processed_038_contrast_a2.0_b0_thresh_binary_100.jpg
+2025-08-18 20:15:02,215 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:15:02,216 - INFO - 处理配置 40/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:15:10,307 - INFO - 配置 40 完成: processed_039_contrast_a2.0_b0_thresh_binary_150.jpg
+2025-08-18 20:15:10,308 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:15:10,308 - INFO - 处理配置 41/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:15:10,329 - ERROR - 处理配置 41 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1633: error: (-2:Unspecified error) in function 'double __cdecl cv::threshold(const class cv::_InputArray &,const class cv::_OutputArray &,double,double,int)'
+> THRESH_OTSU mode:
+>     'src_type == CV_8UC1 || src_type == CV_16UC1'
+> where
+>     'src_type' is 16 (CV_8UC3)
+
+2025-08-18 20:15:10,332 - INFO - 处理配置 42/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:15:10,358 - ERROR - 处理配置 42 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:15:10,363 - INFO - 处理配置 43/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:15:10,395 - ERROR - 处理配置 43 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:15:10,399 - INFO - 处理配置 44/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:15:10,429 - ERROR - 处理配置 44 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:15:10,431 - INFO - 处理配置 45/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:15:10,462 - ERROR - 处理配置 45 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:15:10,465 - INFO - 处理配置 46/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:15:18,271 - INFO - 配置 46 完成: processed_045_contrast_a1.0_b-50.jpg
+2025-08-18 20:15:18,272 - INFO - OCR文本: RapidOCROutput(img=array([[[50, 50, 50],
+        [50, 50, 50],
+        [50, 50, 50],
+        ...,
+  ...
+2025-08-18 20:15:18,272 - INFO - 处理配置 47/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:15:26,198 - INFO - 配置 47 完成: processed_046_contrast_a1.0_b-50_thresh_binary_127.jpg
+2025-08-18 20:15:26,199 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:15:26,199 - INFO - 处理配置 48/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:15:34,603 - INFO - 配置 48 完成: processed_047_contrast_a1.0_b-50_thresh_binary_100.jpg
+2025-08-18 20:15:34,605 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:15:34,607 - INFO - 处理配置 49/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:15:41,761 - INFO - 配置 49 完成: processed_048_contrast_a1.0_b-50_thresh_binary_150.jpg
+2025-08-18 20:15:41,762 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:15:41,762 - INFO - 处理配置 50/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:15:41,785 - ERROR - 处理配置 50 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1633: error: (-2:Unspecified error) in function 'double __cdecl cv::threshold(const class cv::_InputArray &,const class cv::_OutputArray &,double,double,int)'
+> THRESH_OTSU mode:
+>     'src_type == CV_8UC1 || src_type == CV_16UC1'
+> where
+>     'src_type' is 16 (CV_8UC3)
+
+2025-08-18 20:15:41,789 - INFO - 处理配置 51/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:15:41,814 - ERROR - 处理配置 51 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:15:41,815 - INFO - 处理配置 52/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:15:41,842 - ERROR - 处理配置 52 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:15:41,843 - INFO - 处理配置 53/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:15:41,865 - ERROR - 处理配置 53 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:15:41,866 - INFO - 处理配置 54/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:15:41,893 - ERROR - 处理配置 54 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:15:41,895 - INFO - 处理配置 55/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:15:49,301 - INFO - 配置 55 完成: processed_054_contrast_a1.0_b50.jpg
+2025-08-18 20:15:49,301 - INFO - OCR文本: RapidOCROutput(img=array([[[50, 50, 50],
+        [50, 50, 50],
+        [50, 50, 50],
+        ...,
+  ...
+2025-08-18 20:15:49,303 - INFO - 处理配置 56/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:15:57,099 - INFO - 配置 56 完成: processed_055_contrast_a1.0_b50_thresh_binary_127.jpg
+2025-08-18 20:15:57,099 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:15:57,099 - INFO - 处理配置 57/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:16:04,573 - INFO - 配置 57 完成: processed_056_contrast_a1.0_b50_thresh_binary_100.jpg
+2025-08-18 20:16:04,574 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:16:04,574 - INFO - 处理配置 58/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:16:12,412 - INFO - 配置 58 完成: processed_057_contrast_a1.0_b50_thresh_binary_150.jpg
+2025-08-18 20:16:12,413 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:16:12,413 - INFO - 处理配置 59/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:16:12,436 - ERROR - 处理配置 59 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1633: error: (-2:Unspecified error) in function 'double __cdecl cv::threshold(const class cv::_InputArray &,const class cv::_OutputArray &,double,double,int)'
+> THRESH_OTSU mode:
+>     'src_type == CV_8UC1 || src_type == CV_16UC1'
+> where
+>     'src_type' is 16 (CV_8UC3)
+
+2025-08-18 20:16:12,438 - INFO - 处理配置 60/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:16:12,461 - ERROR - 处理配置 60 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:16:12,463 - INFO - 处理配置 61/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:16:12,485 - ERROR - 处理配置 61 时出错: OpenCV(4.12.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\thresh.cpp:1908: error: (-215:Assertion failed) src.type() == CV_8UC1 in function 'cv::adaptiveThreshold'
+
+2025-08-18 20:16:12,488 - INFO - 处理配置 62/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:16:12,514 - ERROR - 处理配置 62 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:16:12,516 - INFO - 处理配置 63/252: {'grayscale': {'enabled': False, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:16:12,540 - ERROR - 处理配置 63 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:16:12,543 - INFO - 处理配置 64/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:16:21,400 - INFO - 配置 64 完成: processed_063_gray_cv2.jpg
+2025-08-18 20:16:21,402 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:16:21,404 - INFO - 处理配置 65/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:16:29,563 - INFO - 配置 65 完成: processed_064_gray_cv2_thresh_binary_127.jpg
+2025-08-18 20:16:29,563 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:16:29,564 - INFO - 处理配置 66/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:16:37,360 - INFO - 配置 66 完成: processed_065_gray_cv2_thresh_binary_100.jpg
+2025-08-18 20:16:37,360 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:16:37,360 - INFO - 处理配置 67/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:16:45,321 - INFO - 配置 67 完成: processed_066_gray_cv2_thresh_binary_150.jpg
+2025-08-18 20:16:45,321 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:16:45,322 - INFO - 处理配置 68/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:16:53,446 - INFO - 配置 68 完成: processed_067_gray_cv2_thresh_otsu.jpg
+2025-08-18 20:16:53,447 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:16:53,448 - INFO - 处理配置 69/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:17:03,009 - INFO - 配置 69 完成: processed_068_gray_cv2_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:17:03,009 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:17:03,010 - INFO - 处理配置 70/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:17:12,096 - INFO - 配置 70 完成: processed_069_gray_cv2_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:17:12,097 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:17:12,098 - INFO - 处理配置 71/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:17:12,126 - ERROR - 处理配置 71 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:17:12,131 - INFO - 处理配置 72/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:17:12,151 - ERROR - 处理配置 72 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:17:12,162 - INFO - 处理配置 73/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:17:19,542 - INFO - 配置 73 完成: processed_072_gray_cv2_contrast_a0.5_b0.jpg
+2025-08-18 20:17:19,543 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:17:19,544 - INFO - 处理配置 74/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:17:22,899 - INFO - 配置 74 完成: processed_073_gray_cv2_contrast_a0.5_b0_thresh_binary_127.jpg
+2025-08-18 20:17:22,899 - INFO - OCR文本: RapidOCROutput(img=None, boxes=None, txts=None, scores=None, word_results=(('', 1.0, None),), elapse...
+2025-08-18 20:17:22,899 - INFO - 处理配置 75/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:17:30,536 - INFO - 配置 75 完成: processed_074_gray_cv2_contrast_a0.5_b0_thresh_binary_100.jpg
+2025-08-18 20:17:30,537 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:17:30,538 - INFO - 处理配置 76/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:17:33,227 - INFO - 配置 76 完成: processed_075_gray_cv2_contrast_a0.5_b0_thresh_binary_150.jpg
+2025-08-18 20:17:33,227 - INFO - OCR文本: RapidOCROutput(img=None, boxes=None, txts=None, scores=None, word_results=(('', 1.0, None),), elapse...
+2025-08-18 20:17:33,227 - INFO - 处理配置 77/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:17:40,974 - INFO - 配置 77 完成: processed_076_gray_cv2_contrast_a0.5_b0_thresh_otsu.jpg
+2025-08-18 20:17:40,974 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:17:40,975 - INFO - 处理配置 78/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:17:49,686 - INFO - 配置 78 完成: processed_077_gray_cv2_contrast_a0.5_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:17:49,687 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:17:49,688 - INFO - 处理配置 79/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:17:58,092 - INFO - 配置 79 完成: processed_078_gray_cv2_contrast_a0.5_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:17:58,093 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:17:58,093 - INFO - 处理配置 80/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:17:58,111 - ERROR - 处理配置 80 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:17:58,112 - INFO - 处理配置 81/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:17:58,133 - ERROR - 处理配置 81 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:17:58,137 - INFO - 处理配置 82/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:18:06,371 - INFO - 配置 82 完成: processed_081_gray_cv2_contrast_a1.0_b0.jpg
+2025-08-18 20:18:06,372 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:18:06,373 - INFO - 处理配置 83/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:18:14,242 - INFO - 配置 83 完成: processed_082_gray_cv2_contrast_a1.0_b0_thresh_binary_127.jpg
+2025-08-18 20:18:14,242 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:18:14,243 - INFO - 处理配置 84/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:18:22,234 - INFO - 配置 84 完成: processed_083_gray_cv2_contrast_a1.0_b0_thresh_binary_100.jpg
+2025-08-18 20:18:22,235 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:18:22,236 - INFO - 处理配置 85/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:18:30,426 - INFO - 配置 85 完成: processed_084_gray_cv2_contrast_a1.0_b0_thresh_binary_150.jpg
+2025-08-18 20:18:30,427 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:18:30,428 - INFO - 处理配置 86/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:18:37,988 - INFO - 配置 86 完成: processed_085_gray_cv2_contrast_a1.0_b0_thresh_otsu.jpg
+2025-08-18 20:18:37,990 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:18:37,991 - INFO - 处理配置 87/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:18:45,156 - INFO - 配置 87 完成: processed_086_gray_cv2_contrast_a1.0_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:18:45,157 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:18:45,157 - INFO - 处理配置 88/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:18:52,908 - INFO - 配置 88 完成: processed_087_gray_cv2_contrast_a1.0_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:18:52,909 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:18:52,910 - INFO - 处理配置 89/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:18:52,931 - ERROR - 处理配置 89 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:18:52,933 - INFO - 处理配置 90/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:18:52,995 - ERROR - 处理配置 90 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:18:53,030 - INFO - 处理配置 91/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:19:01,862 - INFO - 配置 91 完成: processed_090_gray_cv2_contrast_a1.5_b0.jpg
+2025-08-18 20:19:01,862 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:19:01,863 - INFO - 处理配置 92/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:19:09,161 - INFO - 配置 92 完成: processed_091_gray_cv2_contrast_a1.5_b0_thresh_binary_127.jpg
+2025-08-18 20:19:09,162 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:19:09,162 - INFO - 处理配置 93/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:19:15,686 - INFO - 配置 93 完成: processed_092_gray_cv2_contrast_a1.5_b0_thresh_binary_100.jpg
+2025-08-18 20:19:15,688 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:19:15,689 - INFO - 处理配置 94/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:19:23,027 - INFO - 配置 94 完成: processed_093_gray_cv2_contrast_a1.5_b0_thresh_binary_150.jpg
+2025-08-18 20:19:23,027 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:19:23,028 - INFO - 处理配置 95/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:19:30,671 - INFO - 配置 95 完成: processed_094_gray_cv2_contrast_a1.5_b0_thresh_otsu.jpg
+2025-08-18 20:19:30,672 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:19:30,672 - INFO - 处理配置 96/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:19:38,378 - INFO - 配置 96 完成: processed_095_gray_cv2_contrast_a1.5_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:19:38,379 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:19:38,379 - INFO - 处理配置 97/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:19:46,229 - INFO - 配置 97 完成: processed_096_gray_cv2_contrast_a1.5_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:19:46,229 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:19:46,230 - INFO - 处理配置 98/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:19:46,248 - ERROR - 处理配置 98 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:19:46,249 - INFO - 处理配置 99/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:19:46,270 - ERROR - 处理配置 99 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:19:46,272 - INFO - 处理配置 100/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:19:54,249 - INFO - 配置 100 完成: processed_099_gray_cv2_contrast_a2.0_b0.jpg
+2025-08-18 20:19:54,249 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:19:54,251 - INFO - 处理配置 101/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:20:01,561 - INFO - 配置 101 完成: processed_100_gray_cv2_contrast_a2.0_b0_thresh_binary_127.jpg
+2025-08-18 20:20:01,561 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:20:01,562 - INFO - 处理配置 102/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:20:08,228 - INFO - 配置 102 完成: processed_101_gray_cv2_contrast_a2.0_b0_thresh_binary_100.jpg
+2025-08-18 20:20:08,228 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:20:08,229 - INFO - 处理配置 103/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:20:15,243 - INFO - 配置 103 完成: processed_102_gray_cv2_contrast_a2.0_b0_thresh_binary_150.jpg
+2025-08-18 20:20:15,243 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:20:15,244 - INFO - 处理配置 104/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:20:22,297 - INFO - 配置 104 完成: processed_103_gray_cv2_contrast_a2.0_b0_thresh_otsu.jpg
+2025-08-18 20:20:22,298 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:20:22,298 - INFO - 处理配置 105/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:20:29,399 - INFO - 配置 105 完成: processed_104_gray_cv2_contrast_a2.0_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:20:29,399 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:20:29,399 - INFO - 处理配置 106/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:20:36,991 - INFO - 配置 106 完成: processed_105_gray_cv2_contrast_a2.0_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:20:36,992 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:20:36,992 - INFO - 处理配置 107/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:20:37,010 - ERROR - 处理配置 107 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:20:37,011 - INFO - 处理配置 108/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:20:37,030 - ERROR - 处理配置 108 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:20:37,030 - INFO - 处理配置 109/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:20:44,310 - INFO - 配置 109 完成: processed_108_gray_cv2_contrast_a1.0_b-50.jpg
+2025-08-18 20:20:44,310 - INFO - OCR文本: RapidOCROutput(img=array([[[50, 50, 50],
+        [50, 50, 50],
+        [50, 50, 50],
+        ...,
+  ...
+2025-08-18 20:20:44,311 - INFO - 处理配置 110/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:20:51,805 - INFO - 配置 110 完成: processed_109_gray_cv2_contrast_a1.0_b-50_thresh_binary_127.jpg
+2025-08-18 20:20:51,806 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:20:51,806 - INFO - 处理配置 111/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:20:59,005 - INFO - 配置 111 完成: processed_110_gray_cv2_contrast_a1.0_b-50_thresh_binary_100.jpg
+2025-08-18 20:20:59,006 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:20:59,007 - INFO - 处理配置 112/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:21:06,792 - INFO - 配置 112 完成: processed_111_gray_cv2_contrast_a1.0_b-50_thresh_binary_150.jpg
+2025-08-18 20:21:06,792 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:21:06,793 - INFO - 处理配置 113/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:21:13,995 - INFO - 配置 113 完成: processed_112_gray_cv2_contrast_a1.0_b-50_thresh_otsu.jpg
+2025-08-18 20:21:13,995 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:21:13,996 - INFO - 处理配置 114/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:21:20,840 - INFO - 配置 114 完成: processed_113_gray_cv2_contrast_a1.0_b-50_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:21:20,840 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:21:20,841 - INFO - 处理配置 115/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:21:28,028 - INFO - 配置 115 完成: processed_114_gray_cv2_contrast_a1.0_b-50_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:21:28,028 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:21:28,028 - INFO - 处理配置 116/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:21:28,049 - ERROR - 处理配置 116 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:21:28,049 - INFO - 处理配置 117/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:21:28,074 - ERROR - 处理配置 117 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:21:28,077 - INFO - 处理配置 118/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:21:35,934 - INFO - 配置 118 完成: processed_117_gray_cv2_contrast_a1.0_b50.jpg
+2025-08-18 20:21:35,935 - INFO - OCR文本: RapidOCROutput(img=array([[[50, 50, 50],
+        [50, 50, 50],
+        [50, 50, 50],
+        ...,
+  ...
+2025-08-18 20:21:35,936 - INFO - 处理配置 119/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:21:43,758 - INFO - 配置 119 完成: processed_118_gray_cv2_contrast_a1.0_b50_thresh_binary_127.jpg
+2025-08-18 20:21:43,759 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:21:43,759 - INFO - 处理配置 120/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:21:51,944 - INFO - 配置 120 完成: processed_119_gray_cv2_contrast_a1.0_b50_thresh_binary_100.jpg
+2025-08-18 20:21:51,944 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:21:51,945 - INFO - 处理配置 121/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:22:06,856 - INFO - 配置 121 完成: processed_120_gray_cv2_contrast_a1.0_b50_thresh_binary_150.jpg
+2025-08-18 20:22:06,857 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:22:06,858 - INFO - 处理配置 122/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:22:20,344 - INFO - 配置 122 完成: processed_121_gray_cv2_contrast_a1.0_b50_thresh_otsu.jpg
+2025-08-18 20:22:20,344 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:22:20,345 - INFO - 处理配置 123/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:22:33,626 - INFO - 配置 123 完成: processed_122_gray_cv2_contrast_a1.0_b50_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:22:33,627 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:22:33,627 - INFO - 处理配置 124/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:22:48,677 - INFO - 配置 124 完成: processed_123_gray_cv2_contrast_a1.0_b50_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:22:48,678 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:22:48,679 - INFO - 处理配置 125/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:22:48,708 - ERROR - 处理配置 125 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:22:48,711 - INFO - 处理配置 126/252: {'grayscale': {'enabled': True, 'method': 'cv2'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:22:48,743 - ERROR - 处理配置 126 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:22:48,744 - INFO - 处理配置 127/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:22:59,371 - INFO - 配置 127 完成: processed_126_gray_luminance.jpg
+2025-08-18 20:22:59,373 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:22:59,374 - INFO - 处理配置 128/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:23:12,326 - INFO - 配置 128 完成: processed_127_gray_luminance_thresh_binary_127.jpg
+2025-08-18 20:23:12,326 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:23:12,327 - INFO - 处理配置 129/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:23:26,178 - INFO - 配置 129 完成: processed_128_gray_luminance_thresh_binary_100.jpg
+2025-08-18 20:23:26,178 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:23:26,179 - INFO - 处理配置 130/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:23:42,845 - INFO - 配置 130 完成: processed_129_gray_luminance_thresh_binary_150.jpg
+2025-08-18 20:23:42,846 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:23:42,846 - INFO - 处理配置 131/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:23:53,355 - INFO - 配置 131 完成: processed_130_gray_luminance_thresh_otsu.jpg
+2025-08-18 20:23:53,356 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:23:53,356 - INFO - 处理配置 132/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:24:04,798 - INFO - 配置 132 完成: processed_131_gray_luminance_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:24:04,799 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:24:04,800 - INFO - 处理配置 133/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:24:16,839 - INFO - 配置 133 完成: processed_132_gray_luminance_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:24:16,840 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:24:16,840 - INFO - 处理配置 134/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:24:16,856 - ERROR - 处理配置 134 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:24:16,858 - INFO - 处理配置 135/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:24:16,881 - ERROR - 处理配置 135 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:24:16,882 - INFO - 处理配置 136/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:24:28,058 - INFO - 配置 136 完成: processed_135_gray_luminance_contrast_a0.5_b0.jpg
+2025-08-18 20:24:28,059 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:24:28,059 - INFO - 处理配置 137/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:24:31,621 - INFO - 配置 137 完成: processed_136_gray_luminance_contrast_a0.5_b0_thresh_binary_127.jpg
+2025-08-18 20:24:31,621 - INFO - OCR文本: RapidOCROutput(img=None, boxes=None, txts=None, scores=None, word_results=(('', 1.0, None),), elapse...
+2025-08-18 20:24:31,621 - INFO - 处理配置 138/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:24:42,625 - INFO - 配置 138 完成: processed_137_gray_luminance_contrast_a0.5_b0_thresh_binary_100.jpg
+2025-08-18 20:24:42,626 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:24:42,626 - INFO - 处理配置 139/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:24:48,180 - INFO - 配置 139 完成: processed_138_gray_luminance_contrast_a0.5_b0_thresh_binary_150.jpg
+2025-08-18 20:24:48,181 - INFO - OCR文本: RapidOCROutput(img=None, boxes=None, txts=None, scores=None, word_results=(('', 1.0, None),), elapse...
+2025-08-18 20:24:48,181 - INFO - 处理配置 140/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:25:04,269 - INFO - 配置 140 完成: processed_139_gray_luminance_contrast_a0.5_b0_thresh_otsu.jpg
+2025-08-18 20:25:04,270 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:25:04,270 - INFO - 处理配置 141/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:25:15,446 - INFO - 配置 141 完成: processed_140_gray_luminance_contrast_a0.5_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:25:15,446 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:25:15,447 - INFO - 处理配置 142/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:25:24,675 - INFO - 配置 142 完成: processed_141_gray_luminance_contrast_a0.5_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:25:24,675 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:25:24,676 - INFO - 处理配置 143/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:25:24,696 - ERROR - 处理配置 143 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:25:24,696 - INFO - 处理配置 144/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:25:24,716 - ERROR - 处理配置 144 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:25:24,717 - INFO - 处理配置 145/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:25:35,601 - INFO - 配置 145 完成: processed_144_gray_luminance_contrast_a1.0_b0.jpg
+2025-08-18 20:25:35,602 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:25:35,603 - INFO - 处理配置 146/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:25:44,584 - INFO - 配置 146 完成: processed_145_gray_luminance_contrast_a1.0_b0_thresh_binary_127.jpg
+2025-08-18 20:25:44,585 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:25:44,585 - INFO - 处理配置 147/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:25:52,109 - INFO - 配置 147 完成: processed_146_gray_luminance_contrast_a1.0_b0_thresh_binary_100.jpg
+2025-08-18 20:25:52,109 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:25:52,110 - INFO - 处理配置 148/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:25:59,938 - INFO - 配置 148 完成: processed_147_gray_luminance_contrast_a1.0_b0_thresh_binary_150.jpg
+2025-08-18 20:25:59,939 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:25:59,939 - INFO - 处理配置 149/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:26:12,058 - INFO - 配置 149 完成: processed_148_gray_luminance_contrast_a1.0_b0_thresh_otsu.jpg
+2025-08-18 20:26:12,059 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:26:12,059 - INFO - 处理配置 150/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:26:22,860 - INFO - 配置 150 完成: processed_149_gray_luminance_contrast_a1.0_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:26:22,861 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:26:22,861 - INFO - 处理配置 151/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:26:30,925 - INFO - 配置 151 完成: processed_150_gray_luminance_contrast_a1.0_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:26:30,925 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:26:30,926 - INFO - 处理配置 152/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:26:30,945 - ERROR - 处理配置 152 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:26:30,946 - INFO - 处理配置 153/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:26:30,966 - ERROR - 处理配置 153 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:26:30,968 - INFO - 处理配置 154/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:26:39,478 - INFO - 配置 154 完成: processed_153_gray_luminance_contrast_a1.5_b0.jpg
+2025-08-18 20:26:39,479 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:26:39,479 - INFO - 处理配置 155/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:26:46,936 - INFO - 配置 155 完成: processed_154_gray_luminance_contrast_a1.5_b0_thresh_binary_127.jpg
+2025-08-18 20:26:46,937 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:26:46,938 - INFO - 处理配置 156/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:26:53,780 - INFO - 配置 156 完成: processed_155_gray_luminance_contrast_a1.5_b0_thresh_binary_100.jpg
+2025-08-18 20:26:53,780 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:26:53,781 - INFO - 处理配置 157/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:27:01,765 - INFO - 配置 157 完成: processed_156_gray_luminance_contrast_a1.5_b0_thresh_binary_150.jpg
+2025-08-18 20:27:01,766 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:27:01,766 - INFO - 处理配置 158/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:27:09,658 - INFO - 配置 158 完成: processed_157_gray_luminance_contrast_a1.5_b0_thresh_otsu.jpg
+2025-08-18 20:27:09,659 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:27:09,660 - INFO - 处理配置 159/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:27:18,729 - INFO - 配置 159 完成: processed_158_gray_luminance_contrast_a1.5_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:27:18,730 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:27:18,730 - INFO - 处理配置 160/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:27:27,364 - INFO - 配置 160 完成: processed_159_gray_luminance_contrast_a1.5_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:27:27,364 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:27:27,365 - INFO - 处理配置 161/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:27:27,390 - ERROR - 处理配置 161 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:27:27,391 - INFO - 处理配置 162/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:27:27,409 - ERROR - 处理配置 162 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:27:27,410 - INFO - 处理配置 163/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:27:36,193 - INFO - 配置 163 完成: processed_162_gray_luminance_contrast_a2.0_b0.jpg
+2025-08-18 20:27:36,194 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:27:36,194 - INFO - 处理配置 164/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:27:43,314 - INFO - 配置 164 完成: processed_163_gray_luminance_contrast_a2.0_b0_thresh_binary_127.jpg
+2025-08-18 20:27:43,315 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:27:43,315 - INFO - 处理配置 165/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:27:50,122 - INFO - 配置 165 完成: processed_164_gray_luminance_contrast_a2.0_b0_thresh_binary_100.jpg
+2025-08-18 20:27:50,123 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:27:50,124 - INFO - 处理配置 166/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:27:57,474 - INFO - 配置 166 完成: processed_165_gray_luminance_contrast_a2.0_b0_thresh_binary_150.jpg
+2025-08-18 20:27:57,474 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:27:57,475 - INFO - 处理配置 167/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:28:05,567 - INFO - 配置 167 完成: processed_166_gray_luminance_contrast_a2.0_b0_thresh_otsu.jpg
+2025-08-18 20:28:05,568 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:28:05,569 - INFO - 处理配置 168/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:28:14,281 - INFO - 配置 168 完成: processed_167_gray_luminance_contrast_a2.0_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:28:14,282 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:28:14,282 - INFO - 处理配置 169/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:28:22,612 - INFO - 配置 169 完成: processed_168_gray_luminance_contrast_a2.0_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:28:22,613 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:28:22,613 - INFO - 处理配置 170/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:28:22,635 - ERROR - 处理配置 170 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:28:22,637 - INFO - 处理配置 171/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:28:22,659 - ERROR - 处理配置 171 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:28:22,660 - INFO - 处理配置 172/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:28:30,965 - INFO - 配置 172 完成: processed_171_gray_luminance_contrast_a1.0_b-50.jpg
+2025-08-18 20:28:30,966 - INFO - OCR文本: RapidOCROutput(img=array([[[50, 50, 50],
+        [50, 50, 50],
+        [50, 50, 50],
+        ...,
+  ...
+2025-08-18 20:28:30,966 - INFO - 处理配置 173/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:28:38,952 - INFO - 配置 173 完成: processed_172_gray_luminance_contrast_a1.0_b-50_thresh_binary_127.jpg
+2025-08-18 20:28:38,953 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:28:38,955 - INFO - 处理配置 174/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:28:46,927 - INFO - 配置 174 完成: processed_173_gray_luminance_contrast_a1.0_b-50_thresh_binary_100.jpg
+2025-08-18 20:28:46,928 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:28:46,928 - INFO - 处理配置 175/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:28:54,804 - INFO - 配置 175 完成: processed_174_gray_luminance_contrast_a1.0_b-50_thresh_binary_150.jpg
+2025-08-18 20:28:54,805 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:28:54,806 - INFO - 处理配置 176/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:29:03,531 - INFO - 配置 176 完成: processed_175_gray_luminance_contrast_a1.0_b-50_thresh_otsu.jpg
+2025-08-18 20:29:03,531 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:29:03,532 - INFO - 处理配置 177/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:29:11,003 - INFO - 配置 177 完成: processed_176_gray_luminance_contrast_a1.0_b-50_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:29:11,004 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:29:11,005 - INFO - 处理配置 178/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:29:19,470 - INFO - 配置 178 完成: processed_177_gray_luminance_contrast_a1.0_b-50_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:29:19,471 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:29:19,471 - INFO - 处理配置 179/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:29:19,494 - ERROR - 处理配置 179 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:29:19,495 - INFO - 处理配置 180/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:29:19,515 - ERROR - 处理配置 180 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:29:19,516 - INFO - 处理配置 181/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:29:28,245 - INFO - 配置 181 完成: processed_180_gray_luminance_contrast_a1.0_b50.jpg
+2025-08-18 20:29:28,246 - INFO - OCR文本: RapidOCROutput(img=array([[[50, 50, 50],
+        [50, 50, 50],
+        [50, 50, 50],
+        ...,
+  ...
+2025-08-18 20:29:28,247 - INFO - 处理配置 182/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:29:35,827 - INFO - 配置 182 完成: processed_181_gray_luminance_contrast_a1.0_b50_thresh_binary_127.jpg
+2025-08-18 20:29:35,827 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:29:35,827 - INFO - 处理配置 183/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:29:43,012 - INFO - 配置 183 完成: processed_182_gray_luminance_contrast_a1.0_b50_thresh_binary_100.jpg
+2025-08-18 20:29:43,013 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:29:43,013 - INFO - 处理配置 184/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:29:51,328 - INFO - 配置 184 完成: processed_183_gray_luminance_contrast_a1.0_b50_thresh_binary_150.jpg
+2025-08-18 20:29:51,331 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:29:51,337 - INFO - 处理配置 185/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:30:01,643 - INFO - 配置 185 完成: processed_184_gray_luminance_contrast_a1.0_b50_thresh_otsu.jpg
+2025-08-18 20:30:01,644 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:30:01,644 - INFO - 处理配置 186/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:30:13,106 - INFO - 配置 186 完成: processed_185_gray_luminance_contrast_a1.0_b50_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:30:13,107 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:30:13,108 - INFO - 处理配置 187/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:30:23,535 - INFO - 配置 187 完成: processed_186_gray_luminance_contrast_a1.0_b50_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:30:23,537 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:30:23,538 - INFO - 处理配置 188/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:30:23,556 - ERROR - 处理配置 188 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:30:23,558 - INFO - 处理配置 189/252: {'grayscale': {'enabled': True, 'method': 'luminance'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:30:23,574 - ERROR - 处理配置 189 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:30:23,575 - INFO - 处理配置 190/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:30:32,429 - INFO - 配置 190 完成: processed_189_gray_average.jpg
+2025-08-18 20:30:32,429 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:30:32,429 - INFO - 处理配置 191/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:30:40,594 - INFO - 配置 191 完成: processed_190_gray_average_thresh_binary_127.jpg
+2025-08-18 20:30:40,595 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:30:40,595 - INFO - 处理配置 192/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:30:51,615 - INFO - 配置 192 完成: processed_191_gray_average_thresh_binary_100.jpg
+2025-08-18 20:30:51,615 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:30:51,616 - INFO - 处理配置 193/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:31:02,933 - INFO - 配置 193 完成: processed_192_gray_average_thresh_binary_150.jpg
+2025-08-18 20:31:02,962 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:31:02,966 - INFO - 处理配置 194/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:31:13,444 - INFO - 配置 194 完成: processed_193_gray_average_thresh_otsu.jpg
+2025-08-18 20:31:13,445 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:31:13,445 - INFO - 处理配置 195/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:31:23,794 - INFO - 配置 195 完成: processed_194_gray_average_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:31:23,794 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:31:23,795 - INFO - 处理配置 196/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:31:34,803 - INFO - 配置 196 完成: processed_195_gray_average_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:31:34,808 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:31:34,810 - INFO - 处理配置 197/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:31:35,115 - ERROR - 处理配置 197 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:31:35,132 - INFO - 处理配置 198/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': False, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:31:35,514 - ERROR - 处理配置 198 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:31:35,589 - INFO - 处理配置 199/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:31:47,153 - INFO - 配置 199 完成: processed_198_gray_average_contrast_a0.5_b0.jpg
+2025-08-18 20:31:47,153 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:31:47,154 - INFO - 处理配置 200/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:31:55,074 - INFO - 配置 200 完成: processed_199_gray_average_contrast_a0.5_b0_thresh_binary_127.jpg
+2025-08-18 20:31:55,075 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:31:55,076 - INFO - 处理配置 201/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:32:14,976 - INFO - 配置 201 完成: processed_200_gray_average_contrast_a0.5_b0_thresh_binary_100.jpg
+2025-08-18 20:32:14,977 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:32:14,978 - INFO - 处理配置 202/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:32:19,278 - INFO - 配置 202 完成: processed_201_gray_average_contrast_a0.5_b0_thresh_binary_150.jpg
+2025-08-18 20:32:19,279 - INFO - OCR文本: RapidOCROutput(img=None, boxes=None, txts=None, scores=None, word_results=(('', 1.0, None),), elapse...
+2025-08-18 20:32:19,279 - INFO - 处理配置 203/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:32:28,543 - INFO - 配置 203 完成: processed_202_gray_average_contrast_a0.5_b0_thresh_otsu.jpg
+2025-08-18 20:32:28,543 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:32:28,544 - INFO - 处理配置 204/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:32:40,361 - INFO - 配置 204 完成: processed_203_gray_average_contrast_a0.5_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:32:40,482 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:32:40,604 - INFO - 处理配置 205/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:32:57,115 - INFO - 配置 205 完成: processed_204_gray_average_contrast_a0.5_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:32:57,116 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:32:57,116 - INFO - 处理配置 206/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:32:57,370 - ERROR - 处理配置 206 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:32:57,371 - INFO - 处理配置 207/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 0.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:32:57,616 - ERROR - 处理配置 207 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:32:57,620 - INFO - 处理配置 208/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:33:11,739 - INFO - 配置 208 完成: processed_207_gray_average_contrast_a1.0_b0.jpg
+2025-08-18 20:33:11,747 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:33:11,753 - INFO - 处理配置 209/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:33:21,278 - INFO - 配置 209 完成: processed_208_gray_average_contrast_a1.0_b0_thresh_binary_127.jpg
+2025-08-18 20:33:21,278 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:33:21,279 - INFO - 处理配置 210/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:33:31,086 - INFO - 配置 210 完成: processed_209_gray_average_contrast_a1.0_b0_thresh_binary_100.jpg
+2025-08-18 20:33:31,087 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:33:31,087 - INFO - 处理配置 211/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:33:40,166 - INFO - 配置 211 完成: processed_210_gray_average_contrast_a1.0_b0_thresh_binary_150.jpg
+2025-08-18 20:33:40,166 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:33:40,168 - INFO - 处理配置 212/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:33:49,627 - INFO - 配置 212 完成: processed_211_gray_average_contrast_a1.0_b0_thresh_otsu.jpg
+2025-08-18 20:33:49,627 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:33:49,628 - INFO - 处理配置 213/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:33:59,658 - INFO - 配置 213 完成: processed_212_gray_average_contrast_a1.0_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:33:59,659 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:33:59,659 - INFO - 处理配置 214/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:34:09,923 - INFO - 配置 214 完成: processed_213_gray_average_contrast_a1.0_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:34:09,924 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:34:09,924 - INFO - 处理配置 215/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:34:10,147 - ERROR - 处理配置 215 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:34:10,148 - INFO - 处理配置 216/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:34:10,382 - ERROR - 处理配置 216 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:34:10,383 - INFO - 处理配置 217/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:34:18,561 - INFO - 配置 217 完成: processed_216_gray_average_contrast_a1.5_b0.jpg
+2025-08-18 20:34:18,561 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:34:18,561 - INFO - 处理配置 218/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:34:27,726 - INFO - 配置 218 完成: processed_217_gray_average_contrast_a1.5_b0_thresh_binary_127.jpg
+2025-08-18 20:34:27,726 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:34:27,727 - INFO - 处理配置 219/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:34:35,147 - INFO - 配置 219 完成: processed_218_gray_average_contrast_a1.5_b0_thresh_binary_100.jpg
+2025-08-18 20:34:35,148 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:34:35,148 - INFO - 处理配置 220/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:34:47,790 - INFO - 配置 220 完成: processed_219_gray_average_contrast_a1.5_b0_thresh_binary_150.jpg
+2025-08-18 20:34:47,791 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:34:47,791 - INFO - 处理配置 221/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:35:02,960 - INFO - 配置 221 完成: processed_220_gray_average_contrast_a1.5_b0_thresh_otsu.jpg
+2025-08-18 20:35:02,960 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:35:02,961 - INFO - 处理配置 222/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:35:18,547 - INFO - 配置 222 完成: processed_221_gray_average_contrast_a1.5_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:35:18,548 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:35:18,549 - INFO - 处理配置 223/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:35:34,696 - INFO - 配置 223 完成: processed_222_gray_average_contrast_a1.5_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:35:34,697 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:35:34,697 - INFO - 处理配置 224/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:35:35,118 - ERROR - 处理配置 224 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:35:35,120 - INFO - 处理配置 225/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.5, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:35:35,395 - ERROR - 处理配置 225 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:35:35,396 - INFO - 处理配置 226/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:35:49,412 - INFO - 配置 226 完成: processed_225_gray_average_contrast_a2.0_b0.jpg
+2025-08-18 20:35:49,413 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:35:49,413 - INFO - 处理配置 227/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:36:02,306 - INFO - 配置 227 完成: processed_226_gray_average_contrast_a2.0_b0_thresh_binary_127.jpg
+2025-08-18 20:36:02,307 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:36:02,308 - INFO - 处理配置 228/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:36:15,414 - INFO - 配置 228 完成: processed_227_gray_average_contrast_a2.0_b0_thresh_binary_100.jpg
+2025-08-18 20:36:15,415 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:36:15,415 - INFO - 处理配置 229/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:36:22,465 - INFO - 配置 229 完成: processed_228_gray_average_contrast_a2.0_b0_thresh_binary_150.jpg
+2025-08-18 20:36:22,466 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:36:22,466 - INFO - 处理配置 230/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:36:29,483 - INFO - 配置 230 完成: processed_229_gray_average_contrast_a2.0_b0_thresh_otsu.jpg
+2025-08-18 20:36:29,484 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:36:29,484 - INFO - 处理配置 231/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:36:36,689 - INFO - 配置 231 完成: processed_230_gray_average_contrast_a2.0_b0_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:36:36,690 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:36:36,691 - INFO - 处理配置 232/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:36:45,253 - INFO - 配置 232 完成: processed_231_gray_average_contrast_a2.0_b0_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:36:45,254 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:36:45,255 - INFO - 处理配置 233/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:36:45,464 - ERROR - 处理配置 233 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:36:45,465 - INFO - 处理配置 234/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 2.0, 'beta': 0}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:36:45,678 - ERROR - 处理配置 234 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:36:45,679 - INFO - 处理配置 235/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:36:53,201 - INFO - 配置 235 完成: processed_234_gray_average_contrast_a1.0_b-50.jpg
+2025-08-18 20:36:53,201 - INFO - OCR文本: RapidOCROutput(img=array([[[50, 50, 50],
+        [50, 50, 50],
+        [50, 50, 50],
+        ...,
+  ...
+2025-08-18 20:36:53,202 - INFO - 处理配置 236/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:37:00,947 - INFO - 配置 236 完成: processed_235_gray_average_contrast_a1.0_b-50_thresh_binary_127.jpg
+2025-08-18 20:37:00,948 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:37:00,948 - INFO - 处理配置 237/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:37:08,906 - INFO - 配置 237 完成: processed_236_gray_average_contrast_a1.0_b-50_thresh_binary_100.jpg
+2025-08-18 20:37:08,906 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:37:08,907 - INFO - 处理配置 238/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:37:16,470 - INFO - 配置 238 完成: processed_237_gray_average_contrast_a1.0_b-50_thresh_binary_150.jpg
+2025-08-18 20:37:16,471 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:37:16,472 - INFO - 处理配置 239/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:37:24,436 - INFO - 配置 239 完成: processed_238_gray_average_contrast_a1.0_b-50_thresh_otsu.jpg
+2025-08-18 20:37:24,436 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:37:24,437 - INFO - 处理配置 240/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:37:32,126 - INFO - 配置 240 完成: processed_239_gray_average_contrast_a1.0_b-50_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:37:32,126 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:37:32,126 - INFO - 处理配置 241/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:37:39,742 - INFO - 配置 241 完成: processed_240_gray_average_contrast_a1.0_b-50_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:37:39,743 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:37:39,743 - INFO - 处理配置 242/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:37:39,960 - ERROR - 处理配置 242 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:37:39,961 - INFO - 处理配置 243/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': -50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:37:40,179 - ERROR - 处理配置 243 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:37:40,179 - INFO - 处理配置 244/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': False, 'method': 'binary', 'params': {}}}
+2025-08-18 20:37:47,597 - INFO - 配置 244 完成: processed_243_gray_average_contrast_a1.0_b50.jpg
+2025-08-18 20:37:47,598 - INFO - OCR文本: RapidOCROutput(img=array([[[50, 50, 50],
+        [50, 50, 50],
+        [50, 50, 50],
+        ...,
+  ...
+2025-08-18 20:37:47,598 - INFO - 处理配置 245/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 127, 'maxval': 255}}}
+2025-08-18 20:37:54,364 - INFO - 配置 245 完成: processed_244_gray_average_contrast_a1.0_b50_thresh_binary_127.jpg
+2025-08-18 20:37:54,365 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:37:54,365 - INFO - 处理配置 246/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 100, 'maxval': 255}}}
+2025-08-18 20:38:00,922 - INFO - 配置 246 完成: processed_245_gray_average_contrast_a1.0_b50_thresh_binary_100.jpg
+2025-08-18 20:38:00,923 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:38:00,924 - INFO - 处理配置 247/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'binary', 'params': {'thresh': 150, 'maxval': 255}}}
+2025-08-18 20:38:08,983 - INFO - 配置 247 完成: processed_246_gray_average_contrast_a1.0_b50_thresh_binary_150.jpg
+2025-08-18 20:38:08,984 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:38:08,984 - INFO - 处理配置 248/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'otsu', 'params': {}}}
+2025-08-18 20:38:16,482 - INFO - 配置 248 完成: processed_247_gray_average_contrast_a1.0_b50_thresh_otsu.jpg
+2025-08-18 20:38:16,482 - INFO - OCR文本: RapidOCROutput(img=array([[[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0],
+        ...,
+        [0,...
+2025-08-18 20:38:16,482 - INFO - 处理配置 249/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:38:24,719 - INFO - 配置 249 完成: processed_248_gray_average_contrast_a1.0_b50_thresh_adaptive_mean_b11_c2.jpg
+2025-08-18 20:38:24,719 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:38:24,720 - INFO - 处理配置 250/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_mean', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:38:31,905 - INFO - 配置 250 完成: processed_249_gray_average_contrast_a1.0_b50_thresh_adaptive_mean_b15_c3.jpg
+2025-08-18 20:38:31,906 - INFO - OCR文本: RapidOCROutput(img=array([[[255, 255, 255],
+        [255, 255, 255],
+        [255, 255, 255],
+      ...
+2025-08-18 20:38:31,907 - INFO - 处理配置 251/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 11, 'c': 2}}}
+2025-08-18 20:38:32,120 - ERROR - 处理配置 251 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:38:32,122 - INFO - 处理配置 252/252: {'grayscale': {'enabled': True, 'method': 'average'}, 'contrast': {'enabled': True, 'alpha': 1.0, 'beta': 50}, 'threshold': {'enabled': True, 'method': 'adaptive_gaussian', 'params': {'block_size': 15, 'c': 3}}}
+2025-08-18 20:38:32,330 - ERROR - 处理配置 252 时出错: OpenCV(4.12.0) :-1: error: (-5:Bad argument) in function 'convertScaleAbs'
+> Overload resolution failed:
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+>  - convertScaleAbs() takes at most 4 arguments (6 given)
+
+2025-08-18 20:38:32,387 - INFO - 处理完成！结果保存在: processed_images
+2025-08-18 20:38:32,388 - INFO - 详细结果: processed_images\processing_results.json
+2025-08-18 20:38:32,388 - INFO - 评估报告: processed_images\evaluation_report.txt

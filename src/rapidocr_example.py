@@ -3,6 +3,7 @@
 import json
 import os
 import re
+from pathlib import Path
 from rapidocr import EngineType, LangDet, LangRec, ModelType, OCRVersion, RapidOCR
 
 engine = RapidOCR(
@@ -20,8 +21,17 @@ engine = RapidOCR(
 
 def ocr_image(img_url):
     """OCR图片"""
-    vis_path = re.sub(r'\.[^\.]+$', '_vis.jpg', img_url)
-    json_path = re.sub(r'\.[^\.]+$', '.json', img_url)
+    img_url = Path(img_url)
+    vis_path = img_url.with_suffix('.vis.jpg')
+    json_path = img_url.with_suffix('.json')
+    if not img_url.exists():
+        print(f"图片不存在: {img_url}")
+        return
+    if img_url.suffix in ['.jpg', '.jpeg', '.png', '.bmp', '.webp']:
+        pass
+    else:
+        print(f"图片格式不支持: {img_url}")
+        return
     result = engine(img_url)
     result.vis(vis_path)
     with open(json_path, "w", encoding="utf-8") as f:
