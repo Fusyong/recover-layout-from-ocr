@@ -1,0 +1,518 @@
+2025-08-19 16:00:36,074 - INFO - 共找到 4553 个图像文件，开始处理……
+2025-08-19 16:00:36,091 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.jpg
+2025-08-19 16:00:40,031 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:00:40,032 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.jpg
+2025-08-19 16:00:44,691 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:00:44,694 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.jpg
+2025-08-19 16:00:48,707 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:00:48,708 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-12.dsk.preprocessed.jpg
+2025-08-19 16:00:51,326 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-12.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:00:51,327 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-13.dsk.preprocessed.jpg
+2025-08-19 16:00:54,975 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-13.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:00:54,976 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-14.dsk.preprocessed.jpg
+2025-08-19 16:00:59,091 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-14.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:00:59,092 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-15.dsk.preprocessed.jpg
+2025-08-19 16:01:02,446 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-15.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:02,447 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-16.dsk.preprocessed.jpg
+2025-08-19 16:01:06,247 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-16.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:06,247 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-17.dsk.preprocessed.jpg
+2025-08-19 16:01:11,194 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-17.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:11,195 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-18.dsk.preprocessed.jpg
+2025-08-19 16:01:14,806 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-18.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:14,807 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-19.dsk.preprocessed.jpg
+2025-08-19 16:01:18,076 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-19.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:18,077 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-2.dsk.preprocessed.jpg
+2025-08-19 16:01:22,031 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-2.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:22,032 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-20.dsk.preprocessed.jpg
+2025-08-19 16:01:25,611 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-20.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:25,612 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-21.dsk.preprocessed.jpg
+2025-08-19 16:01:29,647 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-21.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:29,647 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-22.dsk.preprocessed.jpg
+2025-08-19 16:01:32,743 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-22.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:32,744 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-23.dsk.preprocessed.jpg
+2025-08-19 16:01:37,320 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-23.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:37,321 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-24.dsk.preprocessed.jpg
+2025-08-19 16:01:40,493 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-24.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:40,494 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-25.dsk.preprocessed.jpg
+2025-08-19 16:01:43,466 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-25.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:43,467 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-26.dsk.preprocessed.jpg
+2025-08-19 16:01:47,366 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-26.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:47,367 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-27.dsk.preprocessed.jpg
+2025-08-19 16:01:51,086 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-27.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:51,086 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-28.dsk.preprocessed.jpg
+2025-08-19 16:01:55,044 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-28.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:01:55,045 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-29.dsk.preprocessed.jpg
+2025-08-19 16:02:00,168 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-29.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:02:00,168 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-3.dsk.preprocessed.jpg
+2025-08-19 16:02:03,157 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-3.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:02:03,157 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-30.dsk.preprocessed.jpg
+2025-08-19 16:02:06,382 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-30.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:02:06,383 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-31.dsk.preprocessed.jpg
+2025-08-19 16:02:09,490 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-31.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:02:09,491 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-32.dsk.preprocessed.jpg
+2025-08-19 16:02:12,990 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-32.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:02:12,991 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-33.dsk.preprocessed.jpg
+2025-08-19 16:02:16,761 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-33.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:02:16,762 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-34.dsk.preprocessed.jpg
+2025-08-19 16:02:20,463 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-34.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:02:20,464 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-35.dsk.preprocessed.jpg
+2025-08-19 16:02:23,957 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-35.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:02:23,958 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-36.dsk.preprocessed.jpg
+2025-08-19 16:07:59,842 - INFO - 共找到 4553 个图像文件，开始处理……
+2025-08-19 16:07:59,857 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.jpg
+2025-08-19 16:08:04,146 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:08:04,147 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.jpg
+2025-08-19 16:08:08,722 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:08:08,723 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.jpg
+2025-08-19 16:08:13,013 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:08:13,014 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-12.dsk.preprocessed.jpg
+2025-08-19 16:08:15,596 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-12.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:08:15,597 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-13.dsk.preprocessed.jpg
+2025-08-19 16:08:19,259 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-13.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:08:19,260 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-14.dsk.preprocessed.jpg
+2025-08-19 16:16:35,162 - INFO - 共找到 4553 个图像文件，开始处理……
+2025-08-19 16:16:35,177 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.jpg
+2025-08-19 16:16:39,108 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:16:39,109 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.jpg
+2025-08-19 16:16:43,648 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:16:43,649 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.jpg
+2025-08-19 16:17:49,698 - ERROR - 输入文件不存在: D:\ah21\recover-layout-from-ocr\tests\assets\img_0_dsk.preprocessed.jpg
+2025-08-19 16:18:20,217 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:18:23,164 - ERROR - 处理文件 tests/assets/img_0_dsk.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:19:11,525 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:19:14,434 - ERROR - 处理文件 tests/assets/img_0_dsk.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:22:07,862 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:22:10,801 - ERROR - 处理文件 tests/assets/img_0_dsk.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:26:58,282 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:27:01,253 - INFO - 输出文件: tests\assets\img_0_dsk.vis.jpg, tests\assets\img_0_dsk.json, tests\assets\img_0_dsk.txt
+2025-08-19 16:28:17,302 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:28:20,918 - INFO - 输出文件: tests\assets\img_0_dsk.vis.jpg, tests\assets\img_0_dsk.json, tests\assets\img_0_dsk.txt
+2025-08-19 16:30:33,753 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:30:36,689 - INFO - 输出文件: tests\assets\img_0_dsk.vis.jpg, tests\assets\img_0_dsk.json, tests\assets\img_0_dsk.txt
+2025-08-19 16:31:29,152 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:31:32,227 - ERROR - 处理文件 tests/assets/img_0_dsk.jpg 时出错: name 'result_dict' is not defined
+2025-08-19 16:33:20,044 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:33:23,008 - ERROR - 处理文件 tests/assets/img_0_dsk.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 16:33:37,001 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:33:40,096 - ERROR - 处理文件 tests/assets/img_0_dsk.jpg 时出错: 'RapidOCROutput' object has no attribute 'to_dict'
+2025-08-19 16:35:29,740 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:35:32,854 - ERROR - 处理文件 tests/assets/img_0_dsk.jpg 时出错: Object of type ndarray is not JSON serializable
+2025-08-19 16:37:14,642 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:37:17,808 - INFO - 输出文件: tests\assets\img_0_dsk.vis.jpg, tests\assets\img_0_dsk.json, tests\assets\img_0_dsk.txt
+2025-08-19 16:38:21,626 - INFO - 共找到 4553 个图像文件，开始处理……
+2025-08-19 16:38:21,643 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.jpg
+2025-08-19 16:38:25,829 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.txt
+2025-08-19 16:38:25,831 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.jpg
+2025-08-19 16:38:30,522 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.txt
+2025-08-19 16:38:30,524 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.jpg
+2025-08-19 16:38:34,914 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.txt
+2025-08-19 16:38:34,916 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-12.dsk.preprocessed.jpg
+2025-08-19 16:38:37,539 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-12.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-12.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-12.dsk.preprocessed.txt
+2025-08-19 16:38:37,541 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-13.dsk.preprocessed.jpg
+2025-08-19 16:38:41,259 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-13.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-13.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-13.dsk.preprocessed.txt
+2025-08-19 16:38:41,261 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-14.dsk.preprocessed.jpg
+2025-08-19 16:38:45,885 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-14.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-14.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-14.dsk.preprocessed.txt
+2025-08-19 16:38:45,887 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-15.dsk.preprocessed.jpg
+2025-08-19 16:38:49,258 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-15.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-15.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-15.dsk.preprocessed.txt
+2025-08-19 16:38:49,261 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-16.dsk.preprocessed.jpg
+2025-08-19 16:38:53,920 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-16.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-16.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-16.dsk.preprocessed.txt
+2025-08-19 16:38:53,922 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-17.dsk.preprocessed.jpg
+2025-08-19 16:38:59,728 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-17.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-17.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-17.dsk.preprocessed.txt
+2025-08-19 16:38:59,730 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-18.dsk.preprocessed.jpg
+2025-08-19 16:39:03,156 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-18.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-18.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-18.dsk.preprocessed.txt
+2025-08-19 16:39:03,158 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-19.dsk.preprocessed.jpg
+2025-08-19 16:39:06,648 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-19.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-19.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-19.dsk.preprocessed.txt
+2025-08-19 16:39:06,650 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-2.dsk.preprocessed.jpg
+2025-08-19 16:39:11,280 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-2.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-2.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-2.dsk.preprocessed.txt
+2025-08-19 16:39:11,283 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-20.dsk.preprocessed.jpg
+2025-08-19 16:39:15,661 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-20.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-20.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-20.dsk.preprocessed.txt
+2025-08-19 16:39:15,664 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-21.dsk.preprocessed.jpg
+2025-08-19 16:39:19,798 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-21.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-21.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-21.dsk.preprocessed.txt
+2025-08-19 16:39:19,801 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-22.dsk.preprocessed.jpg
+2025-08-19 16:39:23,046 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-22.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-22.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-22.dsk.preprocessed.txt
+2025-08-19 16:39:23,049 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-23.dsk.preprocessed.jpg
+2025-08-19 16:39:28,291 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-23.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-23.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-23.dsk.preprocessed.txt
+2025-08-19 16:39:28,293 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-24.dsk.preprocessed.jpg
+2025-08-19 16:39:31,510 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-24.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-24.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-24.dsk.preprocessed.txt
+2025-08-19 16:39:31,512 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-25.dsk.preprocessed.jpg
+2025-08-19 16:39:34,689 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-25.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-25.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-25.dsk.preprocessed.txt
+2025-08-19 16:39:34,692 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-26.dsk.preprocessed.jpg
+2025-08-19 16:39:39,068 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-26.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-26.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-26.dsk.preprocessed.txt
+2025-08-19 16:39:39,069 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-27.dsk.preprocessed.jpg
+2025-08-19 16:39:43,155 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-27.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-27.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-27.dsk.preprocessed.txt
+2025-08-19 16:39:43,158 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-28.dsk.preprocessed.jpg
+2025-08-19 16:39:47,402 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-28.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-28.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-28.dsk.preprocessed.txt
+2025-08-19 16:39:47,405 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-29.dsk.preprocessed.jpg
+2025-08-19 16:39:52,534 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-29.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-29.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-29.dsk.preprocessed.txt
+2025-08-19 16:39:52,537 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-3.dsk.preprocessed.jpg
+2025-08-19 16:39:55,601 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-3.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-3.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-3.dsk.preprocessed.txt
+2025-08-19 16:39:55,603 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-30.dsk.preprocessed.jpg
+2025-08-19 16:39:58,849 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-30.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-30.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-30.dsk.preprocessed.txt
+2025-08-19 16:39:58,852 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-31.dsk.preprocessed.jpg
+2025-08-19 16:40:02,045 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-31.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-31.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-31.dsk.preprocessed.txt
+2025-08-19 16:40:02,047 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-32.dsk.preprocessed.jpg
+2025-08-19 16:40:06,097 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-32.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-32.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-32.dsk.preprocessed.txt
+2025-08-19 16:40:06,100 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-33.dsk.preprocessed.jpg
+2025-08-19 16:40:10,263 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-33.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-33.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-33.dsk.preprocessed.txt
+2025-08-19 16:40:10,266 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-34.dsk.preprocessed.jpg
+2025-08-19 16:40:14,424 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-34.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-34.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-34.dsk.preprocessed.txt
+2025-08-19 16:40:14,427 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-35.dsk.preprocessed.jpg
+2025-08-19 16:40:18,318 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-35.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-35.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-35.dsk.preprocessed.txt
+2025-08-19 16:40:18,321 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-36.dsk.preprocessed.jpg
+2025-08-19 16:40:21,644 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-36.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-36.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-36.dsk.preprocessed.txt
+2025-08-19 16:40:21,646 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-37.dsk.preprocessed.jpg
+2025-08-19 16:40:25,108 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-37.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-37.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-37.dsk.preprocessed.txt
+2025-08-19 16:40:25,111 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-38.dsk.preprocessed.jpg
+2025-08-19 16:40:29,409 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-38.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-38.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-38.dsk.preprocessed.txt
+2025-08-19 16:40:29,411 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-39.dsk.preprocessed.jpg
+2025-08-19 16:40:34,139 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-39.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-39.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-39.dsk.preprocessed.txt
+2025-08-19 16:40:34,143 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-4.dsk.preprocessed.jpg
+2025-08-19 16:40:38,011 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-4.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-4.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-4.dsk.preprocessed.txt
+2025-08-19 16:40:38,014 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-40.dsk.preprocessed.jpg
+2025-08-19 16:40:43,338 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-40.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-40.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-40.dsk.preprocessed.txt
+2025-08-19 16:40:43,341 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-41.dsk.preprocessed.jpg
+2025-08-19 16:40:48,164 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-41.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-41.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-41.dsk.preprocessed.txt
+2025-08-19 16:40:48,167 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-42.dsk.preprocessed.jpg
+2025-08-19 16:40:52,225 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-42.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-42.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-42.dsk.preprocessed.txt
+2025-08-19 16:40:52,229 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-43.dsk.preprocessed.jpg
+2025-08-19 16:40:55,095 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-43.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-43.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-43.dsk.preprocessed.txt
+2025-08-19 16:40:55,097 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-44.dsk.preprocessed.jpg
+2025-08-19 16:40:59,171 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-44.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-44.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-44.dsk.preprocessed.txt
+2025-08-19 16:40:59,174 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-45.dsk.preprocessed.jpg
+2025-08-19 16:41:04,487 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-45.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-45.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-45.dsk.preprocessed.txt
+2025-08-19 16:41:04,490 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-46.dsk.preprocessed.jpg
+2025-08-19 16:41:08,795 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-46.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-46.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-46.dsk.preprocessed.txt
+2025-08-19 16:41:08,797 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-47.dsk.preprocessed.jpg
+2025-08-19 16:41:13,843 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-47.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-47.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-47.dsk.preprocessed.txt
+2025-08-19 16:41:13,846 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-48.dsk.preprocessed.jpg
+2025-08-19 16:41:17,527 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-48.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-48.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-48.dsk.preprocessed.txt
+2025-08-19 16:41:17,529 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-49.dsk.preprocessed.jpg
+2025-08-19 16:41:21,022 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-49.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-49.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-49.dsk.preprocessed.txt
+2025-08-19 16:41:21,024 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-5.dsk.preprocessed.jpg
+2025-08-19 16:41:25,444 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-5.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-5.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-5.dsk.preprocessed.txt
+2025-08-19 16:41:25,445 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-50.dsk.preprocessed.jpg
+2025-08-19 16:41:30,214 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-50.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-50.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-50.dsk.preprocessed.txt
+2025-08-19 16:41:30,217 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-51.dsk.preprocessed.jpg
+2025-08-19 16:41:35,211 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-51.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-51.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-51.dsk.preprocessed.txt
+2025-08-19 16:41:35,214 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-52.dsk.preprocessed.jpg
+2025-08-19 16:41:39,926 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-52.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-52.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-52.dsk.preprocessed.txt
+2025-08-19 16:41:39,928 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-53.dsk.preprocessed.jpg
+2025-08-19 16:41:44,854 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-53.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-53.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-53.dsk.preprocessed.txt
+2025-08-19 16:41:44,856 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-54.dsk.preprocessed.jpg
+2025-08-19 16:41:48,242 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-54.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-54.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-54.dsk.preprocessed.txt
+2025-08-19 16:41:48,244 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-55.dsk.preprocessed.jpg
+2025-08-19 16:41:51,435 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-55.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-55.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-55.dsk.preprocessed.txt
+2025-08-19 16:41:51,437 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-56.dsk.preprocessed.jpg
+2025-08-19 16:41:54,641 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-56.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-56.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-56.dsk.preprocessed.txt
+2025-08-19 16:41:54,644 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-57.dsk.preprocessed.jpg
+2025-08-19 16:41:58,786 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-57.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-57.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-57.dsk.preprocessed.txt
+2025-08-19 16:41:58,788 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-58.dsk.preprocessed.jpg
+2025-08-19 16:42:03,043 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-58.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-58.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-58.dsk.preprocessed.txt
+2025-08-19 16:42:03,045 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-59.dsk.preprocessed.jpg
+2025-08-19 16:42:08,356 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-59.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-59.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-59.dsk.preprocessed.txt
+2025-08-19 16:42:08,359 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-6.dsk.preprocessed.jpg
+2025-08-19 16:42:11,326 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-6.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-6.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-6.dsk.preprocessed.txt
+2025-08-19 16:42:11,329 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-60.dsk.preprocessed.jpg
+2025-08-19 16:42:15,169 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-60.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-60.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-60.dsk.preprocessed.txt
+2025-08-19 16:42:15,172 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-61.dsk.preprocessed.jpg
+2025-08-19 16:42:17,779 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-61.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-61.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-61.dsk.preprocessed.txt
+2025-08-19 16:42:17,782 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-62.dsk.preprocessed.jpg
+2025-08-19 16:42:20,661 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-62.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-62.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-62.dsk.preprocessed.txt
+2025-08-19 16:42:20,663 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-63.dsk.preprocessed.jpg
+2025-08-19 16:42:23,338 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-63.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-63.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-63.dsk.preprocessed.txt
+2025-08-19 16:42:23,341 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-64.dsk.preprocessed.jpg
+2025-08-19 16:42:26,434 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-64.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-64.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-64.dsk.preprocessed.txt
+2025-08-19 16:42:26,435 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-65.dsk.preprocessed.jpg
+2025-08-19 16:42:29,556 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-65.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-65.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-65.dsk.preprocessed.txt
+2025-08-19 16:42:29,558 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-66.dsk.preprocessed.jpg
+2025-08-19 16:42:32,485 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-66.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-66.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-66.dsk.preprocessed.txt
+2025-08-19 16:42:32,487 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-67.dsk.preprocessed.jpg
+2025-08-19 16:42:35,619 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-67.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-67.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-67.dsk.preprocessed.txt
+2025-08-19 16:42:35,621 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-68.dsk.preprocessed.jpg
+2025-08-19 16:42:38,529 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-68.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-68.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-68.dsk.preprocessed.txt
+2025-08-19 16:42:38,531 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-69.dsk.preprocessed.jpg
+2025-08-19 16:42:41,466 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-69.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-69.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-69.dsk.preprocessed.txt
+2025-08-19 16:42:41,469 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-7.dsk.preprocessed.jpg
+2025-08-19 16:42:44,655 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-7.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-7.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-7.dsk.preprocessed.txt
+2025-08-19 16:42:44,657 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-70.dsk.preprocessed.jpg
+2025-08-19 16:42:47,487 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-70.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-70.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-70.dsk.preprocessed.txt
+2025-08-19 16:42:47,490 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-71.dsk.preprocessed.jpg
+2025-08-19 16:42:50,208 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-71.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-71.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-71.dsk.preprocessed.txt
+2025-08-19 16:42:50,210 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-72.dsk.preprocessed.jpg
+2025-08-19 16:42:52,989 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-72.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-72.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-72.dsk.preprocessed.txt
+2025-08-19 16:42:52,991 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-8.dsk.preprocessed.jpg
+2025-08-19 16:42:57,049 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-8.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-8.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-8.dsk.preprocessed.txt
+2025-08-19 16:42:57,052 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-9.dsk.preprocessed.jpg
+2025-08-19 16:43:00,164 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-9.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-9.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-9.dsk.preprocessed.txt
+2025-08-19 16:43:00,166 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-1.dsk.preprocessed.jpg
+2025-08-19 16:43:04,144 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-1.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-1.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-1.dsk.preprocessed.txt
+2025-08-19 16:43:04,146 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-10.dsk.preprocessed.jpg
+2025-08-19 16:43:09,655 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-10.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-10.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-10.dsk.preprocessed.txt
+2025-08-19 16:43:09,657 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-11.dsk.preprocessed.jpg
+2025-08-19 16:43:15,887 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-11.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-11.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-11.dsk.preprocessed.txt
+2025-08-19 16:43:15,889 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-12.dsk.preprocessed.jpg
+2025-08-19 16:43:20,564 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-12.dsk.preprocessed.vis.jpg, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-12.dsk.preprocessed.json, D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-12.dsk.preprocessed.txt
+2025-08-19 16:43:20,566 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷五下-h\img-13.dsk.preprocessed.jpg
+2025-08-19 16:50:29,567 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-19 16:52:31,936 - INFO - 共找到 4553 个图像文件，开始处理……
+2025-08-19 16:52:31,951 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.jpg
+2025-08-19 16:52:36,040 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.jpg
+2025-08-19 16:52:40,579 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.jpg
+2025-08-19 16:52:44,847 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-12.dsk.preprocessed.jpg
+2025-08-19 16:52:47,468 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-13.dsk.preprocessed.jpg
+2025-08-19 16:52:51,139 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-14.dsk.preprocessed.jpg
+2025-08-19 16:52:55,707 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-15.dsk.preprocessed.jpg
+2025-08-19 16:52:59,071 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-16.dsk.preprocessed.jpg
+2025-08-19 16:53:03,799 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-17.dsk.preprocessed.jpg
+2025-08-19 16:53:09,522 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-18.dsk.preprocessed.jpg
+2025-08-19 16:53:13,072 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-19.dsk.preprocessed.jpg
+2025-08-19 16:53:16,371 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-2.dsk.preprocessed.jpg
+2025-08-19 16:53:20,801 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-20.dsk.preprocessed.jpg
+2025-08-19 16:53:25,062 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-21.dsk.preprocessed.jpg
+2025-08-19 16:53:29,264 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-22.dsk.preprocessed.jpg
+2025-08-19 16:53:32,440 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-23.dsk.preprocessed.jpg
+2025-08-19 16:53:37,760 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-24.dsk.preprocessed.jpg
+2025-08-19 16:53:41,134 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-25.dsk.preprocessed.jpg
+2025-08-19 16:53:44,418 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-26.dsk.preprocessed.jpg
+2025-08-19 16:53:48,905 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-27.dsk.preprocessed.jpg
+2025-08-19 16:53:53,243 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-28.dsk.preprocessed.jpg
+2025-08-19 16:53:57,618 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-29.dsk.preprocessed.jpg
+2025-08-19 16:54:02,890 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-3.dsk.preprocessed.jpg
+2025-08-19 16:54:06,009 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-30.dsk.preprocessed.jpg
+2025-08-19 16:54:09,569 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-31.dsk.preprocessed.jpg
+2025-08-19 16:54:12,871 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-32.dsk.preprocessed.jpg
+2025-08-19 16:54:16,754 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-33.dsk.preprocessed.jpg
+2025-08-19 16:54:21,012 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-34.dsk.preprocessed.jpg
+2025-08-19 16:54:25,155 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-35.dsk.preprocessed.jpg
+2025-08-19 16:54:29,276 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-36.dsk.preprocessed.jpg
+2025-08-19 16:54:32,555 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-37.dsk.preprocessed.jpg
+2025-08-19 16:55:08,797 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.jpg
+2025-08-19 16:57:46,049 - INFO - 共找到 72 个图像文件，开始处理……
+2025-08-19 16:57:46,050 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.jpg
+2025-08-19 16:57:50,286 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.jpg
+2025-08-19 16:57:54,985 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.jpg
+2025-08-19 16:57:59,416 - INFO - 处理图像: D:\TEMP\img-12.dsk.preprocessed.jpg
+2025-08-19 16:58:02,068 - INFO - 处理图像: D:\TEMP\img-13.dsk.preprocessed.jpg
+2025-08-19 16:58:05,850 - INFO - 处理图像: D:\TEMP\img-14.dsk.preprocessed.jpg
+2025-08-19 16:58:10,919 - INFO - 处理图像: D:\TEMP\img-15.dsk.preprocessed.jpg
+2025-08-19 16:58:14,428 - INFO - 处理图像: D:\TEMP\img-16.dsk.preprocessed.jpg
+2025-08-19 16:58:19,018 - INFO - 处理图像: D:\TEMP\img-17.dsk.preprocessed.jpg
+2025-08-19 16:58:24,793 - INFO - 处理图像: D:\TEMP\img-18.dsk.preprocessed.jpg
+2025-08-19 16:58:28,266 - INFO - 处理图像: D:\TEMP\img-19.dsk.preprocessed.jpg
+2025-08-19 16:58:31,712 - INFO - 处理图像: D:\TEMP\img-2.dsk.preprocessed.jpg
+2025-08-19 16:58:36,327 - INFO - 处理图像: D:\TEMP\img-20.dsk.preprocessed.jpg
+2025-08-19 16:58:40,512 - INFO - 处理图像: D:\TEMP\img-21.dsk.preprocessed.jpg
+2025-08-19 16:58:44,650 - INFO - 处理图像: D:\TEMP\img-22.dsk.preprocessed.jpg
+2025-08-19 16:58:47,917 - INFO - 处理图像: D:\TEMP\img-23.dsk.preprocessed.jpg
+2025-08-19 16:58:53,238 - INFO - 处理图像: D:\TEMP\img-24.dsk.preprocessed.jpg
+2025-08-19 16:58:56,681 - INFO - 处理图像: D:\TEMP\img-25.dsk.preprocessed.jpg
+2025-08-19 16:59:00,132 - INFO - 处理图像: D:\TEMP\img-26.dsk.preprocessed.jpg
+2025-08-19 16:59:04,803 - INFO - 处理图像: D:\TEMP\img-27.dsk.preprocessed.jpg
+2025-08-19 16:59:09,243 - INFO - 处理图像: D:\TEMP\img-28.dsk.preprocessed.jpg
+2025-08-19 16:59:13,834 - INFO - 处理图像: D:\TEMP\img-29.dsk.preprocessed.jpg
+2025-08-19 16:59:19,213 - INFO - 处理图像: D:\TEMP\img-3.dsk.preprocessed.jpg
+2025-08-19 16:59:22,241 - INFO - 处理图像: D:\TEMP\img-30.dsk.preprocessed.jpg
+2025-08-19 16:59:25,561 - INFO - 处理图像: D:\TEMP\img-31.dsk.preprocessed.jpg
+2025-08-19 16:59:28,917 - INFO - 处理图像: D:\TEMP\img-32.dsk.preprocessed.jpg
+2025-08-19 16:59:32,702 - INFO - 处理图像: D:\TEMP\img-33.dsk.preprocessed.jpg
+2025-08-19 16:59:36,976 - INFO - 处理图像: D:\TEMP\img-34.dsk.preprocessed.jpg
+2025-08-19 16:59:41,254 - INFO - 处理图像: D:\TEMP\img-35.dsk.preprocessed.jpg
+2025-08-19 16:59:45,511 - INFO - 处理图像: D:\TEMP\img-36.dsk.preprocessed.jpg
+2025-08-19 16:59:48,997 - INFO - 处理图像: D:\TEMP\img-37.dsk.preprocessed.jpg
+2025-08-19 16:59:52,623 - INFO - 处理图像: D:\TEMP\img-38.dsk.preprocessed.jpg
+2025-08-19 16:59:57,086 - INFO - 处理图像: D:\TEMP\img-39.dsk.preprocessed.jpg
+2025-08-19 17:00:01,970 - INFO - 处理图像: D:\TEMP\img-4.dsk.preprocessed.jpg
+2025-08-19 17:00:05,995 - INFO - 处理图像: D:\TEMP\img-40.dsk.preprocessed.jpg
+2025-08-19 17:00:11,628 - INFO - 处理图像: D:\TEMP\img-41.dsk.preprocessed.jpg
+2025-08-19 17:00:16,727 - INFO - 处理图像: D:\TEMP\img-42.dsk.preprocessed.jpg
+2025-08-19 17:00:20,980 - INFO - 处理图像: D:\TEMP\img-43.dsk.preprocessed.jpg
+2025-08-19 17:00:24,159 - INFO - 处理图像: D:\TEMP\img-44.dsk.preprocessed.jpg
+2025-08-19 17:00:28,555 - INFO - 处理图像: D:\TEMP\img-45.dsk.preprocessed.jpg
+2025-08-19 17:00:33,723 - INFO - 处理图像: D:\TEMP\img-46.dsk.preprocessed.jpg
+2025-08-19 17:00:38,055 - INFO - 处理图像: D:\TEMP\img-47.dsk.preprocessed.jpg
+2025-08-19 17:00:44,137 - INFO - 处理图像: D:\TEMP\img-48.dsk.preprocessed.jpg
+2025-08-19 17:00:48,023 - INFO - 处理图像: D:\TEMP\img-49.dsk.preprocessed.jpg
+2025-08-19 17:00:51,704 - INFO - 处理图像: D:\TEMP\img-5.dsk.preprocessed.jpg
+2025-08-19 17:00:56,277 - INFO - 处理图像: D:\TEMP\img-50.dsk.preprocessed.jpg
+2025-08-19 17:01:01,250 - INFO - 处理图像: D:\TEMP\img-51.dsk.preprocessed.jpg
+2025-08-19 17:01:06,385 - INFO - 处理图像: D:\TEMP\img-52.dsk.preprocessed.jpg
+2025-08-19 17:01:11,273 - INFO - 处理图像: D:\TEMP\img-53.dsk.preprocessed.jpg
+2025-08-19 17:01:16,101 - INFO - 处理图像: D:\TEMP\img-54.dsk.preprocessed.jpg
+2025-08-19 17:01:19,526 - INFO - 处理图像: D:\TEMP\img-55.dsk.preprocessed.jpg
+2025-08-19 17:01:22,832 - INFO - 处理图像: D:\TEMP\img-56.dsk.preprocessed.jpg
+2025-08-19 17:01:26,237 - INFO - 处理图像: D:\TEMP\img-57.dsk.preprocessed.jpg
+2025-08-19 17:01:30,362 - INFO - 处理图像: D:\TEMP\img-58.dsk.preprocessed.jpg
+2025-08-19 17:01:34,858 - INFO - 处理图像: D:\TEMP\img-59.dsk.preprocessed.jpg
+2025-08-19 17:01:40,229 - INFO - 处理图像: D:\TEMP\img-6.dsk.preprocessed.jpg
+2025-08-19 17:01:43,263 - INFO - 处理图像: D:\TEMP\img-60.dsk.preprocessed.jpg
+2025-08-19 17:01:47,458 - INFO - 处理图像: D:\TEMP\img-61.dsk.preprocessed.jpg
+2025-08-19 17:01:50,309 - INFO - 处理图像: D:\TEMP\img-62.dsk.preprocessed.jpg
+2025-08-19 17:01:53,552 - INFO - 处理图像: D:\TEMP\img-63.dsk.preprocessed.jpg
+2025-08-19 17:01:56,507 - INFO - 处理图像: D:\TEMP\img-64.dsk.preprocessed.jpg
+2025-08-19 17:01:59,549 - INFO - 处理图像: D:\TEMP\img-65.dsk.preprocessed.jpg
+2025-08-19 17:02:02,644 - INFO - 处理图像: D:\TEMP\img-66.dsk.preprocessed.jpg
+2025-08-19 17:02:05,752 - INFO - 处理图像: D:\TEMP\img-67.dsk.preprocessed.jpg
+2025-08-19 17:02:09,054 - INFO - 处理图像: D:\TEMP\img-68.dsk.preprocessed.jpg
+2025-08-19 17:02:12,231 - INFO - 处理图像: D:\TEMP\img-69.dsk.preprocessed.jpg
+2025-08-19 17:02:15,519 - INFO - 处理图像: D:\TEMP\img-7.dsk.preprocessed.jpg
+2025-08-19 17:02:19,127 - INFO - 处理图像: D:\TEMP\img-70.dsk.preprocessed.jpg
+2025-08-19 17:02:22,214 - INFO - 处理图像: D:\TEMP\img-71.dsk.preprocessed.jpg
+2025-08-19 17:02:25,005 - INFO - 处理图像: D:\TEMP\img-72.dsk.preprocessed.jpg
+2025-08-19 17:02:27,734 - INFO - 处理图像: D:\TEMP\img-8.dsk.preprocessed.jpg
+2025-08-19 17:02:31,885 - INFO - 处理图像: D:\TEMP\img-9.dsk.preprocessed.jpg
+2025-08-19 17:02:35,022 - INFO - 批量OCR处理完成！
+2025-08-20 08:45:42,206 - INFO - 共找到 144 个图像文件，开始处理……
+2025-08-20 08:45:42,207 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.jpg
+2025-08-20 08:45:46,154 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.vis.jpg
+2025-08-20 08:45:51,759 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.jpg
+2025-08-20 08:45:56,896 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.vis.jpg
+2025-08-20 08:46:02,918 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.jpg
+2025-08-20 08:46:07,352 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.vis.jpg
+2025-08-20 08:46:13,899 - INFO - 处理图像: D:\TEMP\img-12.dsk.preprocessed.jpg
+2025-08-20 08:46:16,732 - INFO - 处理图像: D:\TEMP\img-12.dsk.preprocessed.vis.jpg
+2025-08-20 08:46:20,588 - INFO - 处理图像: D:\TEMP\img-13.dsk.preprocessed.jpg
+2025-08-20 08:46:24,562 - INFO - 处理图像: D:\TEMP\img-13.dsk.preprocessed.vis.jpg
+2025-08-20 08:46:30,408 - INFO - 处理图像: D:\TEMP\img-14.dsk.preprocessed.jpg
+2025-08-20 08:46:34,949 - INFO - 处理图像: D:\TEMP\img-14.dsk.preprocessed.vis.jpg
+2025-08-20 08:46:41,776 - INFO - 处理图像: D:\TEMP\img-15.dsk.preprocessed.jpg
+2025-08-20 08:46:44,986 - INFO - 处理图像: D:\TEMP\img-15.dsk.preprocessed.vis.jpg
+2025-08-20 08:46:49,339 - INFO - 处理图像: D:\TEMP\img-16.dsk.preprocessed.jpg
+2025-08-20 08:46:53,683 - INFO - 处理图像: D:\TEMP\img-16.dsk.preprocessed.vis.jpg
+2025-08-20 08:46:59,654 - INFO - 处理图像: D:\TEMP\img-17.dsk.preprocessed.jpg
+2025-08-20 08:47:05,010 - INFO - 处理图像: D:\TEMP\img-17.dsk.preprocessed.vis.jpg
+2025-08-20 08:47:12,691 - INFO - 处理图像: D:\TEMP\img-18.dsk.preprocessed.jpg
+2025-08-20 08:47:15,994 - INFO - 处理图像: D:\TEMP\img-18.dsk.preprocessed.vis.jpg
+2025-08-20 08:47:20,705 - INFO - 处理图像: D:\TEMP\img-19.dsk.preprocessed.jpg
+2025-08-20 08:47:23,975 - INFO - 处理图像: D:\TEMP\img-19.dsk.preprocessed.vis.jpg
+2025-08-20 08:47:28,757 - INFO - 处理图像: D:\TEMP\img-2.dsk.preprocessed.jpg
+2025-08-20 08:47:32,774 - INFO - 处理图像: D:\TEMP\img-2.dsk.preprocessed.vis.jpg
+2025-08-20 08:47:38,893 - INFO - 处理图像: D:\TEMP\img-20.dsk.preprocessed.jpg
+2025-08-20 08:47:43,364 - INFO - 处理图像: D:\TEMP\img-20.dsk.preprocessed.vis.jpg
+2025-08-20 08:47:49,413 - INFO - 处理图像: D:\TEMP\img-21.dsk.preprocessed.jpg
+2025-08-20 08:47:53,772 - INFO - 处理图像: D:\TEMP\img-21.dsk.preprocessed.vis.jpg
+2025-08-20 08:47:59,974 - INFO - 处理图像: D:\TEMP\img-22.dsk.preprocessed.jpg
+2025-08-20 08:48:03,268 - INFO - 处理图像: D:\TEMP\img-22.dsk.preprocessed.vis.jpg
+2025-08-20 08:48:08,174 - INFO - 处理图像: D:\TEMP\img-23.dsk.preprocessed.jpg
+2025-08-20 08:52:52,222 - INFO - 共找到 159 个图像文件，开始处理……
+2025-08-20 08:52:52,222 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.jpg
+2025-08-20 08:52:55,559 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'json'
+2025-08-20 08:52:55,560 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.vis.jpg
+2025-08-20 08:53:00,175 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.vis.jpg 时出错: 'RapidOCROutput' object has no attribute 'json'
+2025-08-20 08:53:00,177 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.vis.vis.jpg
+2025-08-20 08:53:06,559 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.vis.vis.jpg 时出错: 'RapidOCROutput' object has no attribute 'json'
+2025-08-20 08:53:06,564 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.jpg
+2025-08-20 08:53:10,831 - ERROR - 处理文件 D:\TEMP\img-10.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'json'
+2025-08-20 08:53:10,834 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.vis.jpg
+2025-08-20 08:54:02,443 - INFO - 共找到 160 个图像文件，开始处理……
+2025-08-20 08:54:02,444 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.jpg
+2025-08-20 08:54:05,679 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:54:05,681 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.vis.jpg
+2025-08-20 08:54:10,198 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.vis.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:54:10,200 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.vis.vis.jpg
+2025-08-20 08:54:16,399 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.vis.vis.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:54:16,404 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.vis.vis.vis.jpg
+2025-08-20 08:54:27,713 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.vis.vis.vis.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:54:27,724 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.jpg
+2025-08-20 08:54:32,187 - ERROR - 处理文件 D:\TEMP\img-10.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:54:32,189 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.vis.jpg
+2025-08-20 08:54:37,750 - ERROR - 处理文件 D:\TEMP\img-10.dsk.preprocessed.vis.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:54:37,754 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.vis.vis.jpg
+2025-08-20 08:54:46,257 - ERROR - 处理文件 D:\TEMP\img-10.dsk.preprocessed.vis.vis.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:54:46,262 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.jpg
+2025-08-20 08:54:50,022 - ERROR - 处理文件 D:\TEMP\img-11.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:54:50,024 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.vis.jpg
+2025-08-20 08:55:54,069 - INFO - 共找到 72 个图像文件，开始处理……
+2025-08-20 08:55:54,070 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.jpg
+2025-08-20 08:55:57,499 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:55:57,500 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.jpg
+2025-08-20 08:56:01,781 - ERROR - 处理文件 D:\TEMP\img-10.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:01,783 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.jpg
+2025-08-20 08:56:05,660 - ERROR - 处理文件 D:\TEMP\img-11.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:05,663 - INFO - 处理图像: D:\TEMP\img-12.dsk.preprocessed.jpg
+2025-08-20 08:56:08,242 - ERROR - 处理文件 D:\TEMP\img-12.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:08,244 - INFO - 处理图像: D:\TEMP\img-13.dsk.preprocessed.jpg
+2025-08-20 08:56:11,792 - ERROR - 处理文件 D:\TEMP\img-13.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:11,793 - INFO - 处理图像: D:\TEMP\img-14.dsk.preprocessed.jpg
+2025-08-20 08:56:16,014 - ERROR - 处理文件 D:\TEMP\img-14.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:16,016 - INFO - 处理图像: D:\TEMP\img-15.dsk.preprocessed.jpg
+2025-08-20 08:56:19,173 - ERROR - 处理文件 D:\TEMP\img-15.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:19,174 - INFO - 处理图像: D:\TEMP\img-16.dsk.preprocessed.jpg
+2025-08-20 08:56:22,942 - ERROR - 处理文件 D:\TEMP\img-16.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:22,944 - INFO - 处理图像: D:\TEMP\img-17.dsk.preprocessed.jpg
+2025-08-20 08:56:27,452 - ERROR - 处理文件 D:\TEMP\img-17.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:27,455 - INFO - 处理图像: D:\TEMP\img-18.dsk.preprocessed.jpg
+2025-08-20 08:56:31,074 - ERROR - 处理文件 D:\TEMP\img-18.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:31,077 - INFO - 处理图像: D:\TEMP\img-19.dsk.preprocessed.jpg
+2025-08-20 08:56:34,345 - ERROR - 处理文件 D:\TEMP\img-19.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:34,347 - INFO - 处理图像: D:\TEMP\img-2.dsk.preprocessed.jpg
+2025-08-20 08:56:38,449 - ERROR - 处理文件 D:\TEMP\img-2.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:38,451 - INFO - 处理图像: D:\TEMP\img-20.dsk.preprocessed.jpg
+2025-08-20 08:56:42,316 - ERROR - 处理文件 D:\TEMP\img-20.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:42,318 - INFO - 处理图像: D:\TEMP\img-21.dsk.preprocessed.jpg
+2025-08-20 08:56:46,175 - ERROR - 处理文件 D:\TEMP\img-21.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:46,180 - INFO - 处理图像: D:\TEMP\img-22.dsk.preprocessed.jpg
+2025-08-20 08:56:49,323 - ERROR - 处理文件 D:\TEMP\img-22.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:56:49,324 - INFO - 处理图像: D:\TEMP\img-23.dsk.preprocessed.jpg
+2025-08-20 08:57:15,639 - INFO - 共找到 87 个图像文件，开始处理……
+2025-08-20 08:57:15,640 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.jpg
+2025-08-20 08:57:19,085 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:57:19,086 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.vis.jpg
+2025-08-20 08:57:23,892 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.vis.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:57:23,894 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.jpg
+2025-08-20 08:57:43,583 - INFO - 共找到 72 个图像文件，开始处理……
+2025-08-20 08:57:43,585 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.jpg
+2025-08-20 08:57:47,076 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:57:47,077 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.jpg
+2025-08-20 08:57:51,341 - ERROR - 处理文件 D:\TEMP\img-10.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:57:51,343 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.jpg
+2025-08-20 08:57:55,185 - ERROR - 处理文件 D:\TEMP\img-11.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:57:55,187 - INFO - 处理图像: D:\TEMP\img-12.dsk.preprocessed.jpg
+2025-08-20 08:57:57,799 - ERROR - 处理文件 D:\TEMP\img-12.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:57:57,803 - INFO - 处理图像: D:\TEMP\img-13.dsk.preprocessed.jpg
+2025-08-20 08:58:01,288 - ERROR - 处理文件 D:\TEMP\img-13.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:58:01,290 - INFO - 处理图像: D:\TEMP\img-14.dsk.preprocessed.jpg
+2025-08-20 08:58:05,499 - ERROR - 处理文件 D:\TEMP\img-14.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:58:05,500 - INFO - 处理图像: D:\TEMP\img-15.dsk.preprocessed.jpg
+2025-08-20 08:58:08,642 - ERROR - 处理文件 D:\TEMP\img-15.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:58:08,643 - INFO - 处理图像: D:\TEMP\img-16.dsk.preprocessed.jpg
+2025-08-20 08:58:12,401 - ERROR - 处理文件 D:\TEMP\img-16.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:58:12,404 - INFO - 处理图像: D:\TEMP\img-17.dsk.preprocessed.jpg
+2025-08-20 08:58:16,991 - ERROR - 处理文件 D:\TEMP\img-17.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:58:16,994 - INFO - 处理图像: D:\TEMP\img-18.dsk.preprocessed.jpg
+2025-08-20 08:58:20,580 - ERROR - 处理文件 D:\TEMP\img-18.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:58:20,583 - INFO - 处理图像: D:\TEMP\img-19.dsk.preprocessed.jpg
+2025-08-20 08:58:23,943 - ERROR - 处理文件 D:\TEMP\img-19.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:58:23,945 - INFO - 处理图像: D:\TEMP\img-2.dsk.preprocessed.jpg
+2025-08-20 08:58:28,061 - ERROR - 处理文件 D:\TEMP\img-2.dsk.preprocessed.jpg 时出错: 'RapidOCROutput' object has no attribute 'save_to_json'
+2025-08-20 08:58:28,063 - INFO - 处理图像: D:\TEMP\img-20.dsk.preprocessed.jpg
+2025-08-20 09:19:08,782 - INFO - 共找到 84 个图像文件，开始处理……
+2025-08-20 09:19:08,783 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.jpg
+2025-08-20 09:19:12,170 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.jpg 时出错: RapidOCROutput.to_json() takes 1 positional argument but 2 were given
+2025-08-20 09:19:12,171 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.vis.jpg
+2025-08-20 09:19:17,021 - ERROR - 处理文件 D:\TEMP\img-1.dsk.preprocessed.vis.jpg 时出错: RapidOCROutput.to_json() takes 1 positional argument but 2 were given
+2025-08-20 09:19:17,024 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.jpg
+2025-08-20 09:19:21,263 - ERROR - 处理文件 D:\TEMP\img-10.dsk.preprocessed.jpg 时出错: RapidOCROutput.to_json() takes 1 positional argument but 2 were given
+2025-08-20 09:19:21,265 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.vis.jpg
+2025-08-20 09:19:26,878 - ERROR - 处理文件 D:\TEMP\img-10.dsk.preprocessed.vis.jpg 时出错: RapidOCROutput.to_json() takes 1 positional argument but 2 were given
+2025-08-20 09:19:26,881 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.jpg
+2025-08-20 09:19:30,792 - ERROR - 处理文件 D:\TEMP\img-11.dsk.preprocessed.jpg 时出错: RapidOCROutput.to_json() takes 1 positional argument but 2 were given
+2025-08-20 09:19:30,794 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.vis.jpg
+2025-08-20 09:19:36,525 - ERROR - 处理文件 D:\TEMP\img-11.dsk.preprocessed.vis.jpg 时出错: RapidOCROutput.to_json() takes 1 positional argument but 2 were given
+2025-08-20 09:19:36,529 - INFO - 处理图像: D:\TEMP\img-12.dsk.preprocessed.jpg
+2025-08-20 09:19:39,208 - ERROR - 处理文件 D:\TEMP\img-12.dsk.preprocessed.jpg 时出错: RapidOCROutput.to_json() takes 1 positional argument but 2 were given
+2025-08-20 09:19:39,210 - INFO - 处理图像: D:\TEMP\img-12.dsk.preprocessed.vis.jpg
+2025-08-20 09:19:42,668 - ERROR - 处理文件 D:\TEMP\img-12.dsk.preprocessed.vis.jpg 时出错: RapidOCROutput.to_json() takes 1 positional argument but 2 were given
+2025-08-20 09:19:42,673 - INFO - 处理图像: D:\TEMP\img-13.dsk.preprocessed.jpg
+2025-08-20 09:19:46,113 - ERROR - 处理文件 D:\TEMP\img-13.dsk.preprocessed.jpg 时出错: RapidOCROutput.to_json() takes 1 positional argument but 2 were given
+2025-08-20 09:19:46,115 - INFO - 处理图像: D:\TEMP\img-13.dsk.preprocessed.vis.jpg
+2025-08-20 09:19:51,505 - ERROR - 处理文件 D:\TEMP\img-13.dsk.preprocessed.vis.jpg 时出错: RapidOCROutput.to_json() takes 1 positional argument but 2 were given
+2025-08-20 09:19:51,508 - INFO - 处理图像: D:\TEMP\img-14.dsk.preprocessed.jpg
+2025-08-20 09:19:57,854 - INFO - 共找到 89 个图像文件，开始处理……
+2025-08-20 09:19:57,854 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.jpg
+2025-08-20 09:20:01,407 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.vis.jpg
+2025-08-20 09:20:06,504 - INFO - 处理图像: D:\TEMP\img-1.dsk.preprocessed.vis.vis.jpg
+2025-08-20 09:20:13,130 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.jpg
+2025-08-20 09:20:17,497 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.vis.jpg
+2025-08-20 09:20:23,185 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.vis.vis.jpg
+2025-08-20 09:20:31,959 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.jpg
+2025-08-20 09:20:35,855 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.vis.jpg

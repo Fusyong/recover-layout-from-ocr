@@ -1,0 +1,74 @@
+2025-08-19 15:56:27,212 - INFO - 共找到 4553 个图像文件，开始处理……
+2025-08-19 15:56:27,212 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.jpg
+2025-08-19 15:56:30,863 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-1.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:56:30,864 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.jpg
+2025-08-19 15:56:35,746 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-10.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:56:35,748 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.jpg
+2025-08-19 15:56:39,966 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-11.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:56:39,967 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-12.dsk.preprocessed.jpg
+2025-08-19 15:56:43,020 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-12.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:56:43,021 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-13.dsk.preprocessed.jpg
+2025-08-19 15:56:46,514 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-13.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:56:46,514 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-14.dsk.preprocessed.jpg
+2025-08-19 15:56:50,701 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-14.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:56:50,702 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-15.dsk.preprocessed.jpg
+2025-08-19 15:56:53,901 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-15.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:56:53,902 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-16.dsk.preprocessed.jpg
+2025-08-19 15:56:57,744 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-16.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:56:57,745 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-17.dsk.preprocessed.jpg
+2025-08-19 15:57:02,472 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-17.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:02,473 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-18.dsk.preprocessed.jpg
+2025-08-19 15:57:06,017 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-18.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:06,017 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-19.dsk.preprocessed.jpg
+2025-08-19 15:57:09,345 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-19.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:09,345 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-2.dsk.preprocessed.jpg
+2025-08-19 15:57:13,418 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-2.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:13,418 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-20.dsk.preprocessed.jpg
+2025-08-19 15:57:17,220 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-20.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:17,221 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-21.dsk.preprocessed.jpg
+2025-08-19 15:57:21,265 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-21.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:21,267 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-22.dsk.preprocessed.jpg
+2025-08-19 15:57:24,409 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-22.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:24,409 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-23.dsk.preprocessed.jpg
+2025-08-19 15:57:28,519 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-23.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:28,520 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-24.dsk.preprocessed.jpg
+2025-08-19 15:57:31,560 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-24.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:31,561 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-25.dsk.preprocessed.jpg
+2025-08-19 15:57:34,547 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-25.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:34,547 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-26.dsk.preprocessed.jpg
+2025-08-19 15:57:38,378 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-26.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:38,378 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-27.dsk.preprocessed.jpg
+2025-08-19 15:57:42,112 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-27.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:42,113 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-28.dsk.preprocessed.jpg
+2025-08-19 15:57:46,079 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-28.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:46,080 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-29.dsk.preprocessed.jpg
+2025-08-19 15:57:50,644 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-29.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:50,645 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-3.dsk.preprocessed.jpg
+2025-08-19 15:57:53,571 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-3.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:53,572 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-30.dsk.preprocessed.jpg
+2025-08-19 15:57:56,816 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-30.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:57:56,817 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-31.dsk.preprocessed.jpg
+2025-08-19 15:58:00,075 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-31.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:00,075 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-32.dsk.preprocessed.jpg
+2025-08-19 15:58:03,522 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-32.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:03,523 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-33.dsk.preprocessed.jpg
+2025-08-19 15:58:07,335 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-33.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:07,335 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-34.dsk.preprocessed.jpg
+2025-08-19 15:58:10,967 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-34.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:10,967 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-35.dsk.preprocessed.jpg
+2025-08-19 15:58:14,582 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-35.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:14,583 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-36.dsk.preprocessed.jpg
+2025-08-19 15:58:18,072 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-36.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:18,073 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-37.dsk.preprocessed.jpg
+2025-08-19 15:58:21,467 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-37.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:21,468 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-38.dsk.preprocessed.jpg
+2025-08-19 15:58:25,268 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-38.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:25,269 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-39.dsk.preprocessed.jpg
+2025-08-19 15:58:29,453 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-39.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:29,453 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-4.dsk.preprocessed.jpg
+2025-08-19 15:58:33,415 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-4.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:33,416 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-40.dsk.preprocessed.jpg
+2025-08-19 15:58:38,144 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-40.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:38,145 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-41.dsk.preprocessed.jpg
+2025-08-19 15:58:42,527 - ERROR - 处理文件 D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-41.dsk.preprocessed.jpg 时出错: Object of type RapidOCROutput is not JSON serializable
+2025-08-19 15:58:42,528 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\preprocessed\一本自主测评卷三下-h\img-42.dsk.preprocessed.jpg

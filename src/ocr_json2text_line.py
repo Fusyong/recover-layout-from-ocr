@@ -120,7 +120,7 @@ class OCRJsonToTextLine:
         self.page_width: int = 0
         self.page_height: int = 0
         # 过滤日志文件
-        self.log_file: str = "filter_log.txt"
+        self.log_file: str = "ocr_json2text_line_filter.log"
         # 用户设置的布局参数
         self.char_height: float = char_height  # 汉字字符高度（像素），必须通过set_layout_params设置
         self.line_height_multiplier: float = line_height_multiplier  # 行高是汉字字符高度的倍数
@@ -1093,28 +1093,28 @@ if __name__ == "__main__":
 
     from ocr_json_filters import box_filters, row_filters
 
-    files = [
-        'tests/assets/pymupdf.json',
-        'tests/assets/rapidocr.json',
-        'tests/assets/youdao.json',
-    ]
-    for file in files:
-        # 转换单个JSON文件
-        convert_json_to_text(
-            file,
-            box_filter_functions=box_filters,
-            row_filter_functions=row_filters,
-            dpi=300,
-            char_height=50.0,
-            line_height_multiplier=1.5
-            )
+    # files = [
+    #     'tests/assets/pymupdf.json',
+    #     'tests/assets/rapidocr.json',
+    #     'tests/assets/youdao.json',
+    # ]
+    # for file in files:
+    #     # 转换单个JSON文件
+    #     convert_json_to_text(
+    #         file,
+    #         box_filter_functions=box_filters,
+    #         row_filter_functions=row_filters,
+    #         dpi=300,
+    #         char_height=50.0,
+    #         line_height_multiplier=1.5
+    #         )
 
     # # 转换文件夹中的所有JSON文件
-    # convert_jsons_to_text(
-    #     'img_dsk',
-    #     box_filter_functions=box_filters,
-    #     row_filter_functions=row_filters,
-    #     dpi=300,
-    #     char_height=50.0,
-    #     line_height_multiplier=1.5
-    # )
+    convert_jsons_to_text(
+        'D:/TEMP',
+        box_filter_functions=box_filters,
+        row_filter_functions=row_filters,
+        dpi=300,
+        char_height=50.0,
+        line_height_multiplier=1.5
+    )

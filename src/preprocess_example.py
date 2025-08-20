@@ -104,16 +104,40 @@ def process_images(input_dir: str, output_dir: str="", config: Dict[str, Any]={}
         else:
             output_dir_obj = Path(output_dir)
         output_dir_obj.mkdir(parents=True, exist_ok=True)
-        
     
-        # 处理每个图像文件
-        for input_path in list(input_dir_obj.rglob("*.png")):
+        # 处理每个图像文件，支持多种后缀
+        image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.tif'}
+        image_files = []
+        for ext in image_extensions:
+            image_files.extend(input_dir_obj.rglob(f"*{ext}"))
+        image_files = list(set(image_files))  # 去重
+
+        total_files = len(image_files)
+        if total_files == 0:
+            logger.info(f"未找到支持的图像文件（{image_extensions}）")
+            return
+
+        logger.info(f"共找到 {total_files} 个图像文件，开始处理……")
+
+        for idx, input_path in enumerate(sorted(image_files), 1):
+            print(f"[{idx}/{total_files}] processing: {input_path}")
             
             try:
-                # 生成输出文件路径
-                base_name = Path(input_path).stem
-                filename = f"{base_name}.preprocessed.jpg"
-                output_path = str(output_dir_obj / filename)
+                # 生成输出文件路径：
+                # 从文件名中截取相对路径和文件名，再增加.preprocessed.jpg后缀
+                # 比如
+                # input_dir_obj 是 d:/dir
+                # output_dir_obj 是 d:/newdir
+                # input_path 是 d:/dir/sub/img.png
+                # 那么
+                # output_path 是 d:/newdir/sub/img.png
+                relative_path = input_path.relative_to(input_dir_obj)
+                # 保持完整的相对路径结构，只改变扩展名
+                output_relative_path = relative_path.with_suffix('.preprocessed.jpg')
+                output_path = str(output_dir_obj / output_relative_path)
+                
+                # 确保输出目录存在
+                Path(output_path).parent.mkdir(parents=True, exist_ok=True)
                 
                 # 调用process_image处理单个文件
                 process_image(str(input_path), output_path, config)
@@ -193,4 +217,4 @@ if __name__ == "__main__":
     
     # process_image(input_path="img/以根据需要修改/img-1.dsk.png", config=config)
 
-    process_images(input_dir="img/以根据需要修改", config=config)
+    process_images(input_dir="D:/语文出版社/2025/同步练习题库/dsk", config=config)
