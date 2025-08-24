@@ -516,3 +516,26 @@
 2025-08-20 09:20:23,185 - INFO - 处理图像: D:\TEMP\img-10.dsk.preprocessed.vis.vis.jpg
 2025-08-20 09:20:31,959 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.jpg
 2025-08-20 09:20:35,855 - INFO - 处理图像: D:\TEMP\img-11.dsk.preprocessed.vis.jpg
+2025-08-21 20:43:06,868 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-21 20:45:57,184 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-21 20:51:09,093 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-21 20:54:13,416 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-21 20:56:40,071 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-21 21:03:42,862 - INFO - 处理图像: tests\assets\img_0_dsk.preprocessed.jpg
+2025-08-21 21:06:35,462 - INFO - 处理图像: tests\assets\img_0_dsk.preprocessed.jpg
+2025-08-21 21:35:31,269 - INFO - 处理图像: tests\assets\img_0_dsk.preprocessed.jpg
+2025-08-21 21:35:31,270 - ERROR - 处理文件 tests/assets/img_0_dsk.preprocessed.jpg 时出错: RapidOCR.__call__() got an unexpected keyword argument 'min_height'
+2025-08-21 21:36:19,634 - INFO - 处理图像: tests\assets\img_0_dsk.preprocessed.jpg
+2025-08-21 21:36:19,635 - ERROR - 处理文件 tests/assets/img_0_dsk.preprocessed.jpg 时出错: RapidOCR.__call__() got an unexpected keyword argument 'min_height'
+2025-08-21 21:36:51,387 - INFO - 处理图像: tests\assets\img_0_dsk.preprocessed.jpg
+2025-08-24 21:14:12,396 - INFO - 处理图像: tests\assets\img_0_dsk.preprocessed.jpg
+2025-08-24 21:14:13,392 - ERROR - 处理文件 tests/assets/img_0_dsk.preprocessed.jpg 时出错: 'TextClsOutput' object has no attribute 'to_json'
+2025-08-24 21:18:11,908 - INFO - 处理图像: tests\assets\img_0_toc.jpg
+2025-08-24 21:18:44,068 - INFO - 处理图像: tests\assets\img_0_toc.jpg
+2025-08-24 21:19:19,054 - INFO - 处理图像: tests\assets\img_0_toc.jpg
+2025-08-24 21:20:34,308 - INFO - 处理图像: tests\assets\img_0_toc.jpg
+2025-08-24 21:21:48,383 - INFO - 处理图像: tests\assets\img_0_toc.jpg
+2025-08-24 21:22:42,530 - INFO - 处理图像: tests\assets\img_0_toc.jpg
+2025-08-24 21:23:42,848 - INFO - 处理图像: tests\assets\img_0_toc.jpg
+2025-08-24 21:26:35,168 - INFO - 处理图像: tests\assets\img_0_toc.jpg
+2025-08-24 21:31:57,868 - INFO - 处理图像: tests\assets\img_0_toc.jpg
