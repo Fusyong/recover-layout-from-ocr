@@ -10686,3 +10686,5 @@
 2025-08-19 15:25:32,654 - INFO - 处理图像: D:\语文出版社\2025\同步练习题库\dsk\高效预学单四下-h\img-9.dsk.png
 2025-08-19 15:25:32,687 - INFO - 输出文件: D:\语文出版社\2025\同步练习题库\dsk\高效预学单四下-h\img-9.dsk.preprocessed.jpg
 2025-08-19 15:25:32,690 - INFO - 批量处理完成！
+2025-08-21 21:02:39,549 - INFO - 处理图像: tests\assets\img_0_dsk.jpg
+2025-08-21 21:02:39,690 - INFO - 输出文件: tests\assets\img_0_dsk.preprocessed.jpg

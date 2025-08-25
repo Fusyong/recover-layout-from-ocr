@@ -215,6 +215,6 @@ if __name__ == "__main__":
     # 示例配置 - 用户可以根据需要修改
     config = get_default_config()
     
-    # process_image(input_path="img/以根据需要修改/img-1.dsk.png", config=config)
+    process_image(input_path="tests/assets/img_0_dsk.jpg", config=config)
 
-    process_images(input_dir="D:/语文出版社/2025/同步练习题库/dsk", config=config)
+    # process_images(input_dir="D:/语文出版社/2025/同步练习题库/dsk", config=config)

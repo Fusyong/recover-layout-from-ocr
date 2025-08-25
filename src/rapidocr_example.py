@@ -23,15 +23,15 @@ engine = RapidOCR(
         "Det.engine_type": EngineType.ONNXRUNTIME,
         "Det.lang_type": LangDet.CH,
         "Det.model_type": ModelType.MOBILE,
-        "Det.ocr_version": OCRVersion.PPOCRV5,
+        "Det.ocr_version": OCRVersion.PPOCRV4,
         "Rec.engine_type": EngineType.ONNXRUNTIME,
         "Rec.lang_type": LangRec.CH,
-        "Rec.model_type": ModelType.MOBILE,
+        "Rec.model_type": ModelType.MOBILE, # MOBILE, SERVER 慢
         "Rec.ocr_version": OCRVersion.PPOCRV5,
     }
 )
 
-def ocr_image(input_path: str, output_dir: str="") -> bool:
+def ocr_image(input_path: str, output_dir: str="") -> Any:
     """OCR单个图像文件"""
     input_path_obj = Path(input_path)
     
@@ -62,16 +62,29 @@ def ocr_image(input_path: str, output_dir: str="") -> bool:
         logger.info(f"处理图像: {input_path_obj}")
         
         # 执行OCR
-        result = engine(str(input_path_obj),use_det=True, use_cls=True, use_rec=True)
+        result = engine(str(input_path_obj),
+        # use_det=True,
+        # use_cls=True,
+        # use_rec=True,
+        # text_score= 0.5,
+        # min_height= 20,
+        # min_side_len= 30,
+        # width_height_ratio= 8,
+        # max_side_len= 2000,
+        # return_word_box= False,
+        # return_single_char_box= False,
+        # font_path= None
+        )
         
         # 保存可视化结果
         # 无法处理中文路径
         result.vis(str(vis_path))
     
-        with open(json_path, "w", encoding="utf-8") as f:
+        with open(json_path,
+        "w", encoding="utf-8") as f:
             json.dump(result.to_json(), f, ensure_ascii=False, indent=2) # type: ignore
         
-        return True
+        return result
         
     except Exception as e:
         logger.error(f"处理文件 {input_path} 时出错: {e}")
@@ -133,11 +146,12 @@ if __name__ == "__main__":
     # 
     # 单张图片ocr
     # 
-    # IMGURL = "D:/语文出版社/2025/同步练习题库/preprocessed/一本自主测评卷三下-h/img-1.dsk.preprocessed.jpg"
-    # ocr_image(IMGURL)
+    IMGURL = "tests/assets/img_0_toc.jpg"
+    r= ocr_image(IMGURL)
+    print(r)
 
     # 
     # 多张图片ocr
     # 
-    ocr_images('D:/TEMP')
+    # ocr_images('D:/TEMP')
     
