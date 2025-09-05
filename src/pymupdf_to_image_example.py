@@ -39,10 +39,10 @@ if __name__ == "__main__":
     # 
     # 转换单个pdf为image
     # 
-    # PDF_PATH = "D:/语文出版社/2025/同步练习题库/2顺序拼接PDF/五三天天练测评卷四下-h.pdf"
-    # pdf_to_image(PDF_PATH)
+    PDF_PATH = "D:/语文出版社/2025/同步练习题库/2顺序拼接PDF/实践园地四上-h.pdf"
+    pdf_to_image(PDF_PATH)
 
     # 
     # 转换多个pdf为image
     # 
-    pdfs_to_image('D:/语文出版社/2025/同步练习题库/2顺序拼接PDF')
+    # pdfs_to_image('D:/语文出版社/2025/同步练习题库/2顺序拼接PDF')

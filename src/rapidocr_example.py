@@ -64,7 +64,7 @@ def ocr_image(input_path: str, output_dir: str="") -> Any:
         # 执行OCR
         result = engine(str(input_path_obj),
         # use_det=True,
-        # use_cls=True,
+        # use_cls=True, # 发生文本行丢失时可关闭
         # use_rec=True,
         # text_score= 0.5,
         # min_height= 20,
@@ -146,12 +146,12 @@ if __name__ == "__main__":
     # 
     # 单张图片ocr
     # 
-    IMGURL = "tests/assets/img_0_toc.jpg"
+    IMGURL = "tests/assets/img_0_dsk.preprocessed.jpg"
     r= ocr_image(IMGURL)
     print(r)
 
     # 
     # 多张图片ocr
     # 
-    # ocr_images('D:/TEMP')
+    ocr_images('E:/语文出版社/2025/同步练习题库/preprocessed/')
     

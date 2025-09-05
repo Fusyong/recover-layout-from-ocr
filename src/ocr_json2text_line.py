@@ -1093,26 +1093,26 @@ if __name__ == "__main__":
 
     from ocr_json_filters import box_filters, row_filters
 
-    files = [
-        'tests/assets/img_0_toc.json',
-        'tests/assets/pymupdf.json',
-        'tests/assets/rapidocr.json',
-        'tests/assets/youdao.json',
-    ]
-    for file in files:
-        # 转换单个JSON文件
-        convert_json_to_text(
-            file,
-            box_filter_functions=box_filters,
-            row_filter_functions=row_filters,
-            dpi=300,
-            char_height=50.0,
-            line_height_multiplier=1.5
-            )
+    # files = [
+    #     'tests/assets/img_0_toc.json',
+    #     'tests/assets/pymupdf.json',
+    #     'tests/assets/rapidocr.json',
+    #     'tests/assets/youdao.json',
+    # ]
+    # for file in files:
+    #     # 转换单个JSON文件
+    #     convert_json_to_text(
+    #         file,
+    #         box_filter_functions=box_filters,
+    #         row_filter_functions=row_filters,
+    #         dpi=300,
+    #         char_height=50.0,
+    #         line_height_multiplier=1.5
+    #         )
 
     # # 转换文件夹中的所有JSON文件
     convert_jsons_to_text(
-        'D:/TEMP',
+        'E:/语文出版社/2025/同步练习题库/preprocessed/一本自主测评卷三下-h/',
         box_filter_functions=box_filters,
         row_filter_functions=row_filters,
         dpi=300,
