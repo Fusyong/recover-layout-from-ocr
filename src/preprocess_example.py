@@ -217,4 +217,4 @@ if __name__ == "__main__":
     
     # process_image(input_path="tests/assets/img_0_dsk.jpg", config=config)
 
-    process_images(input_dir="D:/语文出版社/2025/同步练习题库/dsk/实践园地四上-h/", config=config)
+    process_images(input_dir="E:/语文出版社/2025/人教教师教学用书语文一年级上册-集团质检/img_dsk/", config=config)

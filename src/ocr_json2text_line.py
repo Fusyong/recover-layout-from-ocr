@@ -5,6 +5,7 @@ OCR JSON结果转文本行（含版面空格/空行）转换器
 
 import json
 import os
+import pathlib
 import statistics
 import re
 from typing import Dict, List, Any, Tuple, Optional
@@ -1082,12 +1083,50 @@ def convert_json_to_text(json_path: str, out_path: str='', box_filter_functions:
             f.write(text)
 
 def convert_jsons_to_text(json_dir: str, out_dir: str='', box_filter_functions: List[callable]=None, row_filter_functions: List[callable]=None, dpi: int=300, char_height: float=50.0, line_height_multiplier: float=1.5) -> str:
-    """将文件夹中的OCR JSON结果转换为纯文本（带空格/空行）"""
+    """将文件夹中的OCR JSON结果转换为纯文本（带空格/空行），支持递归处理"""
+    
+    # 检查输入文件夹是否存在
+    input_dir_obj = pathlib.Path(json_dir)
+    if not input_dir_obj.exists():
+        print(f"输入文件夹不存在: {json_dir}")
+        return
+    
+    # 如果输出目录为空，则使用输入目录
     if not out_dir:
-        out_dir = json_dir
-    for json_path in os.listdir(json_dir):
-        if json_path.endswith('.json'):
-            convert_json_to_text(os.path.join(json_dir, json_path), os.path.join(out_dir, json_path.replace('.json', '.txt')), box_filter_functions, row_filter_functions, dpi, char_height, line_height_multiplier)
+        output_dir_obj = input_dir_obj
+    else:
+        output_dir_obj = pathlib.Path(out_dir)
+        output_dir_obj.mkdir(parents=True, exist_ok=True)
+    
+    # 递归查找所有JSON文件
+    json_files = list(input_dir_obj.rglob("*.json"))
+    
+    total_files = len(json_files)
+    if total_files == 0:
+        print("未找到JSON文件")
+        return
+    
+    print(f"共找到 {total_files} 个JSON文件，开始处理……")
+    
+    for idx, json_path in enumerate(sorted(json_files), 1):
+        print(f"[{idx}/{total_files}] processing: {json_path}")
+        
+        try:
+            # 保持完整的相对路径结构
+            relative_path = json_path.relative_to(input_dir_obj)
+            output_subdir = output_dir_obj / relative_path.parent
+            output_subdir.mkdir(parents=True, exist_ok=True)
+            
+            # 生成输出文件路径
+            output_file = output_subdir / (relative_path.stem + '.txt')
+            
+            # 调用convert_json_to_text处理单个文件
+            convert_json_to_text(str(json_path), str(output_file), box_filter_functions, row_filter_functions, dpi, char_height, line_height_multiplier)
+            
+        except Exception as e:
+            print(f"处理文件 {json_path} 时出错: {e}")
+    
+    print("批量JSON转换处理完成！")
 
 if __name__ == "__main__":
 
@@ -1112,7 +1151,7 @@ if __name__ == "__main__":
 
     # # 转换文件夹中的所有JSON文件
     convert_jsons_to_text(
-        'E:/语文出版社/2025/同步练习题库/preprocessed/一本自主测评卷三下-h/',
+        'E:/语文出版社/2025/人教教师教学用书语文一年级上册-集团质检/img_preprocessed/',
         box_filter_functions=box_filters,
         row_filter_functions=row_filters,
         dpi=300,

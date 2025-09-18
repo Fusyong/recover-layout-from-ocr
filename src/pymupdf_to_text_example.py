@@ -46,7 +46,7 @@ def pdfs_to_json(pdf_dir: str, output_dir: str=""):
 
 if __name__ == "__main__":
     # 转换单个pdf
-    pdf_path = "pdf/2025语文同步学与练五年级上册四川版.pdf"
+    pdf_path = "C:/Users/DELL/Desktop/南宋经学史/南宋经学史.pdf"
     pdf_to_json(pdf_path)
 
     # # 转换多个pdf

@@ -3,5 +3,6 @@ pdf/
 img/
 img_dsk/
 *.pdf
+*.log
 __pycache__
 processed_images/

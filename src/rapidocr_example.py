@@ -146,12 +146,12 @@ if __name__ == "__main__":
     # 
     # 单张图片ocr
     # 
-    IMGURL = "tests/assets/img_0_dsk.preprocessed.jpg"
-    r= ocr_image(IMGURL)
-    print(r)
+    # IMGURL = "tests/assets/img_0_dsk.preprocessed.jpg"
+    # r= ocr_image(IMGURL)
+    # print(r)
 
     # 
     # 多张图片ocr
     # 
-    ocr_images('E:/语文出版社/2025/同步练习题库/preprocessed/')
+    ocr_images('E:/语文出版社/2025/人教教师教学用书语文一年级上册-集团质检/img_preprocessed/')
     
